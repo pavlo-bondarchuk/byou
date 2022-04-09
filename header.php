@@ -25,38 +25,44 @@
 
 	<header class="header">
         <div class="inner">
-            <nav class="header__menu">
-							<?php
-							wp_nav_menu(
-									array(
-											'theme_location' => 'header',
-
-									)
-							);
-							?>
-            </nav>
+          <?php
+          wp_nav_menu(
+              array(
+                  'theme_location' => 'header',
+                  'container'       => 'nav',
+                  'container_class' => 'header__menu',
+                  'container_id'    => '',
+                  'menu_class'      => 'header__menu_list',
+                  'menu_id'         => 'header__menu_id',
+                  'echo'            => true,
+                  'fallback_cb'     => 'wp_page_menu',
+                  'before'          => '',
+                  'after'           => '',
+                  'link_before'     => '',
+                  'link_after'      => '',
+                  'items_wrap'      => '%3$s',
+                  'depth'           => 1,
+                  'walker'          => new Custom_Walker_Nav_Menu()
+                  )
+          );
+          ?>
             <div class="logo">
-							<?php
-							the_custom_logo();
-							if ( is_front_page() && is_home() ) :
-								?>
-                  <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-							<?php
-							else :
-								?>
-                  <p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-							<?php
-							endif;
-							$byou_description = get_bloginfo( 'description', 'display' );
-							if ( $byou_description || is_customize_preview() ) :
-								?>
-                  <p class="site-description"><?php echo $byou_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-							<?php endif; ?>
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+                  <?php
+                  $custom_logo_id = get_theme_mod( 'custom_logo' );
+                  $logo           = wp_get_attachment_image_src( $custom_logo_id, 'full' );
+                  if ( has_custom_logo() ) {
+                      echo '<img src="' . esc_url( $logo[0] ) . '" alt="' . get_bloginfo( 'name' ) . '">';
+                  } else {
+                      echo '<h1>' . get_bloginfo( 'name' ) . '</h1>';
+                  }
+                  ?>
+                </a>
             </div>
             <div class="addition">
                 <a href="">Shop</a>
                 <a href="">Contact Us</a>
-                <a href="" class="btn">Book Free Consultation</a>
+                <a href="" class="button__blue">Book Free Consultation</a>
             </div>
         </div>
 	</header>

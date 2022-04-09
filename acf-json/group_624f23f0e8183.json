@@ -25,7 +25,7 @@
             "key": "field_624f2571951ef",
             "label": "Text",
             "name": "text",
-            "type": "text",
+            "type": "textarea",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -36,9 +36,10 @@
             },
             "default_value": "",
             "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "br",
+            "acfe_textarea_code": 0
         },
         {
             "key": "field_624f2577951f0",
@@ -106,5 +107,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1649354127
+    "modified": 1649511039
 }

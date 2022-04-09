@@ -104,6 +104,15 @@ function byou_setup() {
 			'flex-height' => true,
 		)
 	);
+	add_editor_style(
+			array(
+					'https://use.typekit.net/kbw6qxr.css'
+			),
+			array(
+					'https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap'
+			)
+	);
+	remove_action( 'wp_body_open', 'wp_global_styles_render_svg_filters' );
 }
 add_action( 'after_setup_theme', 'byou_setup' );
 
@@ -142,19 +151,7 @@ add_action( 'widgets_init', 'byou_widgets_init' );
 /**
  * Enqueue scripts and styles.
  */
-function byou_scripts() {
-	wp_enqueue_style( 'byou-style', get_template_directory_uri() . '/assets/dist/css/styles.css', array(), _S_VERSION );
-
-	wp_enqueue_script( 'byou-script', get_template_directory_uri() . '/assets/dist/js/app.min.js', array( 'jquery' ), _S_VERSION, true );
-	wp_localize_script( 'byou-script', 'ajax_posts', array(
-			'ajaxurl' => admin_url( 'admin-ajax.php' )
-	) );
-
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-		wp_enqueue_script( 'comment-reply' );
-	}
-}
-add_action( 'wp_enqueue_scripts', 'byou_scripts' );
+require get_template_directory() . '/inc/scripts-styles.php';
 
 /**
  * Implement the Custom Header feature.
@@ -199,3 +196,8 @@ require IT_DIR . '/gutenberg-blocks/gutenberg-connect.php';
  * Images and Iframes lazyload
  */
 require IT_DIR . '/inc/lazy-load.php';
+
+/**
+ * Custom Menu Walker
+ */
+require IT_DIR . '/inc/walker.php';

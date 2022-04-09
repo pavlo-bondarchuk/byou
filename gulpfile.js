@@ -92,11 +92,11 @@ function images() {
 
 const cssConfig = {
 
-	src: [dir.src + 'scss/main.scss', './editor-style.scss', './gutenberg-blocks/**/*.scss'],
-	lint: dir.src + 'scss/**/*.s+(a|c)ss',
-	watch: [dir.src + 'scss/**/*', './editor-style.scss', './gutenberg-blocks/**/*.scss', '!' + dir.src + 'scss/bs.scss', '!' + dir.src + 'scss/fa.scss'],
+	src: [dir.src + 'scss/styles.scss', './editor-style.scss', './gutenberg-blocks/**/*.scss'],
+	//lint: dir.src + 'scss/**/*.s+(a|c)ss',
+	watch: [dir.src + 'scss/**/*', './editor-style.scss', './gutenberg-blocks/**/*.scss', '!'],
 	build: dir.build + 'css/',
-	main: dir.build + 'css/main.min.css',
+	main: dir.build + 'css/styles.css',
 	sassOpts: {
 		sourceMap: false,
 		outputStyle: 'compressed',

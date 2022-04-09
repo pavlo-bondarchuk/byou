@@ -1,0 +1,121 @@
+{
+  "$schema": "https://json.schemastore.org/theme-v1.json",
+  "version": 1,
+  "settings": {
+    "color": {
+      "palette": [
+        {
+          "slug": "black",
+          "color": "#000000",
+          "name": "Black"
+        },
+        {
+          "slug": "white",
+          "color": "#FFFFFF",
+          "name": "White"
+        },
+        {
+          "slug": "transparent-gray",
+          "color": "#00000026",
+          "name": "Transparent Gray"
+        },
+        {
+          "slug": "transparent-middle-gray",
+          "color": "#00000080",
+          "name": "Transparent Middle Gray"
+        },
+        {
+          "slug": "middle-gray",
+          "color": "#818181",
+          "name": "Middle Gray"
+        },
+        {
+          "slug": "dark-gray",
+          "color": "#666666",
+          "name": "Dark Gray"
+        },
+        {
+          "slug": "light-gray",
+          "color": "#EDEDED",
+          "name": "Light Gray"
+        },
+        {
+          "slug": "light-white",
+          "color": "#F2F2F2",
+          "name": "Light White"
+        },
+        {
+          "slug": "transparent-light-white",
+          "color": "#F2F2F2CB",
+          "name": "Transparent Light White"
+        },
+        {
+          "slug": "blue",
+          "color": "#1F4A94",
+          "name": "Blue"
+        },
+        {
+          "slug": "second-blue",
+          "color": "#1B4AA6",
+          "name": "Second Blue"
+        }
+      ],
+      "defaultPalette": false,
+      "custom": false
+    },
+    "typography": {
+      "customFontSize": false,
+      "lineHeight": true,
+      "fontFamilies": [
+        {
+          "fontFamily": "\"Montserrat\", sans-serif",
+          "slug": "montserrat"
+        },
+        {
+          "fontFamily": "swear-display, sans-serif",
+          "slug": "swear-display"
+        }
+      ],
+      "fontSizes": [
+        {
+          "slug": "montserrat-regular-small",
+          "size": "15px",
+          "name": "Montserrat Regular 15px"
+        },
+        {
+          "slug": "small",
+          "size": "15px",
+          "name": "Small"
+        },
+        {
+          "slug": "medium",
+          "size": "16px",
+          "name": "Medium"
+        },
+        {
+          "slug": "large",
+          "size": "18px",
+          "name": "Large"
+        },
+        {
+          "slug": "extra-large",
+          "size": "40px",
+          "name": "Extra large"
+        }
+      ]
+    },
+    "layout": {
+      "contentSize": "1240px",
+      "wideSize": "1240px"
+    }
+  },
+  "styles": {
+    "typography": {
+      "fontFamily": "var(--wp--preset--font-family--montserrat)"
+    },
+    "color": {
+      "background": "var(--wp--preset--color--white)",
+      "text": "var(--wp--preset--color--black)"
+    }
+  }
+}
