@@ -1,0 +1,88 @@
+//@import "./assets/src/scss/00-vars/_grid.scss";
+//@import "./assets/src/scss/00-vars/_defaults.scss";
+//@import "./assets/src/scss/00-vars/_typography.scss";
+//@import "./assets/src/scss/01-mixins/_font-typography.scss";
+//@import "./assets/src/scss/01-mixins/_media.scss";
+//@import "./assets/src/scss/01-mixins/_mixins-master.scss";
+//
+//body, button, input, select, optgroup, textarea {
+//	-webkit-font-smoothing: antialiased; // sass-lint:disable-line no-vendor-prefixes
+//	@include fs($font-size-base);
+//	font-family: $font-family-base;
+//	line-height: $line-height-base;
+//}
+//
+//.editor-styles-wrapper .block-editor-block-list__block:not(.is-selected):not(.is-typing) ul,
+//.editor-styles-wrapper ul {
+//	list-style: none !important;
+//	margin: 0;
+//}
+//
+//.block-editor-block-list__block {
+//	&.is-block-collapsed {
+//		margin-top: 0;
+//		margin-bottom: 0;
+//	}
+//
+//	&:not(.is-selected):not(.is-typing):not(.block-editor-block-list__block) {
+//		@import "./assets/src/scss/bs.scss";
+//		@import "./assets/src/scss/00-vars/_colors.scss";
+//		@import "./assets/src/scss/02-typography/_copy.scss";
+//		@import "./assets/src/scss/02-typography/_headings.scss";
+//		@import "./assets/src/scss/02-typography/_help-classes.scss";
+//		@import "./assets/src/scss/03-base/_elements.scss";
+//		@import "./assets/src/scss/03-base/_classes.scss";
+//		@import "./assets/src/scss/03-base/_captions.scss";
+//		@import "./assets/src/scss/03-base/_galleries.scss";
+//		@import "./assets/src/scss/03-base/_links.scss";
+//		@import "./assets/src/scss/03-base/_lists.scss";
+//		@import "./assets/src/scss/00-vars/_magnific_popup.scss";
+//		@import "./assets/src/scss/03-base/_media.scss";
+//		//@import "./assets/src/scss/03-base/_swiper.scss";
+//		@import "./assets/src/scss/00-vars/_slick.scss";
+//		@import "./assets/src/scss/03-base/_tables.scss";
+//		//@import "./assets/src/scss/forms/_gravity.scss";
+//		@import "./assets/src/scss/forms/_buttons.scss";
+//	}
+//}
+//
+//:root {
+//	--container-width: 100%;
+//	@include m(sm) {
+//		--container-width: #{map-get($container-max-widths, sm)}; //sass-lint:disable-line function-name-format
+//	}
+//	@include m(md) {
+//		--container-width: #{map-get($container-max-widths, md)}; //sass-lint:disable-line function-name-format
+//	}
+//	@include m(lg) {
+//		--container-width: #{map-get($container-max-widths, lg)}; //sass-lint:disable-line function-name-format
+//	}
+//	@include m(xl) {
+//		--container-width: #{map-get($container-max-widths, xl)}; //sass-lint:disable-line function-name-format
+//	}
+//}
+//
+//.acf-field.img-select .acf-checkbox-list input,
+//.acf-field.img-select .acf-radio-list input {
+//	position: absolute;
+//	left: -9999px;
+//}
+//
+//.acf-field.img-select .acf-checkbox-list img,
+//.acf-field.img-select .acf-radio-list img {
+//	border: 2px solid #0000;
+//	width: 32px;
+//	padding: 3px;
+//	border-radius: 3px;
+//}
+//
+//.acf-field.img-select .acf-checkbox-list input:checked + img,
+//.acf-field.img-select .acf-radio-list input:checked + img {
+//	border: 2px solid #444;
+//}
+//
+//.default-block-container {
+//	p {
+//		color: #000;
+//	}
+//}

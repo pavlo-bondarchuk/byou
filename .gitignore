@@ -1,0 +1,11 @@
+.idea
+!.gitignore
+!README.md
+!package.json
+!gulpfile.js
+!.github/
+!*.sql
+
+/node_modules/*
+/assets/src/*
+package-lock.json
