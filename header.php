@@ -27,12 +27,7 @@
         <div class="inner">
             <div class="top">
                 <div class="inner">
-                    <button class="menu-toggle hamburger hamburger--slider" type="button" aria-controls="primary-menu"
-                            aria-expanded="false">
-					<span class="hamburger-box">
-					    <span class="hamburger-inner"></span>
-					</span>
-                    </button>
+                    <div class="menu__open"><span></span></div>
 									<?php
 									wp_nav_menu(
 											array(
