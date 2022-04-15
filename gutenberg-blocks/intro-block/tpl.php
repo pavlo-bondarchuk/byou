@@ -32,17 +32,20 @@ if ( !empty( $block['align'] ) ) {
 		/* Add styles that use ACF values here */
 		}
 </style>
-
+<?php
+if( isset( $block['data']['preview_image_help'] )  ) :
+	echo '<img src="'. $block['data']['preview_image_help'] .'" style="width:100%; height:auto;">';
+else : ?>
 <div id="<?php echo esc_attr( $id ); ?>" class="<?php echo esc_attr( $classes ); ?>">
     <div class="content__wrapper">
             <div class="content__col">
                 <div class="title"><?php the_field( 'title' ); ?></div>
-			</div>
+            </div>
             <div class="content__col">
-                <div class="text__main text__white text__mb_medium"><?php the_field( 'text' ); ?></div>
-			    <?php $button = get_field( 'button' ); ?>
+                <div class="text text__main text__white text__mb_medium"><?php the_field( 'text' ); ?></div>
+                <?php $button = get_field( 'button' ); ?>
 			    <?php if ( $button ) : ?>
-                    <a href="<?php echo esc_url( $button['url'] ); ?>" target="<?php echo esc_attr( $button['target'] ); ?>" class="button__blue">
+                    <a href="<?php echo esc_url( $button['url'] ); ?>" target="<?php echo esc_attr( $button['target'] ); ?>" class="button button__blue">
                       <?php echo esc_html( $button['title'] ); ?>
                     </a>
 			    <?php endif; ?>
@@ -56,3 +59,4 @@ if ( !empty( $block['align'] ) ) {
 			<?php endif; ?>
     </div>
 </div>
+<?php endif;?>

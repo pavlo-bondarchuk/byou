@@ -1,4 +1,4 @@
-@import "../../assets/src/scss/utils";
+@import "../../assets/src/scss/styles";
 
 .intro-block {
 	position: relative;
@@ -6,6 +6,14 @@
 	height: 100vh;
 	display: flex;
 	align-items: flex-end;
+	@include tablet {
+		padding-top: 40%;
+	}
+	@include mobile-only {
+		padding-bottom: 85px;
+		padding-top: 280px;
+		height: auto;
+	}
 
 	.content {
 		&__wrapper {
@@ -17,11 +25,30 @@
 			margin: 0 auto;
 			position: relative;
 			z-index: 10;
+			@include tablet {
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+			}
+			@include mobile-only {
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+			}
 
 			.title {
 				font: normal normal 300 71px/81px $font-swear;
 				color: #fff;
 				width: 330px;
+				@include tablet {
+					width: 50%;
+					text-align: center;
+					margin-bottom: 50px;
+				}
+				@include mobile-only {
+					text-align: center;
+					margin-bottom: 105px;
+				}
 			}
 
 			.text {
@@ -31,6 +58,38 @@
 				color: #FFFFFF;
 				text-transform: uppercase;
 				width: 258px;
+				@include tablet {
+					text-align: center;
+					width: 80%;
+				}
+				@include mobile-only {
+					text-align: center;
+					width: 90%;
+				}
+			}
+
+			.button {
+				border-radius: 0;
+				z-index: 10;
+				border: none;
+				outline: none;
+				cursor: pointer;
+				height: 50px;
+				padding: 16px 36px;
+				display: flex;
+				align-items: center;
+				align-self: flex-start;
+				justify-content: center;
+				text-align: center;
+				background: #1F4A94;
+				color: #fff;
+				font: normal normal 500 15px/19px $font-montserrat;
+				@include tablet {
+					align-self: center;
+				}
+				@include mobile-only {
+					display: none;
+				}
 			}
 		}
 
@@ -38,6 +97,13 @@
 			display: flex;
 			flex-wrap: wrap;
 			flex-direction: column;
+			width: 100%;
+			@include tablet {
+				align-items: center;
+			}
+			@include mobile-only {
+				align-items: center;
+			}
 		}
 	}
 

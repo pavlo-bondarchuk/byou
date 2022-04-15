@@ -1,0 +1,27 @@
+@import "../../assets/src/scss/styles";
+
+.brands-block {
+	padding: 76px 0;
+	border-bottom: 1px solid #F2F2F2;
+	@include mobile-only {
+		padding: 50px 0;
+	}
+
+	.inner {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 80px;
+		@include mobile-only {
+			gap: 40px;
+			flex-wrap: wrap;
+		}
+
+		img {
+			@include mobile-only {
+				width: 50%;
+				max-width: 120px;
+			}
+		}
+	}
+}

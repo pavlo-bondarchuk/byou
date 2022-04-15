@@ -9,7 +9,8 @@ const
 		nm: '/node_modules/',
 		theme: '.',
 		src: 'assets/src/',
-		build: 'assets/dist/'
+		build: 'assets/dist/',
+		fonts: 'assets/dist/'
 	},
 	url = 'http://byou.test/',
 	textdomain = 'byou',
@@ -55,7 +56,7 @@ function translate() {
 const fontsConfig = {
 
 	src: dir.src + 'fonts/**/*',
-	build: dir.build + 'fonts/',
+	build: dir.fonts + 'fonts/',
 	watch: dir.src + 'fonts/**/*',
 };
 
@@ -93,7 +94,6 @@ function images() {
 const cssConfig = {
 
 	src: [dir.src + 'scss/styles.scss', './editor-style.scss', './gutenberg-blocks/**/*.scss'],
-	//lint: dir.src + 'scss/**/*.s+(a|c)ss',
 	watch: [dir.src + 'scss/**/*', './editor-style.scss', './gutenberg-blocks/**/*.scss', '!'],
 	build: dir.build + 'css/',
 	main: dir.build + 'css/styles.css',
@@ -113,16 +113,6 @@ const cssConfig = {
 	]
 
 };
-
-// function cssLint() {
-//
-// 	return gulp.src( cssConfig.lint )
-// 		.pipe( sassLint( {
-// 			configFile: '.sass-lint.yml'
-// 		} ) )
-// 		.pipe( sassLint.format() )
-// 		.pipe( sassLint.failOnError() )
-// }
 
 function css() {
 
@@ -154,22 +144,17 @@ function critCss() {
 
 const jsConfig = {
 
-	src: [dir.src + 'js/*'],
-	// src: [dir.src + 'js/libs/*.js', dir.src + 'js/custom/*.js'],
-	//srcLibs: dir.src + 'js/libs/*.js',
-	//srcLint: dir.src + 'js/custom/*.js',
-	//srcCopy: [dir.src + 'js/copy/*.js'],
-	watch: dir.src + 'js/**/*',
-	build: dir.build + 'js/'
-
+	src: [dir.src + 'js/*', './gutenberg-blocks/**/*.js'],
+	watch: [dir.src + 'js/**/*', './gutenberg-blocks/**/*.js', '!'],
+	srcGutenberg: './gutenberg-blocks/**/*.js',
+	watchGutenberg: './gutenberg-blocks/**/*.js',
+	build: dir.build + 'js/',
 };
 
 const jsBabelOpts = {
 	presets: ['@babel/preset-env']
 };
 
-// Jshint outputs any kind of javascript problems you might have
-// Only checks javascript files inside /src directory
 function jsHint() {
 
 	return gulp.src( jsConfig.srcLint )
@@ -193,11 +178,17 @@ function js() {
 		//.pipe( browsersync.reload( {stream: true} ) );
 }
 
-// function jsCopy() {
-//
-// 	return gulp.src( jsConfig.srcCopy )
-// 		.pipe( gulp.dest( jsConfig.build ) );
-// }
+function jsGutenberg() {
+
+	return gulp.src(jsConfig.srcGutenberg)
+			.pipe( sourcemaps.init() )
+			.pipe(babel(jsBabelOpts))
+			.pipe(gulp.dest(jsConfig.build))
+			.pipe(uglify())
+			.pipe( sourcemaps.write() )
+			.pipe(gulp.dest(jsConfig.build))
+			.pipe(browsersync.reload({ stream: true }));
+}
 
 /**************** browser-sync task ****************/
 
@@ -237,7 +228,11 @@ function watchfonts() {
 	gulp.watch( fontsConfig.watch, fonts );
 }
 
-const start = gulp.parallel( fonts, images, css, js, /**bs,**/ watchcss, watchjs, watchfonts, watchimages );
+function watchjsGutenberg() {
+	gulp.watch(jsConfig.watchGutenberg, jsGutenberg);
+}
+
+const start = gulp.parallel( fonts, images, css, js, jsGutenberg, watchcss, watchjs, watchjsGutenberg, watchfonts, watchimages );
 
 //exports.cssLint = cssLint;
 exports.css = css;

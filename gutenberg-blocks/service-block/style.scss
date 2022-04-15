@@ -1,0 +1,252 @@
+@import "../../assets/src/scss/styles";
+
+.service-block {
+	margin-bottom: 0;
+	@include tablet {
+		margin-bottom: 200px;
+	}
+
+	&.image__align_left {
+		.inner {
+			@include tablet {
+				flex-direction: row;
+			}
+
+			.column {
+				&__desktop {
+					&:first-child {
+						width: 70%;
+					}
+					&:last-child {
+						width: 30%;
+					}
+					.image {
+						padding: 0;
+						z-index: 10;
+						position: relative;
+						@include tablet {
+							padding-right: 150px;
+							z-index: 10;
+							position: relative;
+						}
+					}
+
+					.shape {
+						position: absolute;
+						top: 0;
+						right: 0;
+						width: 100%;
+						height: 100%;
+						z-index: 0;
+
+						img {
+							position: absolute;
+							top: 0;
+							right: 50px;
+							width: auto;
+							height: 100%;
+						}
+					}
+
+					.content_wrapper {
+						padding-right: 100px;
+					}
+				}
+			}
+		}
+	}
+
+	&.image__align_right {
+		.inner {
+			@include tablet {
+				flex-direction: row-reverse;
+			}
+
+			.column {
+				&__desktop {
+					&:first-child {
+						width: 70%;
+					}
+					&:last-child {
+						width: 30%;
+					}
+					.image {
+						padding: 0;
+						z-index: 10;
+						position: relative;
+						@include tablet {
+							padding-left: 150px;
+							z-index: 10;
+							position: relative;
+						}
+					}
+
+					.shape {
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 100%;
+						height: 100%;
+						z-index: 0;
+						@include mobile-only {
+							display: none;
+						}
+
+						img {
+							position: absolute;
+							top: 0;
+							left: 50px;
+							width: auto;
+							height: 100%;
+						}
+					}
+
+					.content_wrapper {
+						padding-left: 100px;
+					}
+				}
+			}
+		}
+	}
+
+	.inner {
+		max-width: 1240px;
+		width: 100%;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		@include mobile-only {
+			flex-direction: column;
+		}
+
+
+		.column {
+			&__desktop {
+				width: 50%;
+				position: relative;
+				@include mobile-only {
+					display: none;
+				}
+
+				.shape {
+					@include mobile-only {
+						display: none;
+					}
+				}
+
+				.title {
+					text-align: left;
+					font: normal normal 500 48px/56px $font-swear;
+					letter-spacing: 0;
+					color: $black;
+					text-transform: capitalize;
+					margin-bottom: 20px;
+					@include mobile-only {
+						font: normal normal 500 24px/50px $font-swear;
+					}
+				}
+
+				.text {
+					max-width: 365px;
+					text-align: left;
+					font: normal normal normal 16px/22px $font-montserrat;
+					letter-spacing: 0;
+					color: $black666;
+					margin-bottom: 20px;
+					@include mobile-only {
+						font: normal normal normal 14px/22px $font-montserrat;
+					}
+				}
+
+				.link {
+					font: normal normal 500 15px/19px $font-montserrat;
+					letter-spacing: 0;
+					color: #1F4A94;
+					text-transform: uppercase;
+					position: relative;
+					display: flex;
+					align-items: center;
+
+					.icon {
+						margin-left: 20px;
+						width: 33px;
+						height: 7px;
+						background-image: url("../../img/arrows-blue.png");
+						background-size: 33px;
+						background-position: center;
+						background-repeat: no-repeat;
+						transition: all .3s ease-in-out;
+					}
+
+					&:hover {
+						.icon {
+							margin-left: 15px;
+							transform: rotate(-1deg);
+						}
+					}
+				}
+			}
+
+			&__mobile {
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-start;
+				border-bottom: 1px solid #E6E6E6;
+				width: 100%;
+
+				.title {
+					padding: 30px 16px 20px;
+					text-align: left;
+					font: normal normal normal 24px/50px $font-swear;
+					letter-spacing: 0;
+					color: $black;
+					text-transform: capitalize;
+				}
+
+				.image {
+					width: 100%;
+					height: 100%;
+					padding-top: 75%;
+					position: relative;
+
+					img {
+						width: 100%;
+						height: 100%;
+						position: absolute;
+						top: 0;
+						left: 0;
+						object-fit: cover;
+					}
+				}
+
+				.link {
+					padding: 10px 16px;
+					color: $white;
+					background: $blue;
+					width: 100%;
+					height: 40px;
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+
+					.icon {
+						font-size: 9px;
+					}
+				}
+
+				.text {
+					padding: 20px 16px;
+					text-align: left;
+					font: normal normal normal 14px/22px $font-montserrat;
+					letter-spacing: 0;
+					color: $black666;
+					margin: 0;
+				}
+
+				@include tablet {
+					display: none;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,228 @@
+@import "../../assets/src/scss/styles";
+
+.why-block {
+	padding: 86px 0 150px;
+	@include tablet {
+		padding: 86px 0;
+	}
+	@include mobile-only {
+		padding: 40px 0;
+	}
+
+	.inner {
+		width: 100%;
+		max-width: 1340px;
+		margin: 0 auto;
+
+		.why {
+			&__choose {
+				padding-bottom: 163px;
+				display: flex;
+				justify-content: space-between;
+				@include desktop {
+					flex-direction: row;
+				}
+				@media (max-width: 1240px) {
+					flex-direction: column-reverse;
+					padding-top: 100px;
+					padding-bottom: 80px;
+				}
+				@include mobile-only {
+					flex-direction: column-reverse;
+					padding-bottom: 80px;
+				}
+
+				.content_wrapper {
+					padding-top: 80px;
+					width: 50%;
+					max-width: 393px;
+					display: flex;
+					flex-direction: column;
+					align-items: flex-start;
+					justify-content: flex-end;
+					@media (max-width: 1240px) {
+						width: 100%;
+						max-width: 100%;
+						padding: 50px 32px 0;
+					}
+					@include mobile-only {
+						align-content: center;
+						justify-content: flex-start;
+						width: 100%;
+						padding: 50px 16px 0;
+					}
+
+					.title {
+						text-align: left;
+						font: normal normal 500 48px/56px $font-swear;
+						letter-spacing: 0;
+						color: $black;
+						text-transform: capitalize;
+						margin-bottom: 30px;
+						@include mobile-only {
+							font: normal normal 500 40px/52px $font-swear;
+						}
+					}
+
+					.text {
+						text-align: left;
+						font: normal normal normal 16px/27px $font-montserrat;
+						letter-spacing: 0;
+						color: $black666;
+						text-transform: capitalize;
+						margin-bottom: 30px;
+					}
+
+					.button {
+						padding: 16px 36px;
+						background: transparent;
+						border: 1px solid $blue;
+						text-align: left;
+						font: normal normal 500 15px/19px $font-montserrat;
+						letter-spacing: 0px;
+						color: $blue;
+						text-transform: uppercase;
+						transition: all .2s ease;
+
+						&:hover {
+							background-color: $blue;
+							color: $white;
+						}
+					}
+				}
+
+				.image {
+					width: 100%;
+					max-width: 574px;
+					height: 100%;
+					position: absolute;
+					top: 0;
+					left: 127px;
+					bottom: 0;
+					right: 60px;
+					z-index: 10;
+					@media (max-width: 1240px) {
+						max-width: 100%;
+						left: 0;
+					}
+					@include mobile-only {
+						left: 16px;
+						right: 16px;
+						top: 32px;
+						width: auto;
+						height: auto;
+					}
+
+					img {
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+						object-position: center;
+					}
+
+					&__shape {
+						position: absolute;
+						width: 100%;
+						z-index: 0;
+						@media (max-width: 1240px) {
+							top: -100px;
+							left: 0;
+						}
+						@include mobile-only {
+							top: 0;
+							left: 0;
+						}
+					}
+
+					&__column {
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						width: 761px;
+						height: 765px;
+						padding: 114px 60px 82px 127px;
+						position: relative;
+						@media (max-width: 1240px) {
+							left: 0;
+							top: 0;
+							right: 0;
+							bottom: 0;
+							width: 100%;
+							height: 100%;
+							padding-bottom: 100%;
+						}
+						@include mobile-only {
+							width: 100%;
+							height: 450px;
+							padding: 32px 16px;
+						}
+					}
+				}
+			}
+
+			&__us {
+				overflow: hidden;
+
+				.title {
+					text-align: center;
+					font: normal normal 500 48px/56px $font-swear;
+					letter-spacing: 0;
+					color: $black;
+					text-transform: capitalize;
+					margin-bottom: 95px;
+				}
+
+				.items {
+					display: flex;
+					column-gap: 166px;
+					@media (max-width: 1240px) {
+						column-gap: 0;
+						width: 100%;
+						flex-direction: column;
+					}
+					@include mobile-only {
+						flex-direction: column;
+						justify-content: center;
+						align-items: center;
+					}
+
+					.swiper-wrapper {
+						display: flex;
+						align-items: center;
+					}
+
+					.swiper-pagination {
+						@include tablet {
+							display: none;
+						}
+					}
+
+					.item {
+						width: 33%;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+
+						&__title {
+							text-align: center;
+							font: normal normal normal 18px/22px $font-montserrat;
+							letter-spacing: 0;
+							color: $black;
+							text-transform: capitalize;
+							position: absolute;
+							z-index: 10;
+							max-width: 244px;
+						}
+
+						&__image {
+							position: relative;
+						}
+					}
+				}
+			}
+		}
+	}
+}

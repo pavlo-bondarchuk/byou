@@ -1,0 +1,84 @@
+@import "../../assets/src/scss/styles";
+
+.book-form-block {
+	padding: 173px 0;
+	@include mobile-only {
+		padding: 37px 0;
+	}
+
+	.inner {
+		max-width: 1100px;
+		width: 100%;
+		margin: 0 auto;
+
+		.columns {
+			display: flex;
+			align-items: flex-start;
+			column-gap: 30px;
+			@include mobile-only {
+				flex-direction: column;
+			}
+
+			.column {
+				&__content {
+					width: 54%;
+					@include mobile-only {
+						width: 100%;
+					}
+				}
+
+				&__form {
+					width: 33%;
+					@include mobile-only {
+						width: 100%;
+					}
+				}
+
+				.image {
+					width: 100%;
+					position: relative;
+					padding: 0 60px 0 55px;
+
+					.illustration {
+						width: 100%;
+						max-width: 439px;
+						position: relative;
+						z-index: 10;
+					}
+
+					.shape_one {
+						position: absolute;
+						top: 100px;
+						left: 0;
+						z-index: 0;
+					}
+
+					.shape_two {
+						position: absolute;
+						bottom: 10px;
+						right: 0;
+						z-index: 0;
+					}
+				}
+
+				.gform_title {
+					text-align: left;
+					font: normal normal 500 48px/56px $font-swear;
+					letter-spacing: 0;
+					color: $black;
+					margin-bottom: 60px;
+					@include mobile-only {
+						text-align: center;
+					}
+				}
+
+				.form {
+					padding: 80px 0 128px;
+					@include mobile-only {
+						padding: 19px 30px 0 30px;
+					}
+				}
+			}
+		}
+	}
+}
