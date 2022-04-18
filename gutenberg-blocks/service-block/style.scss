@@ -3,7 +3,7 @@
 .service-block {
 	margin-bottom: 0;
 	@include tablet {
-		margin-bottom: 200px;
+		margin-bottom: 158px;
 	}
 
 	&.image__align_left {
@@ -25,7 +25,7 @@
 						z-index: 10;
 						position: relative;
 						@include tablet {
-							padding-right: 150px;
+							padding-right: 128px;
 							z-index: 10;
 							position: relative;
 						}

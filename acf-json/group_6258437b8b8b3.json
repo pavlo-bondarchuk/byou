@@ -15,7 +15,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "<iframe src=\"https:\/\/snazzymaps.com\/embed\/387240\" width=\"100%\" height=\"600px\" style=\"border:none;\"><\/iframe>",
+            "default_value": "<iframe src=\"https:\/\/snazzymaps.com\/embed\/387240\" width=\"100%\" height=\"862px\" style=\"border:none;\"><\/iframe>",
             "placeholder": "",
             "prepend": "",
             "append": "",
@@ -264,5 +264,5 @@
         }
     },
     "acfe_note": "",
-    "modified": 1649954869
+    "modified": 1650317341
 }

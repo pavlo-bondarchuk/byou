@@ -1,0 +1,99 @@
+@import "../../assets/src/scss/styles";
+
+.keymember-block {
+	.inner {
+		width: 100%;
+		max-width: 1240px;
+		margin: 0 auto;
+
+		&__wrapper {
+			display: flex;
+			@include mobile-only {
+				padding: 0 16px;
+				flex-direction: column-reverse;
+			}
+
+			.wrapper {
+				&__content {
+					width: 40%;
+					max-width: 453px;
+					margin-right: 277px;
+					@include mobile-only {
+						width: 100%;
+						max-width: 100%;
+						margin: 0;
+					}
+
+					.title {
+						text-align: left;
+						font: normal normal 500 48px/56px $font-swear;
+						letter-spacing: 0;
+						color: $black;
+						text-transform: capitalize;
+						margin-top: 48px;
+						margin-bottom: 20px;
+						@include mobile-only {
+							font: normal normal 500 40px/52px $font-swear;
+							margin-bottom: 15px;
+							margin-top: 0;
+						}
+					}
+
+					.specialization {
+						text-align: left;
+						font: italic normal normal 16px/22px $font-montserrat;
+						letter-spacing: 0;
+						color: $blue;
+						margin-bottom: 40px;
+						@include mobile-only {
+							margin-bottom: 30px;
+							font: italic normal normal 12px/22px $font-montserrat;
+						}
+					}
+
+					.about {
+						text-align: left;
+						font: normal normal normal 16px/22px $font-montserrat;
+						letter-spacing: 0;
+						color: $black666;
+						@include mobile-only {
+							font: normal normal normal 14px/20px $font-montserrat;
+						}
+					}
+				}
+
+				&__image {
+					@include mobile-only {
+						width: 100%;
+						max-width: 100%;
+						margin: 0;
+					}
+
+					.image {
+						width: 100%;
+						height: 100%;
+						max-width: 510px;
+						position: relative;
+						@include mobile-only {
+							margin-bottom: 40px;
+						}
+
+						.img {
+							position: relative;
+							z-index: 10;
+						}
+
+						.shape {
+							position: absolute;
+							top: 0;
+							left: -150px;
+							width: 100%;
+							height: 100%;
+							z-index: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}

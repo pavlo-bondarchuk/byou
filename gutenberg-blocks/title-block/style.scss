@@ -17,7 +17,10 @@
 			color: $black;
 			width: 63%;
 			margin: 0 auto;
+			z-index: 10;
+			position: relative;
 			@include mobile-only {
+				width: 100%;
 				font: normal normal normal 24px/34px $font-montserrat;
 			}
 		}
@@ -26,12 +29,25 @@
 			width: 100%;
 			height: 100%;
 			position: absolute;
-			top: 0;
+			top: -100%;
 			left: 0;
+			z-index: 0;
+			@include mobile-only {
+				top: -50%;
+			}
 
 			img {
 				width: 100%;
 				height: 100%;
+			}
+
+			svg {
+				width: auto;
+				height: auto;
+				min-width: 800px;
+				@include mobile-only {
+					min-width: 100%;
+				}
 			}
 		}
 	}

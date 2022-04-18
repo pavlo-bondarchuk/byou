@@ -21,9 +21,13 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div class="page-container">
-
-	<header class="header">
+<?php
+$white = get_field('header_transparency') ? '' : ' white' ;
+$header_transparency = get_field('header_transparency') ? '' : ' transparency' ;
+$first_block_behind_header = get_field('first_block_behind_header') ? '' : ' first_block_behind_header' ;
+?>
+<div class="page-container<?php echo $first_block_behind_header . $header_transparency;?>">
+	<header class="header<?php echo $white;?>">
         <div class="inner">
             <div class="top">
                 <div class="inner">
@@ -68,9 +72,9 @@
                         </a>
                     </div>
                     <div class="addition">
-                        <a href="">Shop</a>
-                        <a href="">Contact Us</a>
-                        <a href="" class="button__blue">Book Free Consultation</a>
+                        <a href="/shop">Shop</a>
+                        <a href="/contact">Contact Us</a>
+                        <a href="/book" class="button__blue">Book Free Consultation</a>
                     </div>
                 </div>
             </div>

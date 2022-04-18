@@ -1,0 +1,69 @@
+@import "../../assets/src/scss/styles";
+
+.team-members-block {
+	padding: 144px 0 150px;
+	@include mobile-only {
+		padding: 90px 16px 100px;
+	}
+
+	.inner {
+		max-width: 1240px;
+		width: 100%;
+		margin: 0 auto;
+
+		.title {
+			text-align: center;
+			font: normal normal 500 48px/56px $font-swear;
+			letter-spacing: 0;
+			color: $black;
+			text-transform: capitalize;
+			margin-bottom: 70px;
+			@include mobile-only {
+				font: normal normal 500 40px/52px $font-swear;
+				width: 70%;
+				margin: 0 auto 50px;
+			}
+		}
+
+		.members__wrapper {
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(352px, 1fr));
+			gap: 92px;
+			@include mobile-only {
+				grid-template-columns: repeat(auto-fill, minmax(342px, 1fr));
+				gap: 50px;
+			}
+
+			.member {
+				width: 100%;
+
+				.image {
+					margin-bottom: 30px;
+				}
+
+				.specialization {
+					text-align: left;
+					font: italic normal normal 14px/22px $font-montserrat;
+					letter-spacing: 0;
+					color: $blue;
+					margin-bottom: 10px;
+					@include mobile-only {
+						font: italic normal normal 12px/17px $font-montserrat;
+						margin-bottom: 12px;
+					}
+				}
+
+				.name {
+					text-align: left;
+					font: normal normal normal 36px/56px $font-swear;
+					letter-spacing: 0;
+					color: $black;
+					text-transform: capitalize;
+					@include mobile-only {
+						font: normal normal normal 32px/52px $font-swear;
+					}
+				}
+			}
+		}
+	}
+}

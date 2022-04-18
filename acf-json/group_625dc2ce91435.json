@@ -1,0 +1,146 @@
+{
+    "key": "group_625dc2ce91435",
+    "title": "Key Team Member",
+    "fields": [
+        {
+            "key": "field_625dc2eed9f8a",
+            "label": "Title",
+            "name": "title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Dr. Ammar Mahmoud",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_625dc2fad9f8b",
+            "label": "Specialization",
+            "name": "specialization",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Specialization In Regenerative Cosmetic Procedures",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_625dc31ed9f8c",
+            "label": "About",
+            "name": "about",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Dr. Ammar Mahmoud received a Bachelor’s Degree in Biomedical Engineering. \r\n\r\nHe graduated medical school from St. George’s University where he served as the Vice President of the Medical Honor Society and on the board of the Anatomical Clinical Research Society. Dr. Mahmoud completed his residency at the State University of New York Downstate in OBGYN where he continues to serve as a Clinical Associate Professor at SUNY Downstate Medical Center. Dr. Mahmoud was a keynote speaker on cutting-edge labiaplasty\/vaginoplasty techniques and served as a faculty member at the International Cosmetic Gynecology Conference in 2018 and 2019. \r\n\r\nIn 2019, Dr. Ammar continued his passion for cosmetic surgery and regenerative procedures by founding Alinea Medical in New York City. Dr. Ammar is an expert in the field of surgical and regenerative cosmetic procedures in combination with tissue engineering, due to his extensive training in regenerative tissue engineering. He specializes in surgical and non-surgical cosmetic gynecology, PRP (platelet rich plasma), PFRM (Platelet-Rich Fibrin Matrix) and body contouring via VASER Liposuction and RF energy. \r\n\r\nDr. Mahmoud and his staff are proud to offer patients a highly customized approach and extensive expertise they have acquired throughout the years.",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "wpautop",
+            "acfe_textarea_code": 0
+        },
+        {
+            "key": "field_625dc358d9f8d",
+            "label": "Photo",
+            "name": "photo",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "uploader": "",
+            "acfe_thumbnail": 0,
+            "return_format": "array",
+            "preview_size": "medium",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "library": "all"
+        },
+        {
+            "key": "field_625dc375d9f8e",
+            "label": "Shape",
+            "name": "shape",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "uploader": "",
+            "acfe_thumbnail": 0,
+            "return_format": "array",
+            "preview_size": "medium",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "library": "all"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/keymember-block"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "acfe_display_title": "",
+    "acfe_autosync": [
+        "json"
+    ],
+    "acfe_form": 0,
+    "acfe_meta": {
+        "acfcloneindex": {
+            "acfe_meta_key": "",
+            "acfe_meta_value": ""
+        }
+    },
+    "acfe_note": "",
+    "modified": 1650312077
+}

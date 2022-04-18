@@ -316,4 +316,85 @@ function register_acf_block_type() {
 					)
 			)
 	) );
+	acf_register_block_type( array(
+			'name'            => 'team-banner-block',
+			'title'           => __( 'Team Banner Block', 'byou' ),
+			'category'        => 'byou-blocks',
+			'icon'            => 'admin-home',
+			'keywords'        => array( 'team-banner' ),
+			'post_types'      => array( 'page' ),
+			'mode'            => 'preview',
+			'align'           => 'full',
+			'supports'        => array(
+					'align'  => true,
+					'jsx'    => true,
+					'anchor' => true
+			),
+			'render_template' => 'gutenberg-blocks/team-banner-block/tpl.php',
+			'enqueue_style'   => get_template_directory_uri() . '/assets/dist/css/team-banner-block/style.css',
+		//'enqueue_script' => get_template_directory_uri() . '/assets/dist/js/review-block/script.js',
+			'example'         => array(
+					'attributes' => array(
+							'mode' => 'preview',
+							'data' => array(
+									'is_preview'         => true,
+									'preview_image_help' => IT_URL . '/gutenberg-blocks/previews/team-banner-section.jpg'
+							)
+					)
+			)
+	) );
+	acf_register_block_type( array(
+			'name'            => 'keymember-block',
+			'title'           => __( 'Key Member Block', 'byou' ),
+			'category'        => 'byou-blocks',
+			'icon'            => 'admin-home',
+			'keywords'        => array( 'keymember' ),
+			'post_types'      => array( 'page' ),
+			'mode'            => 'preview',
+			'align'           => 'full',
+			'supports'        => array(
+					'align'  => true,
+					'jsx'    => true,
+					'anchor' => true
+			),
+			'render_template' => 'gutenberg-blocks/keymember-block/tpl.php',
+			'enqueue_style'   => get_template_directory_uri() . '/assets/dist/css/keymember-block/style.css',
+		//'enqueue_script' => get_template_directory_uri() . '/assets/dist/js/review-block/script.js',
+			'example'         => array(
+					'attributes' => array(
+							'mode' => 'preview',
+							'data' => array(
+									'is_preview'         => true,
+									'preview_image_help' => IT_URL . '/gutenberg-blocks/previews/keymember-section.jpg'
+							)
+					)
+			)
+	) );
+	acf_register_block_type( array(
+			'name'            => 'team-members-block',
+			'title'           => __( 'Team Members Block', 'byou' ),
+			'category'        => 'byou-blocks',
+			'icon'            => 'admin-home',
+			'keywords'        => array( 'team-members' ),
+			'post_types'      => array( 'page' ),
+			'mode'            => 'preview',
+			'align'           => 'full',
+			'supports'        => array(
+					'align'  => true,
+					'jsx'    => true,
+					'anchor' => true
+			),
+			'render_template' => 'gutenberg-blocks/team-members-block/tpl.php',
+			'enqueue_style'   => get_template_directory_uri() . '/assets/dist/css/team-members-block/style.css',
+		//'enqueue_script' => get_template_directory_uri() . '/assets/dist/js/review-block/script.js',
+			'example'         => array(
+					'attributes' => array(
+							'mode' => 'preview',
+							'data' => array(
+									'is_preview'         => true,
+									'preview_image_help' => IT_URL . '/gutenberg-blocks/previews/team-members-section.jpg'
+							)
+					)
+			)
+	) );
 }
