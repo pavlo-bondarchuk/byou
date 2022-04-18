@@ -38,6 +38,12 @@ else : ?>
 <div id="<?php echo esc_attr( $id ); ?>" class="<?php echo esc_attr( $classes ); ?>">
 	<div class="inner">
 		<div class="title"><?php the_field( 'title' ); ?></div>
+		<?php $shape = get_field( 'shape' ); ?>
+        <?php if ( $shape ) : ?>
+            <div class="shape">
+                <img src="<?php echo esc_url( $shape['url'] ); ?>" alt="<?php echo esc_attr( $shape['alt'] ); ?>" />
+            </div>
+		<?php endif; ?>
 	</div>
 </div>
 <?php endif; ?>
