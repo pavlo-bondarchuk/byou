@@ -4,50 +4,49 @@
 
 const
 
-	// directory locations
-	dir = {
-		nm: '/node_modules/',
-		theme: '.',
-		src: 'assets/src/',
-		build: 'assets/dist/',
-		fonts: 'assets/dist/'
-	},
-	url = 'http://byou.test/',
-	textdomain = 'byou',
+		// directory locations
+		dir = {
+			nm: '/node_modules/',
+			theme: '.',
+			src: 'assets/src/',
+			build: 'assets/dist/',
+		},
+		url = 'http://byou.test/',
+		textdomain = 'byou',
 
-	// modules
-	gulp = require( 'gulp' ),
-	newer = require( 'gulp-newer' ),
-	size = require( 'gulp-size' ),
-	imagemin = require( 'gulp-imagemin' ),
-	sass = require( 'gulp-sass' ),
-	babel = require( 'gulp-babel' ),
-	postcss = require( 'gulp-postcss' ),
-	sassGlob = require( 'gulp-sass-glob' ),
-	sourcemaps = require( 'gulp-sourcemaps' ),
-	rename = require( 'gulp-rename' ),
-	jshint = require( 'gulp-jshint' ),
-	uglify = require( 'gulp-uglify' ),
-	concat = require( 'gulp-concat' ),
-	criticalCss = require( 'gulp-penthouse' ),
-	sassLint = require( 'gulp-sass-lint' ),
-	replace = require( 'gulp-replace' ),
-	browsersync = require( 'browser-sync' ).create();
+		// modules
+		gulp = require('gulp'),
+		newer = require('gulp-newer'),
+		size = require('gulp-size'),
+		imagemin = require('gulp-imagemin'),
+		sass = require('gulp-sass'),
+		babel = require('gulp-babel'),
+		postcss = require('gulp-postcss'),
+		sassGlob = require('gulp-sass-glob'),
+		sourcemaps = require('gulp-sourcemaps'),
+		rename = require('gulp-rename'),
+		jshint = require('gulp-jshint'),
+		uglify = require('gulp-uglify'),
+		concat = require('gulp-concat'),
+		criticalCss = require('gulp-penthouse'),
+		sassLint = require('gulp-sass-lint'),
+		replace = require('gulp-replace'),
+		browsersync = require('browser-sync').create();
 
-	// Default error handler
-	const onError = function( err ) {
+// Default error handler
+const onError = function (err) {
 
-	console.log( 'An error occured:', err.message );
-	this.emit( 'end' );
+	console.log('An error occured:', err.message);
+	this.emit('end');
 };
 
 /**************** textdomain task ****************/
 
 function translate() {
 
-	return gulp.src( './**/*', {ignore: 'gulpfile.js'} )
-		.pipe( replace( 'byou', textdomain ) )
-		.pipe( gulp.dest( './' ) );
+	return gulp.src('./**/*', {ignore: 'gulpfile.js'})
+			.pipe(replace('byou', textdomain))
+			.pipe(gulp.dest('./'));
 
 }
 
@@ -56,14 +55,14 @@ function translate() {
 const fontsConfig = {
 
 	src: dir.src + 'fonts/**/*',
-	build: dir.fonts + 'fonts/',
+	build: dir.build + 'fonts/',
 	watch: dir.src + 'fonts/**/*',
 };
 
 function fonts() {
 
-	return gulp.src( fontsConfig.src )
-		.pipe( gulp.dest( fontsConfig.build ) );
+	return gulp.src(fontsConfig.src)
+			.pipe(gulp.dest(fontsConfig.build));
 
 }
 
@@ -81,11 +80,11 @@ const imgConfig = {
 
 function images() {
 
-	return gulp.src( imgConfig.src )
-		.pipe( newer( imgConfig.build ) )
-		.pipe( imagemin( imgConfig.minOpts ) )
-		.pipe( size( {showFiles: true} ) )
-		.pipe( gulp.dest( imgConfig.build ) );
+	return gulp.src(imgConfig.src)
+			.pipe(newer(imgConfig.build))
+			.pipe(imagemin(imgConfig.minOpts))
+			.pipe(size({showFiles: true}))
+			.pipe(gulp.dest(imgConfig.build));
 
 }
 
@@ -109,35 +108,35 @@ const cssConfig = {
 	},
 
 	postCSS: [
-		require( 'autoprefixer' )
+		require('autoprefixer')
 	]
 
 };
 
 function css() {
 
-	return gulp.src( cssConfig.src )
-		.pipe( sourcemaps.init() )
-		.pipe( sassGlob() )
-		.pipe( sass( cssConfig.sassOpts ).on( 'error', sass.logError ) )
-		.pipe( postcss( cssConfig.postCSS ) )
-		.pipe( sourcemaps.write() )
-		.pipe( size( {showFiles: true} ) )
-		.pipe( gulp.dest( cssConfig.build ) )
-		//.pipe( browsersync.reload( {stream: true} ) );
+	return gulp.src(cssConfig.src)
+			.pipe(sourcemaps.init())
+			.pipe(sassGlob())
+			.pipe(sass(cssConfig.sassOpts).on('error', sass.logError))
+			.pipe(postcss(cssConfig.postCSS))
+			.pipe(sourcemaps.write())
+			.pipe(size({showFiles: true}))
+			.pipe(gulp.dest(cssConfig.build))
+	//.pipe( browsersync.reload( {stream: true} ) );
 }
 
 function critCss() {
 
-	return gulp.src( cssConfig.main )
-		.pipe( criticalCss( {
-			out: '/critical.php', // output file name
-			url: url, // url from where we want penthouse to extract critical styles
-			width: 1400, // max window width for critical media queries
-			height: 900, // max window height for critical media queries
-			userAgent: 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)' // pretend to be googlebot when grabbing critical page styles.
-		} ) )
-		.pipe( gulp.dest( dir.theme ) ); // destination folder for the output file
+	return gulp.src(cssConfig.main)
+			.pipe(criticalCss({
+				out: '/critical.php', // output file name
+				url: url, // url from where we want penthouse to extract critical styles
+				width: 1400, // max window width for critical media queries
+				height: 900, // max window height for critical media queries
+				userAgent: 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)' // pretend to be googlebot when grabbing critical page styles.
+			}))
+			.pipe(gulp.dest(dir.theme)); // destination folder for the output file
 }
 
 /**************** JS task ****************/
@@ -157,37 +156,37 @@ const jsBabelOpts = {
 
 function jsHint() {
 
-	return gulp.src( jsConfig.srcLint )
-		.pipe( jshint( '.jshintrc' ) )
-		.pipe( jshint.reporter( 'jshint-stylish' ) )
-		.pipe( jshint.reporter( 'fail' ) );
+	return gulp.src(jsConfig.srcLint)
+			.pipe(jshint('.jshintrc'))
+			.pipe(jshint.reporter('jshint-stylish'))
+			.pipe(jshint.reporter('fail'));
 }
 
 function js() {
 
-	return gulp.src( jsConfig.src )
-		.pipe( sourcemaps.init() )
-		.pipe( babel( jsBabelOpts ) )
-		.pipe( concat( 'app.js' ) )
-		.pipe( gulp.dest( jsConfig.build ) )
-		.pipe( uglify() )
-		.pipe( rename( {suffix: '.min'} ) )
-		.pipe( sourcemaps.write() )
-		.pipe( gulp.dest( jsConfig.build ) )
-		// .pipe( jsCopy() )
-		//.pipe( browsersync.reload( {stream: true} ) );
+	return gulp.src(jsConfig.src)
+			.pipe(sourcemaps.init())
+			.pipe(babel(jsBabelOpts))
+			.pipe(concat('app.js'))
+			.pipe(gulp.dest(jsConfig.build))
+			.pipe(uglify())
+			.pipe(rename({suffix: '.min'}))
+			.pipe(sourcemaps.write())
+			.pipe(gulp.dest(jsConfig.build))
+	// .pipe( jsCopy() )
+	//.pipe( browsersync.reload( {stream: true} ) );
 }
 
 function jsGutenberg() {
 
 	return gulp.src(jsConfig.srcGutenberg)
-			.pipe( sourcemaps.init() )
+			.pipe(sourcemaps.init())
 			.pipe(babel(jsBabelOpts))
 			.pipe(gulp.dest(jsConfig.build))
 			.pipe(uglify())
-			.pipe( sourcemaps.write() )
+			.pipe(sourcemaps.write())
 			.pipe(gulp.dest(jsConfig.build))
-			.pipe(browsersync.reload({ stream: true }));
+			.pipe(browsersync.reload({stream: true}));
 }
 
 /**************** browser-sync task ****************/
@@ -212,27 +211,27 @@ function jsGutenberg() {
 /**************** watch task ****************/
 
 function watchimages() {
-	gulp.watch( imgConfig.watch, images );
+	gulp.watch(imgConfig.watch, images);
 }
 
 function watchjs() {
 	// gulp.watch( jsConfig.watch, jsHint );
-	gulp.watch( jsConfig.watch, js );
+	gulp.watch(jsConfig.watch, js);
 }
 
 function watchcss() {
-	gulp.watch( cssConfig.watch, gulp.series( css ) );
+	gulp.watch(cssConfig.watch, gulp.series(css));
 }
 
 function watchfonts() {
-	gulp.watch( fontsConfig.watch, fonts );
+	gulp.watch(fontsConfig.watch, fonts);
 }
 
 function watchjsGutenberg() {
 	gulp.watch(jsConfig.watchGutenberg, jsGutenberg);
 }
 
-const start = gulp.parallel( fonts, images, css, js, jsGutenberg, watchcss, watchjs, watchjsGutenberg, watchfonts, watchimages );
+const start = gulp.parallel(fonts, images, css, js, jsGutenberg, watchcss, watchjs, watchjsGutenberg, watchfonts, watchimages);
 
 //exports.cssLint = cssLint;
 exports.css = css;
