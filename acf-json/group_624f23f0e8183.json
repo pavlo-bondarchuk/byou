@@ -6,7 +6,7 @@
             "key": "field_624f256a951ee",
             "label": "Title",
             "name": "title",
-            "type": "text",
+            "type": "textarea",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -15,11 +15,12 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
+            "default_value": "Discover \r\nthe beauty \r\nof you",
             "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
+            "maxlength": "",
+            "rows": 4,
+            "new_lines": "br",
+            "acfe_textarea_code": 0
         },
         {
             "key": "field_624f2571951ef",
@@ -105,7 +106,12 @@
         "json"
     ],
     "acfe_form": 0,
-    "acfe_meta": "",
+    "acfe_meta": {
+        "acfcloneindex": {
+            "acfe_meta_key": "",
+            "acfe_meta_value": ""
+        }
+    },
     "acfe_note": "",
-    "modified": 1649511039
+    "modified": 1650288611
 }

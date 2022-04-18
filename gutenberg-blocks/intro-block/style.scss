@@ -4,6 +4,7 @@
 	position: relative;
 	padding-bottom: 130px;
 	height: 100vh;
+	max-height: 900px;
 	display: flex;
 	align-items: flex-end;
 	@include tablet {
@@ -21,15 +22,11 @@
 			align-items: flex-end;
 			justify-content: space-between;
 			width: 100%;
-			max-width: 1120px;
+			max-width: 1200px;
 			margin: 0 auto;
 			position: relative;
 			z-index: 10;
-			@include tablet {
-				flex-direction: column;
-				align-items: center;
-				justify-content: center;
-			}
+			flex-direction: row;
 			@include mobile-only {
 				flex-direction: column;
 				align-items: center;
@@ -40,9 +37,9 @@
 				font: normal normal 300 71px/81px $font-swear;
 				color: #fff;
 				width: 330px;
-				@include tablet {
-					width: 50%;
-					text-align: center;
+				@include desktop {
+					width: 90%;
+					text-align: left;
 					margin-bottom: 50px;
 				}
 				@include mobile-only {
@@ -58,10 +55,6 @@
 				color: #FFFFFF;
 				text-transform: uppercase;
 				width: 258px;
-				@include tablet {
-					text-align: center;
-					width: 80%;
-				}
 				@include mobile-only {
 					text-align: center;
 					width: 90%;
@@ -84,9 +77,6 @@
 				background: #1F4A94;
 				color: #fff;
 				font: normal normal 500 15px/19px $font-montserrat;
-				@include tablet {
-					align-self: center;
-				}
 				@include mobile-only {
 					display: none;
 				}
@@ -97,10 +87,17 @@
 			display: flex;
 			flex-wrap: wrap;
 			flex-direction: column;
+			align-items: flex-start;
 			width: 100%;
-			@include tablet {
-				align-items: center;
+
+			&:first-child {
+				max-width: 883px;
 			}
+
+			&:last-child {
+				max-width: 250px;
+			}
+
 			@include mobile-only {
 				align-items: center;
 			}
