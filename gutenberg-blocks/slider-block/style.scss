@@ -1,0 +1,89 @@
+@import "../../assets/src/scss/styles";
+
+.slider-block {
+	@include mobile-only {
+		padding: 80px 0;
+	}
+
+	.slider__container {
+		width: 100%;
+		max-width: 926px;
+		margin: 0 auto;
+		position: relative;
+		@include mobile-only {
+			overflow: hidden;
+		}
+
+		.swiper-slide {
+			img {
+				width: 100%;
+				@include mobile-only {
+					height: 100%;
+					position: absolute;
+					object-fit: cover;
+				}
+			}
+
+			@include mobile-only {
+				min-height: 265px;
+			}
+		}
+
+		.sliderPrev {
+			width: 57px;
+			height: 57px;
+			background-color: $white;
+			opacity: .5;
+			position: absolute;
+			top: 0;
+			left: -157px;
+			z-index: 100;
+			transition: opacity .2s ease-in-out;
+
+			&:hover {
+				opacity: 1;
+			}
+
+			@include mobile-only {
+				width: 37px;
+				height: 37px;
+				left: 16px;
+			}
+
+			.fa {
+				font-size: 18px;
+				color: $black;
+			}
+		}
+
+		.sliderNext {
+			width: 57px;
+			height: 57px;
+			background-color: $white;
+			opacity: .5;
+			position: absolute;
+			top: 0;
+			right: -157px;
+			z-index: 100;
+			transition: opacity .2s ease-in-out;
+
+			&:hover {
+				opacity: 1;
+			}
+
+			@include mobile-only {
+				width: 37px;
+				height: 37px;
+				right: 16px;
+			}
+
+			.fa {
+				font-size: 18px;
+				color: $black;
+				@include mobile-only {
+					font-size: 12px;
+				}
+			}
+		}
+	}
+}

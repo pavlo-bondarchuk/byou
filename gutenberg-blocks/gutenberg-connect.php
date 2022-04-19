@@ -397,4 +397,112 @@ function register_acf_block_type() {
 					)
 			)
 	) );
+	acf_register_block_type( array(
+			'name'            => 'join-block',
+			'title'           => __( 'Join Block', 'byou' ),
+			'category'        => 'byou-blocks',
+			'icon'            => 'admin-home',
+			'keywords'        => array( 'join' ),
+			'post_types'      => array( 'page' ),
+			'mode'            => 'preview',
+			'align'           => 'full',
+			'supports'        => array(
+					'align'  => true,
+					'jsx'    => true,
+					'anchor' => true
+			),
+			'render_template' => 'gutenberg-blocks/join-block/tpl.php',
+			'enqueue_style'   => get_template_directory_uri() . '/assets/dist/css/join-block/style.css',
+		//'enqueue_script' => get_template_directory_uri() . '/assets/dist/js/review-block/script.js',
+			'example'         => array(
+					'attributes' => array(
+							'mode' => 'preview',
+							'data' => array(
+									'is_preview'         => true,
+									'preview_image_help' => IT_URL . '/gutenberg-blocks/previews/join-section.jpg'
+							)
+					)
+			)
+	) );
+	acf_register_block_type( array(
+			'name'            => 'slider-block',
+			'title'           => __( 'Slider Block', 'byou' ),
+			'category'        => 'byou-blocks',
+			'icon'            => 'admin-home',
+			'keywords'        => array( 'slider' ),
+			'post_types'      => array( 'page' ),
+			'mode'            => 'preview',
+			'align'           => 'full',
+			'supports'        => array(
+					'align'  => true,
+					'jsx'    => true,
+					'anchor' => true
+			),
+			'render_template' => 'gutenberg-blocks/slider-block/tpl.php',
+			'enqueue_style'   => get_template_directory_uri() . '/assets/dist/css/slider-block/style.css',
+			'enqueue_script' => get_template_directory_uri() . '/assets/dist/js/slider-block/script.js',
+			'example'         => array(
+					'attributes' => array(
+							'mode' => 'preview',
+							'data' => array(
+									'is_preview'         => true,
+									'preview_image_help' => IT_URL . '/gutenberg-blocks/previews/slider-section.jpg'
+							)
+					)
+			)
+	) );
+	acf_register_block_type( array(
+			'name'            => 'become-block',
+			'title'           => __( 'Become Block', 'byou' ),
+			'category'        => 'byou-blocks',
+			'icon'            => 'admin-home',
+			'keywords'        => array( 'become' ),
+			'post_types'      => array( 'page' ),
+			'mode'            => 'preview',
+			'align'           => 'full',
+			'supports'        => array(
+					'align'  => true,
+					'jsx'    => true,
+					'anchor' => true
+			),
+			'render_template' => 'gutenberg-blocks/become-block/tpl.php',
+			'enqueue_style'   => get_template_directory_uri() . '/assets/dist/css/become-block/style.css',
+			'enqueue_script' => get_template_directory_uri() . '/assets/dist/js/become-block/script.js',
+			'example'         => array(
+					'attributes' => array(
+							'mode' => 'preview',
+							'data' => array(
+									'is_preview'         => true,
+									'preview_image_help' => IT_URL . '/gutenberg-blocks/previews/become-section.jpg'
+							)
+					)
+			)
+	) );
+	acf_register_block_type( array(
+			'name'            => 'whats-included-block',
+			'title'           => __( 'What\'s Included Block', 'byou' ),
+			'category'        => 'byou-blocks',
+			'icon'            => 'admin-home',
+			'keywords'        => array( 'whats-included' ),
+			'post_types'      => array( 'page' ),
+			'mode'            => 'preview',
+			'align'           => 'full',
+			'supports'        => array(
+					'align'  => true,
+					'jsx'    => true,
+					'anchor' => true
+			),
+			'render_template' => 'gutenberg-blocks/whats-included-block/tpl.php',
+			'enqueue_style'   => get_template_directory_uri() . '/assets/dist/css/whats-included-block/style.css',
+			//'enqueue_script' => get_template_directory_uri() . '/assets/dist/js/whats-included-block/script.js',
+			'example'         => array(
+					'attributes' => array(
+							'mode' => 'preview',
+							'data' => array(
+									'is_preview'         => true,
+									'preview_image_help' => IT_URL . '/gutenberg-blocks/previews/whats-included-section.jpg'
+							)
+					)
+			)
+	) );
 }

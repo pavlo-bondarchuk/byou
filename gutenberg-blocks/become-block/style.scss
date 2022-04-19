@@ -1,0 +1,107 @@
+@import "../../assets/src/scss/styles";
+
+.become-block {
+	padding: 150px 0;
+	@include mobile-only {
+		padding: 100px 16px;
+	}
+
+	.inner {
+		width: 100%;
+		max-width: 1136px;
+		margin: 0 auto;
+
+		.title {
+			text-align: center;
+			font: normal normal 500 48px/56px $font-swear;
+			letter-spacing: 0;
+			color: $black;
+			margin-bottom: 80px;
+			@include mobile-only {
+				font: normal normal 500 40px/52px $font-swear;
+				margin-bottom: 18px;
+			}
+		}
+
+		&__wrapper {
+			display: flex;
+			@include mobile-only {
+				flex-direction: column;
+				overflow: hidden;
+			}
+
+			.item {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				max-width: 100%;
+				@include desktop {
+					width: 27.5%;
+					&:not(.last-child) {
+						margin-right: 100px;
+					}
+				}
+
+				&__icon {
+					width: 102px;
+					height: 102px;
+					border-radius: 50%;
+					overflow: hidden;
+					margin-bottom: 20px;
+					@include mobile-only {
+						margin-bottom: 22px;
+					}
+				}
+
+				&__title {
+					text-align: center;
+					font: normal normal 500 24px/26px $font-swear;
+					letter-spacing: 0;
+					color: $black;
+					text-transform: capitalize;
+					margin-bottom: 20px;
+					@include mobile-only {
+						font: normal normal 500 22px/24px $font-swear;
+					}
+				}
+
+				&__text {
+					text-align: center;
+					font: normal normal normal 16px/22px $font-montserrat;
+					letter-spacing: 0;
+					color: $black666;
+					margin-bottom: 0;
+					@include mobile-only {
+						font: normal normal normal 14px/22px $font-montserrat;
+					}
+				}
+
+				&__slider {
+					&-pagination {
+						@include desktop {
+							display: none;
+						}
+						display: flex;
+						justify-content: center;
+						margin-top: 50px;
+
+						.bullet {
+							width: 7px;
+							height: 7px;
+							background-color: #C1C1C1;
+							border-radius: 50%;
+
+							&:not(:last-child) {
+								margin-right: 8px;
+							}
+
+							&-active {
+								background-color: $black;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

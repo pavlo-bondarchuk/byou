@@ -6,7 +6,7 @@
             "key": "field_6256e062e1fef",
             "label": "Title",
             "name": "title",
-            "type": "text",
+            "type": "textarea",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -17,9 +17,10 @@
             },
             "default_value": "",
             "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "br",
+            "acfe_textarea_code": 0
         },
         {
             "key": "field_625d6fa88b252",
@@ -77,5 +78,5 @@
         }
     },
     "acfe_note": "",
-    "modified": 1650290809
+    "modified": 1650352654
 }
