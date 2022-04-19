@@ -1,0 +1,116 @@
+{
+    "key": "group_625e5a59e264d",
+    "title": "Join",
+    "fields": [
+        {
+            "key": "field_625e5a6badbf4",
+            "label": "Title",
+            "name": "title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Let’s grow together By building a franchise",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_625e5a7badbf5",
+            "label": "Text",
+            "name": "text",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "wpautop",
+            "acfe_textarea_code": 0
+        },
+        {
+            "key": "field_625e5a89adbf6",
+            "label": "Link",
+            "name": "link",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        },
+        {
+            "key": "field_625e5a96adbf7",
+            "label": "Image",
+            "name": "image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "uploader": "",
+            "acfe_thumbnail": 0,
+            "return_format": "array",
+            "preview_size": "medium",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "library": "all"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/join-block"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "acfe_display_title": "",
+    "acfe_autosync": [
+        "json"
+    ],
+    "acfe_form": 0,
+    "acfe_meta": {
+        "acfcloneindex": {
+            "acfe_meta_key": "",
+            "acfe_meta_value": ""
+        }
+    },
+    "acfe_note": "",
+    "modified": 1650350750
+}

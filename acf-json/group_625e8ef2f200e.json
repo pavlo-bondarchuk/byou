@@ -1,0 +1,149 @@
+{
+    "key": "group_625e8ef2f200e",
+    "title": "What's Included",
+    "fields": [
+        {
+            "key": "field_625e8f196e127",
+            "label": "Title",
+            "name": "title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "What’s Included in our business kit",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_625e8f2b6e128",
+            "label": "Item",
+            "name": "item",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_repeater_stylised_button": 0,
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_625e8f386e129",
+                    "label": "Text",
+                    "name": "text",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": 3,
+                    "new_lines": "",
+                    "acfe_textarea_code": 0
+                }
+            ]
+        },
+        {
+            "key": "field_625e8f526e12a",
+            "label": "Image",
+            "name": "image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "uploader": "",
+            "acfe_thumbnail": 0,
+            "return_format": "array",
+            "preview_size": "medium",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "library": "all"
+        },
+        {
+            "key": "field_625e8f596e12b",
+            "label": "Shape",
+            "name": "shape",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "uploader": "",
+            "acfe_thumbnail": 0,
+            "return_format": "array",
+            "preview_size": "medium",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "library": "all"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/whats-included-block"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "acfe_display_title": "",
+    "acfe_autosync": [
+        "json"
+    ],
+    "acfe_form": 0,
+    "acfe_meta": {
+        "acfcloneindex": {
+            "acfe_meta_key": "",
+            "acfe_meta_value": ""
+        }
+    },
+    "acfe_note": "",
+    "modified": 1650364546
+}
