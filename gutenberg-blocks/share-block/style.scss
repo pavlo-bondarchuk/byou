@@ -1,0 +1,38 @@
+@import "../../assets/src/scss/styles";
+
+.post__share {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	@include mobile-only {
+		display: none;
+	}
+
+	&_text {
+		text-align: left;
+		font: normal normal 500 14px/22px $font-montserrat;
+		letter-spacing: 0;
+		color: $black;
+		margin-right: 20px;
+	}
+
+	&_wrapper {
+		display: flex;
+		align-items: center;
+		.link {
+			transition: opacity .2s ease-in-out;
+
+			[class^='fa'] {
+				font-size: 15px;
+			}
+
+			&:not(:last-child) {
+				margin-right: 14px;
+			}
+
+			&:hover {
+				opacity: .7;
+			}
+		}
+	}
+}

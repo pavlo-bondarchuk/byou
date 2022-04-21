@@ -114,7 +114,7 @@
 					$custom_logo_id = get_theme_mod( 'custom_logo' );
 					$logo           = wp_get_attachment_image_src( $custom_logo_id, 'full' );
 					$logo_white     = get_field( 'logo_white', 'option' );
-					if ( $logo_color ) {
+					if ( $logo_white ) {
 						echo '<img src="' . esc_url( $logo_white['url'] ) . '" alt="' . $logo_white['alt'] . '" class="logo__white">';
 					} elseif ( has_custom_logo() ) {
 						echo '<img src="' . esc_url( $logo[0] ) . '" alt="' . get_bloginfo( 'name' ) . '">';

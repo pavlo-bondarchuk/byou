@@ -295,7 +295,7 @@ function register_acf_block_type() {
 			'category'        => 'byou-blocks',
 			'icon'            => 'admin-home',
 			'keywords'        => array( 'map' ),
-			'post_types'      => array( 'page' ),
+			'post_types'      => array( 'page', 'post' ),
 			'mode'            => 'preview',
 			'align'           => 'full',
 			'supports'        => array(
@@ -501,6 +501,60 @@ function register_acf_block_type() {
 							'data' => array(
 									'is_preview'         => true,
 									'preview_image_help' => IT_URL . '/gutenberg-blocks/previews/whats-included-section.jpg'
+							)
+					)
+			)
+	) );
+	acf_register_block_type( array(
+			'name'            => 'share-block',
+			'title'           => __( 'Share Block', 'byou' ),
+			'category'        => 'byou-blocks',
+			'icon'            => 'admin-home',
+			'keywords'        => array( 'share' ),
+			'post_types'      => array( 'post' ),
+			'mode'            => 'preview',
+			'align'           => 'full',
+			'supports'        => array(
+					'align'  => true,
+					'jsx'    => true,
+					'anchor' => true
+			),
+			'render_template' => 'gutenberg-blocks/share-block/tpl.php',
+			'enqueue_style'   => get_template_directory_uri() . '/assets/dist/css/share-block/style.css',
+		//'enqueue_script' => get_template_directory_uri() . '/assets/dist/js/whats-included-block/script.js',
+			'example'         => array(
+					'attributes' => array(
+							'mode' => 'preview',
+							'data' => array(
+									'is_preview'         => true,
+									'preview_image_help' => IT_URL . '/gutenberg-blocks/previews/share-block.jpg'
+							)
+					)
+			)
+	) );
+	acf_register_block_type( array(
+			'name'            => 'related-block',
+			'title'           => __( 'Related Block', 'byou' ),
+			'category'        => 'byou-blocks',
+			'icon'            => 'admin-home',
+			'keywords'        => array( 'related' ),
+			'post_types'      => array( 'post' ),
+			'mode'            => 'preview',
+			'align'           => 'full',
+			'supports'        => array(
+					'align'  => true,
+					'jsx'    => true,
+					'anchor' => true
+			),
+			'render_template' => 'gutenberg-blocks/related-block/tpl.php',
+			'enqueue_style'   => get_template_directory_uri() . '/assets/dist/css/related-block/style.css',
+		//'enqueue_script' => get_template_directory_uri() . '/assets/dist/js/whats-included-block/script.js',
+			'example'         => array(
+					'attributes' => array(
+							'mode' => 'preview',
+							'data' => array(
+									'is_preview'         => true,
+									'preview_image_help' => IT_URL . '/gutenberg-blocks/previews/related-section.jpg'
 							)
 					)
 			)

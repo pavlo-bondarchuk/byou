@@ -70,7 +70,7 @@
         {
           "slug": "small",
           "size": "15px",
-          "name": "Montserrat Regular 15px"
+          "name": "small"
         },
         {
           "slug": "medium",
@@ -88,18 +88,6 @@
           "name": "Extra large"
         }
       ]
-      "fontFamilies": [
-        {
-          "fontFamily": "\"Montserrat\", sans-serif",
-          "slug": "montserrat",
-          "name": "Montserrat",
-          "google": "family=Montserrat:wght@300;400;500;700&display=swap",
-        },
-        {
-          "fontFamily": "swear-display, sans-serif",
-          "slug": "swear-display"
-        }
-      ],
     },
     "layout": {
       "contentSize": "1240px",
@@ -108,11 +96,11 @@
   },
   "styles": {
     "typography": {
-      "fontFamily": "var(--wp--preset--font-family--montserrat)"
+      "fontFamily": "montserrat, sans-serif"
     },
     "color": {
-      "background": "var(--wp--preset--color--white)",
-      "text": "var(--wp--preset--color--black)"
+      "background": "",
+      "text": ""
     }
   }
 }
