@@ -1,0 +1,73 @@
+@import "../../assets/src/scss/styles";
+
+.features-block {
+	padding: 0 0 76px;
+	@include mobile-only {
+		padding: 0 16px 0;
+	}
+
+	.inner {
+		width: 100%;
+		max-width: 1136px;
+		margin: 0 auto;
+
+		&__wrapper {
+			display: flex;
+			@include mobile-only {
+				flex-direction: column;
+				overflow: hidden;
+			}
+
+			.item {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				width: 100%;
+
+				&:not(:last-child) {
+					margin-right: 100px;
+					@include mobile-only {
+						margin: 0;
+					}
+				}
+
+				@include mobile-only {
+					margin-bottom: 80px;
+				}
+
+				&__icon {
+					width: 102px;
+					height: 102px;
+					border-radius: 50%;
+					padding: 24px;
+					overflow: hidden;
+					margin-bottom: 35px;
+					background-color: #F8FAFF;
+					@include mobile-only {
+						margin-bottom: 20px;
+					}
+				}
+
+				&__title {
+					text-align: center;
+					font: normal normal 500 24px/34px $font-swear;
+					letter-spacing: 0;
+					color: $black;
+					text-transform: capitalize;
+					margin-bottom: 35px;
+					@include mobile-only {
+						margin-bottom: 20px;
+					}
+				}
+
+				&__text {
+					text-align: center;
+					font: normal normal normal 16px/22px $font-montserrat;
+					letter-spacing: 0;
+					color: $black666;
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}

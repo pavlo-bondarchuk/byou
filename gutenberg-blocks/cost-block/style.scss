@@ -1,0 +1,134 @@
+@import "../../assets/src/scss/styles";
+
+.cost-block {
+	padding: 206px 0 150px;
+	@include mobile-only {
+		padding: 157px 0 121px;
+	}
+
+	.inner {
+		width: 100%;
+		max-width: 1240px;
+		margin: 0 auto;
+		@include mobile-only {
+			padding: 0 16px;
+		}
+
+		.title {
+			text-align: center;
+			font: normal normal normal 48px/56px $font-swear;
+			letter-spacing: 0;
+			color: $black;
+			text-transform: capitalize;
+			margin-bottom: 20px;
+			@include mobile-only {
+				font: normal normal normal 40px/52px $font-swear;
+			}
+		}
+
+		.description {
+			text-align: center;
+			font: normal normal normal 16px/22px $font-montserrat;
+			letter-spacing: 0;
+			color: $black666;
+			margin-bottom: 30px;
+			@include mobile-only {
+				font: normal normal normal 15px/24px $font-montserrat;
+				margin-bottom: 40px;
+			}
+		}
+
+		.cost {
+			&__wrapper {
+				@include mobile-only {
+					overflow: hidden;
+					margin: 0 22px;
+				}
+
+				.swiper-wrapper {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					@include mobile-only {
+						justify-content: stretch;
+					}
+				}
+			}
+
+			&__item {
+				width: auto;
+				padding: 30px 20px;
+				background-color: #F0F3FD;
+				@include mobile-only {
+					padding: 30px 26px;
+					box-sizing: border-box;
+				}
+
+				&:not(:last-child) {
+					margin-right: 70px;
+					@include mobile-only {
+						margin: 0;
+					}
+				}
+
+				&_content {
+					margin-bottom: 30px;
+				}
+
+				&_cost {
+					width: 100%;
+				}
+
+				.title {
+					text-align: left;
+					font: normal normal normal 24px/32px $font-swear;
+					letter-spacing: 0;
+					color: $black;
+					text-transform: capitalize;
+					margin-bottom: 10px;
+				}
+
+				.text {
+					text-align: left;
+					font: normal normal normal 14px/20px $font-montserrat;
+					letter-spacing: 0;
+					color: $black666;
+					text-transform: capitalize;
+				}
+
+				.cost {
+					text-align: left;
+					font: normal normal normal 18px/24px $font-swear;
+					letter-spacing: 0;
+					color: $blue;
+				}
+			}
+
+			&__pagination {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin-top: 50px;
+				@include desktop {
+					display: none;
+				}
+
+				.bullet {
+					width: 6px;
+					height: 6px;
+					border-radius: 50%;
+					background-color: $black;
+					opacity: 0.25;
+
+					&:not(:last-child) {
+						margin-right: 10px;
+					}
+
+					&_active {
+						opacity: 1;
+					}
+				}
+			}
+		}
+	}
+}

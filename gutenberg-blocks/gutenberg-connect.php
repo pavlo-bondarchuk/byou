@@ -559,4 +559,139 @@ function register_acf_block_type() {
 					)
 			)
 	) );
+	acf_register_block_type( array(
+			'name'            => 'start-block',
+			'title'           => __( 'Intro Treatment Block', 'byou' ),
+			'category'        => 'byou-blocks',
+			'icon'            => 'admin-home',
+			'keywords'        => array( 'start', 'intro-treatment' ),
+			'post_types'      => array( 'page' ),
+			'mode'            => 'preview',
+			'align'           => 'full',
+			'supports'        => array(
+					'align'  => true,
+					'jsx'    => true,
+					'anchor' => true
+			),
+			'render_template' => 'gutenberg-blocks/start-block/tpl.php',
+			'enqueue_style'   => get_template_directory_uri() . '/assets/dist/css/start-block/style.css',
+		//'enqueue_script' => get_template_directory_uri() . '/assets/dist/js/review-block/script.js',
+			'example'         => array(
+					'attributes' => array(
+							'mode' => 'preview',
+							'data' => array(
+									'is_preview'         => true,
+									'preview_image_help' => IT_URL . '/gutenberg-blocks/previews/start-section.jpg'
+							)
+					)
+			)
+	) );
+	acf_register_block_type( array(
+			'name'            => 'treatment-block',
+			'title'           => __( 'Treatment Block', 'byou' ),
+			'category'        => 'byou-blocks',
+			'icon'            => 'admin-home',
+			'keywords'        => array( 'treatment' ),
+			'post_types'      => array( 'page' ),
+			'mode'            => 'preview',
+			'align'           => 'full',
+			'supports'        => array(
+					'align'  => true,
+					'jsx'    => true,
+					'anchor' => true
+			),
+			'render_template' => 'gutenberg-blocks/treatment-block/tpl.php',
+			'enqueue_style'   => get_template_directory_uri() . '/assets/dist/css/treatment-block/style.css',
+		//'enqueue_script' => get_template_directory_uri() . '/assets/dist/js/why-block/script.js',
+			'example'         => array(
+					'attributes' => array(
+							'mode' => 'preview',
+							'data' => array(
+									'is_preview'         => true,
+									'preview_image_help' => IT_URL . '/gutenberg-blocks/previews/treatment-section.jpg'
+							)
+					)
+			)
+	) );
+	acf_register_block_type( array(
+			'name'            => 'features-block',
+			'title'           => __( 'Treatment Features Block', 'byou' ),
+			'category'        => 'byou-blocks',
+			'icon'            => 'admin-home',
+			'keywords'        => array( 'features' ),
+			'post_types'      => array( 'page' ),
+			'mode'            => 'preview',
+			'align'           => 'full',
+			'supports'        => array(
+					'align'  => true,
+					'jsx'    => true,
+					'anchor' => true
+			),
+			'render_template' => 'gutenberg-blocks/features-block/tpl.php',
+			'enqueue_style'   => get_template_directory_uri() . '/assets/dist/css/features-block/style.css',
+//			'enqueue_script' => get_template_directory_uri() . '/assets/dist/js/become-block/script.js',
+			'example'         => array(
+					'attributes' => array(
+							'mode' => 'preview',
+							'data' => array(
+									'is_preview'         => true,
+									'preview_image_help' => IT_URL . '/gutenberg-blocks/previews/features-section.jpg'
+							)
+					)
+			)
+	) );
+	acf_register_block_type( array(
+			'name'            => 'cost-block',
+			'title'           => __( 'Treatment Cost Block', 'byou' ),
+			'category'        => 'byou-blocks',
+			'icon'            => 'admin-home',
+			'keywords'        => array( 'cost' ),
+			'post_types'      => array( 'page' ),
+			'mode'            => 'preview',
+			'align'           => 'full',
+			'supports'        => array(
+					'align'  => true,
+					'jsx'    => true,
+					'anchor' => true
+			),
+			'render_template' => 'gutenberg-blocks/cost-block/tpl.php',
+			'enqueue_style'   => get_template_directory_uri() . '/assets/dist/css/cost-block/style.css',
+			'enqueue_script' => get_template_directory_uri() . '/assets/dist/js/cost-block/script.js',
+			'example'         => array(
+					'attributes' => array(
+							'mode' => 'preview',
+							'data' => array(
+									'is_preview'         => true,
+									'preview_image_help' => IT_URL . '/gutenberg-blocks/previews/cost-section.jpg'
+							)
+					)
+			)
+	) );
+	acf_register_block_type( array(
+			'name'            => 'qa-block',
+			'title'           => __( 'Q&A Block', 'byou' ),
+			'category'        => 'byou-blocks',
+			'icon'            => 'admin-home',
+			'keywords'        => array( 'qa' ),
+			'post_types'      => array( 'page' ),
+			'mode'            => 'preview',
+			'align'           => 'full',
+			'supports'        => array(
+					'align'  => true,
+					'jsx'    => true,
+					'anchor' => true
+			),
+			'render_template' => 'gutenberg-blocks/qa-block/tpl.php',
+			'enqueue_style'   => get_template_directory_uri() . '/assets/dist/css/qa-block/style.css',
+			'enqueue_script' => get_template_directory_uri() . '/assets/dist/js/qa-block/script.js',
+			'example'         => array(
+					'attributes' => array(
+							'mode' => 'preview',
+							'data' => array(
+									'is_preview'         => true,
+									'preview_image_help' => IT_URL . '/gutenberg-blocks/previews/qa-section.jpg'
+							)
+					)
+			)
+	) );
 }

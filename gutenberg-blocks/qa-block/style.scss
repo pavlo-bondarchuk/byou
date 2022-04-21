@@ -1,0 +1,123 @@
+@import "../../assets/src/scss/styles";
+
+.qa-block {
+	.inner {
+		width: 100%;
+		max-width: 1240px;
+		margin: 0 auto;
+		display: flex;
+		align-items: flex-start;
+		justify-content: center;
+		@include mobile-only {
+			flex-direction: column-reverse;
+			padding: 0 16px;
+		}
+
+		.wrapper {
+			&__content {
+				width: 47%;
+				@include mobile-only {
+					width: 100%;
+				}
+
+				.title {
+					text-align: left;
+					font: normal normal normal 71px/56px $font-swear;
+					letter-spacing: 0;
+					color: $black;
+					text-transform: capitalize;
+					padding: 60px 0 33px;
+					@include mobile-only {
+						text-align: center;
+						padding: 60px 0 50px;
+						font: normal normal normal 40px/52px $font-swear;
+					}
+				}
+
+				.qa {
+					&__wrapper {
+
+					}
+
+					&__item {
+						border-top: 1px solid #D1D1D1;
+
+						&:last-child {
+							border-top: 1px solid #D1D1D1;
+							border-bottom: 1px solid #D1D1D1;
+						}
+
+						&_question {
+							text-align: left;
+							font: normal normal normal 24px/28px $font-swear;
+							letter-spacing: 0;
+							color: $black;
+							text-transform: capitalize;
+							padding: 27px 25px;
+							position: relative;
+							cursor: pointer;
+							@include mobile-only {
+								font: normal normal normal 18px/24px $font-swear;
+								padding: 15px 17px;
+							}
+
+							&:before {
+								content: '';
+								position: absolute;
+								left: 0;
+								top: 50%;
+								width: 0;
+								height: 0;
+								border-style: solid;
+								border-width: 4px 0 4px 4px;
+								border-color: transparent transparent transparent #000000;
+							}
+						}
+
+						&_answer {
+							text-align: left;
+							font: normal normal normal 16px/24px $font-montserrat;
+							letter-spacing: 0;
+							color: $black666;
+							text-transform: capitalize;
+							padding: 27px 25px;
+							background: #f1f1f1;
+							border-top: 1px solid #D1D1D1;
+						}
+					}
+				}
+			}
+
+			&__image {
+				width: 53%;
+				padding-left: 126px;
+				padding-right: 98px;
+				padding-top: 70px;
+				position: relative;
+				@include mobile-only {
+					width: 100%;
+					padding: 45px 50px 0;
+				}
+
+				.image {
+					position: relative;
+					z-index: 10;
+				}
+
+				.shape_top {
+					position: absolute;
+					top: 0;
+					right: 0;
+					z-index: 0;
+				}
+
+				.shape_bottom {
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					z-index: 0;
+				}
+			}
+		}
+	}
+}
