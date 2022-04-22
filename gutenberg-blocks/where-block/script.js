@@ -1,18 +1,3 @@
-let imageCompareViewers = document.querySelectorAll(".image-compare");
-
-let configs = [
-	{
-		controlColor: "#FFFFFF",
-	},
-	{
-		controlColor: "#FFFFFF",
-	}
-];
-
-imageCompareViewers.forEach((element, i) => {
-	new ImageCompare(element, configs[i]).mount();
-});
-
 document.addEventListener('DOMContentLoaded', function (event) {
 	'use strict';
 	var $ = jQuery;
@@ -29,15 +14,13 @@ document.addEventListener('DOMContentLoaded', function (event) {
 		};
 
 		const enableSwiper = function () {
-			mySwiper = new Swiper('.services__wrapper', {
+			mySwiper = new Swiper('.why__us .items', {
 				loop: true,
 				slidesPerView: 1,
 				centeredSlides: true,
 				a11y: true,
 				keyboardControl: true,
-				grabCursor: false,
-				allowTouchMove: false,
-				spaceBetween: 100,
+				grabCursor: true,
 				pagination: {
 					el: '.swiper-pagination',
 					clickable: true,

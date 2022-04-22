@@ -15,7 +15,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
+            "default_value": "Before & After",
             "placeholder": "",
             "prepend": "",
             "append": "",
@@ -34,7 +34,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
+            "default_value": "#BYouLaserClinic",
             "placeholder": "",
             "prepend": "",
             "append": "",
@@ -182,5 +182,5 @@
         }
     },
     "acfe_note": "",
-    "modified": 1649881823
+    "modified": 1650634883
 }

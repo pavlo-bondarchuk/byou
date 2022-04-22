@@ -1,6 +1,6 @@
 <?php
 /**
- * Block template file: gutenberg-blocks/brands-block/tpl.php
+ * Block template file: gutenberg-blocks/why-block/tpl.php
  *
  * Why Block Block Template.
  *

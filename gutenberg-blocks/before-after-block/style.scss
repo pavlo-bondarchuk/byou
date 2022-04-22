@@ -1,7 +1,13 @@
 @import "../../assets/src/scss/styles";
 
 .before-after {
+
 	&-block {
+		padding: 150px 0 110px;
+		@include mobile-only {
+			padding: 70px 0 50px;
+		}
+
 		.inner {
 			max-width: 1340px;
 			width: 100%;
@@ -47,13 +53,22 @@
 			}
 
 			.items {
-				column-gap: 35px;
-				@include mobile-only {
-					column-gap: 0;
+				@include desktop {
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
 				}
 
 				.item {
-					width: 50%;
+					&:not(:last-child) {
+						margin-right: 35px;
+						@include mobile-only {
+							margin: 0;
+						}
+					}
+					@include desktop {
+						width: 48.7%;
+					}
 
 					.content_wrapper {
 						display: flex;

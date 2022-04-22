@@ -7104,49 +7104,10 @@ document.addEventListener('DOMContentLoaded', function (event) {
         keyboardControl: true,
         grabCursor: false,
         allowTouchMove: false,
+        spaceBetween: 100,
         pagination: {
           el: '.swiper-pagination',
           clickable: true
-        }
-      });
-    };
-
-    breakpoint.addListener(breakpointChecker);
-    breakpointChecker();
-  }
-});
-"use strict";
-
-document.addEventListener('DOMContentLoaded', function (event) {
-  'use strict';
-
-  var $ = jQuery;
-
-  if (!$('body').hasClass('wp-admin')) {
-    var breakpoint = window.matchMedia('(min-width:31.25em)');
-    var mySwiper;
-
-    var breakpointChecker = function breakpointChecker() {
-      if (breakpoint.matches === true) {
-        if (mySwiper !== undefined) mySwiper.destroy(true, true);
-        return;
-      } else if (breakpoint.matches === false) {
-        return enableSwiper();
-      }
-    };
-
-    var enableSwiper = function enableSwiper() {
-      mySwiper = new Swiper('.cost__wrapper', {
-        loop: true,
-        centeredSlides: true,
-        centeredSlidesBounds: true,
-        slidesPerView: 1,
-        pagination: {
-          el: '.cost__pagination',
-          type: 'bullets',
-          clickable: true,
-          bulletActiveClass: 'bullet_active',
-          bulletClass: 'bullet'
         }
       });
     };
@@ -7203,6 +7164,46 @@ document.addEventListener('DOMContentLoaded', function (event) {
 
   var $ = jQuery;
 
+  if (!$('body').hasClass('wp-admin')) {
+    var breakpoint = window.matchMedia('(min-width:31.25em)');
+    var mySwiper;
+
+    var breakpointChecker = function breakpointChecker() {
+      if (breakpoint.matches === true) {
+        if (mySwiper !== undefined) mySwiper.destroy(true, true);
+        return;
+      } else if (breakpoint.matches === false) {
+        return enableSwiper();
+      }
+    };
+
+    var enableSwiper = function enableSwiper() {
+      mySwiper = new Swiper('.cost__wrapper', {
+        loop: true,
+        centeredSlides: true,
+        centeredSlidesBounds: true,
+        slidesPerView: 1,
+        pagination: {
+          el: '.cost__pagination',
+          type: 'bullets',
+          clickable: true,
+          bulletActiveClass: 'bullet_active',
+          bulletClass: 'bullet'
+        }
+      });
+    };
+
+    breakpoint.addListener(breakpointChecker);
+    breakpointChecker();
+  }
+});
+"use strict";
+
+document.addEventListener('DOMContentLoaded', function (event) {
+  'use strict';
+
+  var $ = jQuery;
+
   if (!$('body').hasClass('wp-admin')) {}
 });
 "use strict";
@@ -7239,6 +7240,54 @@ document.addEventListener('DOMContentLoaded', function (event) {
         }
       }
     });
+  }
+});
+"use strict";
+
+document.addEventListener('DOMContentLoaded', function (event) {
+  'use strict';
+
+  var $ = jQuery;
+
+  if (!$('body').hasClass('wp-admin')) {}
+});
+"use strict";
+
+document.addEventListener('DOMContentLoaded', function (event) {
+  'use strict';
+
+  var $ = jQuery;
+
+  if (!$('body').hasClass('wp-admin')) {
+    var breakpoint = window.matchMedia('(min-width:31.25em)');
+    var mySwiper;
+
+    var breakpointChecker = function breakpointChecker() {
+      if (breakpoint.matches === true) {
+        if (mySwiper !== undefined) mySwiper.destroy(true, true);
+        return;
+      } else if (breakpoint.matches === false) {
+        return enableSwiper();
+      }
+    };
+
+    var enableSwiper = function enableSwiper() {
+      mySwiper = new Swiper('.why__us .items', {
+        loop: true,
+        slidesPerView: 1,
+        centeredSlides: true,
+        a11y: true,
+        keyboardControl: true,
+        grabCursor: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true
+        }
+      });
+    };
+
+    breakpoint.addListener(breakpointChecker);
+    breakpointChecker();
   }
 });
 "use strict";

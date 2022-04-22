@@ -9,7 +9,7 @@
 		&__wrapper {
 			display: flex;
 			align-items: center;
-			justify-content: center;
+			justify-content: space-between;
 			margin-bottom: 115px;
 			@include mobile-only {
 				flex-direction: column;
@@ -20,8 +20,11 @@
 			.wrapper {
 				&__content {
 					width: 50%;
-					max-width: 577px;
+					max-width: 484px;
 					margin-right: 108px;
+					display: flex;
+					flex-direction: column;
+					align-items: flex-start;
 					@include mobile-only {
 						width: 100%;
 						max-width: 100%;

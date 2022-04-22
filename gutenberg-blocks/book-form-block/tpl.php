@@ -37,24 +37,22 @@ if( isset( $block['data']['preview_image_help'] )  ) :
 else : ?>
 <div id="<?php echo esc_attr( $id ); ?>" class="<?php echo esc_attr( $classes ); ?>">
 	<div class="inner">
-		<div class="columns">
-            <div class="column column__content">
-                <div class="image">
+		<div class="wrapper">
+            <div class="wrapper__image">
                   <?php $image = get_field( 'image' ); ?>
                   <?php if ( $image ) : ?>
-                      <img src="<?php echo esc_url( $image['url'] ); ?>" alt="<?php echo esc_attr( $image['alt'] ); ?>" class="illustration" />
+                      <img src="<?php echo esc_url( $image['url'] ); ?>" alt="<?php echo esc_attr( $image['alt'] ); ?>" class="image" />
                   <?php endif; ?>
                   <?php $shape_one = get_field( 'shape_one' ); ?>
                   <?php if ( $shape_one ) : ?>
-                      <img src="<?php echo esc_url( $shape_one['url'] ); ?>" alt="<?php echo esc_attr( $shape_one['alt'] ); ?>" class="shape_one" />
+                      <img src="<?php echo esc_url( $shape_one['url'] ); ?>" alt="<?php echo esc_attr( $shape_one['alt'] ); ?>" class="shape_top" />
                   <?php endif; ?>
                   <?php $shape_two = get_field( 'shape_two' ); ?>
                   <?php if ( $shape_two ) : ?>
-                      <img src="<?php echo esc_url( $shape_two['url'] ); ?>" alt="<?php echo esc_attr( $shape_two['alt'] ); ?>" class="shape_two" />
+                      <img src="<?php echo esc_url( $shape_two['url'] ); ?>" alt="<?php echo esc_attr( $shape_two['alt'] ); ?>" class="shape_bottom" />
                   <?php endif; ?>
-                </div>
             </div>
-            <div class="column column__form">
+            <div class="wrapper__form">
 				<div class="form">
                   <?php
                   $form_object = get_field( 'form' );
