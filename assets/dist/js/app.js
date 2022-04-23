@@ -7137,19 +7137,18 @@ document.addEventListener('DOMContentLoaded', function (event) {
     };
 
     var enableSwiper = function enableSwiper() {
-      mySwiper = new Swiper('.become-block .item__slider', {
+      mySwiper = new Swiper('.cost__wrapper', {
         loop: true,
-        a11y: true,
-        keyboardControl: true,
-        grabCursor: true,
-        pagination: {
-          el: '.item__slider-pagination',
-          clickable: true,
-          bulletClass: 'bullet',
-          bulletActiveClass: 'bullet-active'
-        },
+        centeredSlides: true,
+        centeredSlidesBounds: true,
         slidesPerView: 1,
-        spaceBetween: 0
+        pagination: {
+          el: '.cost__pagination',
+          type: 'bullets',
+          clickable: true,
+          bulletActiveClass: 'bullet_active',
+          bulletClass: 'bullet'
+        }
       });
     };
 
@@ -7178,18 +7177,19 @@ document.addEventListener('DOMContentLoaded', function (event) {
     };
 
     var enableSwiper = function enableSwiper() {
-      mySwiper = new Swiper('.cost__wrapper', {
+      mySwiper = new Swiper('.become-block .item__slider', {
         loop: true,
-        centeredSlides: true,
-        centeredSlidesBounds: true,
-        slidesPerView: 1,
+        a11y: true,
+        keyboardControl: true,
+        grabCursor: true,
         pagination: {
-          el: '.cost__pagination',
-          type: 'bullets',
+          el: '.item__slider-pagination',
           clickable: true,
-          bulletActiveClass: 'bullet_active',
-          bulletClass: 'bullet'
-        }
+          bulletClass: 'bullet',
+          bulletActiveClass: 'bullet-active'
+        },
+        slidesPerView: 1,
+        spaceBetween: 0
       });
     };
 
