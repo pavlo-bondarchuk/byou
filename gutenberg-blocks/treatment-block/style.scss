@@ -11,7 +11,7 @@
 
 	&.image__align_left {
 		.inner {
-			max-width: 1240px;
+			max-width: 1300px;
 			width: 100%;
 			margin: 0 auto;
 			display: flex;
@@ -28,19 +28,17 @@
 				&__image {
 					width: 50%;
 					position: relative;
+					padding: 25px 130px 85px 0;
 					@include mobile-only {
 						width: 100%;
-						margin-bottom: 50px;
-						padding-top: 60px;
+						margin-top: 60px;
+						padding: 60px 0;
 					}
 
 					.image {
 						padding: 0;
 						z-index: 10;
 						position: relative;
-						@include tablet {
-							padding-right: 130px;
-						}
 						@include mobile-only {
 							width: 100%;
 							height: 235px;
@@ -79,9 +77,10 @@
 				}
 
 				&__content {
-					width: 28%;
+					width: 31%;
 					@include mobile-only {
 						width: 100%;
+						padding: 0;
 					}
 
 					.title {
@@ -97,7 +96,7 @@
 					}
 
 					.text {
-						max-width: 365px;
+						padding-right: 23%;
 						text-align: left;
 						font: normal normal normal 16px/22px $font-montserrat;
 						letter-spacing: 0;
@@ -105,6 +104,7 @@
 						margin-bottom: 20px;
 						@include mobile-only {
 							font: normal normal normal 14px/22px $font-montserrat;
+							padding: 0;
 						}
 					}
 
@@ -142,12 +142,12 @@
 
 	&.image__align_right {
 		.inner {
-			max-width: 1240px;
+			max-width: 1300px;
 			width: 100%;
 			margin: 0 auto;
 			display: flex;
 			align-items: center;
-			justify-content: flex-start;
+			justify-content: space-between;
 			@include mobile-only {
 				flex-direction: column;
 				padding: 0 16px;
@@ -158,11 +158,13 @@
 
 			.column {
 				&__image {
-					width: 65%;
+					width: 57%;
 					position: relative;
+					padding: 130px 60px 20px 130px;
 					@include mobile-only {
 						width: 100%;
 						margin-bottom: 50px;
+						padding: 0;
 						padding-top: 60px;
 					}
 
@@ -170,11 +172,6 @@
 						padding: 0;
 						z-index: 10;
 						position: relative;
-						@include tablet {
-							padding-left: 265px;
-							z-index: 10;
-							position: relative;
-						}
 						@include mobile-only {
 							width: 100%;
 							height: 235px;
@@ -193,16 +190,21 @@
 					.shape {
 						position: absolute;
 						top: 0;
-						left: 0;
+						left: -20px;
 						width: 100%;
 						height: 100%;
 						z-index: 0;
+						@include mobile-only {
+							left: 0;
+						}
 
 						img {
-							position: absolute;
-							top: 0;
-							left: 50px;
-							width: auto;
+							position: relative;
+							top: auto;
+							left: 0;
+							right: auto;
+							bottom: 0;
+							width: 100%;
 							height: 100%;
 						}
 					}
@@ -213,7 +215,7 @@
 				}
 
 				&__content {
-					width: 33%;
+					width: 50%;
 					padding-left: 100px;
 					@include mobile-only {
 						width: 100%;
@@ -226,14 +228,16 @@
 						letter-spacing: 0;
 						color: $black;
 						text-transform: capitalize;
-						margin-bottom: 20px;
+						padding: 100px 0 20px;
 						@include mobile-only {
 							font: normal normal 500 40px/52px $font-swear;
+							padding: 0;
+							padding-bottom: 20px;
 						}
 					}
 
 					.text {
-						max-width: 365px;
+						padding-right: 36%;
 						text-align: left;
 						font: normal normal normal 16px/22px $font-montserrat;
 						letter-spacing: 0;
@@ -241,6 +245,7 @@
 						margin-bottom: 20px;
 						@include mobile-only {
 							font: normal normal normal 15px/24px $font-montserrat;
+							padding: 0;
 						}
 					}
 
