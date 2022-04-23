@@ -214,8 +214,10 @@
 
 				&__content {
 					width: 33%;
+					padding-left: 100px;
 					@include mobile-only {
 						width: 100%;
+						padding-left: 0;
 					}
 
 					.title {
