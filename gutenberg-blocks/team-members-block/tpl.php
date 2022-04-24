@@ -37,7 +37,14 @@ if( isset( $block['data']['preview_image_help'] )  ) :
 else : ?>
 <div id="<?php echo esc_attr( $id ); ?>" class="<?php echo esc_attr( $classes ); ?>">
 	<div class="inner">
-		<div class="title"><?php the_field( 'title' ); ?></div>
+      <?php $title = get_field( 'title' ); ?>
+      <?php if ( $title ) : ?>
+          <h4 class="title"><?php echo $title; ?></h4>
+      <?php endif; ?>
+			<?php $text = get_field( 'text' ); ?>
+			<?php if ( $text ) : ?>
+          <div class="text"><?php echo $text; ?></div>
+			<?php endif; ?>
 		<div class="members__wrapper">
 			<?php if ( have_rows( 'member' ) ) : ?>
 				<?php while ( have_rows( 'member' ) ) : the_row(); ?>

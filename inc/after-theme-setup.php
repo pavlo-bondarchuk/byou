@@ -101,6 +101,8 @@ function byou_setup() {
 	remove_action( 'wp_body_open', 'wp_global_styles_render_svg_filters' );
 
 	remove_theme_support('block-templates');
+
+	add_image_size( 'byou-treatment-mobile', 343, 235, true );
 }
 add_action( 'after_setup_theme', 'byou_setup' );
 

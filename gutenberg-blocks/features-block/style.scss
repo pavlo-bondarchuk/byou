@@ -28,7 +28,7 @@
 				&:not(:last-child) {
 					margin-right: 100px;
 					@include mobile-only {
-						margin: 0;
+						margin-right: 0;
 					}
 				}
 

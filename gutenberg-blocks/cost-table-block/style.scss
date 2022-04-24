@@ -1,0 +1,371 @@
+@import "../../assets/src/scss/styles";
+
+.cost-table-block {
+	padding: 206px 0 50px;
+	@include mobile-only {
+		padding: 157px 0 121px;
+	}
+
+	.inner {
+		width: 100%;
+		max-width: 1040px;
+		margin: 0 auto;
+		@include mobile-only {
+			padding: 0 16px;
+		}
+
+		.title {
+			text-align: center;
+			font: normal normal normal 48px/56px $font-swear;
+			letter-spacing: 0;
+			color: $black;
+			text-transform: capitalize;
+			margin-bottom: 20px;
+			@include mobile-only {
+				font: normal normal normal 40px/52px $font-swear;
+				margin-bottom: 50px;
+			}
+		}
+
+		.description {
+			width: 58%;
+			margin: 0 auto 40px;
+			text-align: center;
+			font: normal normal normal 16px/22px $font-montserrat;
+			letter-spacing: 0;
+			color: $black666;
+			@include mobile-only {
+				width: 100%;
+				margin: 0 auto 40px;
+				font: normal normal normal 15px/24px $font-montserrat;
+				margin-bottom: 50px;
+			}
+		}
+
+		.cost_table {
+			&__wrapper {
+				@include mobile-only {
+					overflow: hidden;
+				}
+
+				.swiper-wrapper {
+					display: flex;
+					align-items: center;
+					justify-content: flex-start;
+					flex-direction: column;
+					box-sizing: border-box;
+					@include mobile-only {
+						padding: 0;
+						justify-content: stretch;
+						flex-direction: row;
+					}
+				}
+
+				.cost__pagination {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					margin-top: 62px;
+
+					.bullet {
+						width: 6px;
+						height: 6px;
+						border-radius: 50%;
+						background-color: $black;
+						opacity: .25;
+
+						&-active {
+							opacity: 1;
+						}
+
+						&:not(:last-child) {
+							margin-right: 10px;
+						}
+					}
+				}
+			}
+
+			&__item {
+				width: 100%;
+				background-color: #F0F3FD;
+				padding: 0 100px 0 50px;
+				@include mobile-only {
+					padding: 30px 10px;
+				}
+
+				&:not(:last-child) {
+					border-bottom: 1px solid #E3E3E3;
+				}
+
+				&:first-child {
+					.name_of_treatment {
+						@include desktop {
+							padding: 45px 0 25px;
+						}
+					}
+				}
+
+				&:not(:first-child) {
+					.cost_table__body {
+						.cost_table__head {
+							@include desktop {
+								display: none;
+							}
+						}
+					}
+				}
+
+				&_content {
+					margin-bottom: 30px;
+				}
+
+				&_cost {
+					width: 100%;
+				}
+
+				.title {
+					text-align: left;
+					font: normal normal normal 24px/32px $font-swear;
+					letter-spacing: 0;
+					color: $black;
+					text-transform: capitalize;
+					margin-bottom: 10px;
+				}
+
+				.text {
+					text-align: left;
+					font: normal normal normal 14px/20px $font-montserrat;
+					letter-spacing: 0;
+					color: $black666;
+					text-transform: capitalize;
+				}
+
+				.cost {
+					text-align: left;
+					font: normal normal normal 18px/24px $font-swear;
+					letter-spacing: 0;
+					color: $blue;
+				}
+			}
+
+			&__head {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				width: 100%;
+
+				&_row {
+					white-space: nowrap;
+
+					&.zero {
+						width: 270px;
+						@include mobile-only {
+							width: 80px;
+							overflow: hidden;
+						}
+					}
+
+					&.first {
+						width: 211px;
+						@include mobile-only {
+							width: 80px;
+							overflow: hidden;
+						}
+					}
+
+					&.second {
+						width: 253px;
+						@include mobile-only {
+							width: 80px;
+							overflow: hidden;
+						}
+					}
+
+					&.third {
+						width: 153px;
+						@include mobile-only {
+							width: 80px;
+							overflow: hidden;
+						}
+					}
+
+					&_title {
+						text-align: left;
+						font: normal normal normal 14px/20px $font-montserrat;
+						letter-spacing: 0;
+						color: $black666;
+						@include mobile-only {
+							font: normal normal normal 12px/20px $font-montserrat;
+						}
+					}
+				}
+			}
+
+			&__body {
+				display: flex;
+				align-items: center;
+				justify-content: flex-start;
+				@include mobile-only {
+					flex-direction: column;
+				}
+
+				.session__wrapper {
+					display: flex;
+					align-items: center;
+					@include mobile-only {
+						flex-direction: row;
+						width: 100%;
+						align-items: flex-start;
+					}
+				}
+
+				.name_of_treatment {
+					padding: 25px 0;
+					width: 225px;
+					margin-right: 46px;
+					@include mobile-only {
+						width: 100%;
+						margin-right: 0;
+						padding: 0;
+						padding-bottom: 20px;
+					}
+
+					.title {
+						text-align: left;
+						font: normal normal normal 24px/28px $font-swear;
+						letter-spacing: 0;
+						color: $black;
+						text-transform: capitalize;
+						opacity: 1;
+						margin: 0;
+						padding: 0;
+					}
+				}
+
+				.single_session {
+					width: 211px;
+					display: flex;
+					flex-direction: column;
+					@include mobile-only {
+						width: 86px;
+						margin-right: 32px;
+					}
+
+					.cost {
+						text-align: left;
+						font: normal normal 500 18px/44px $font-swear;
+						letter-spacing: 0;
+						color: $blue;
+						text-transform: capitalize;
+						margin-right: 14px;
+					}
+				}
+
+				.package_of_3_sessions {
+					width: 253px;
+					display: flex;
+					align-items: flex-start;
+					flex-direction: column;
+					@include mobile-only {
+						width: 77px;
+						margin-right: 41px;
+					}
+
+					.price {
+						display: flex;
+						align-items: center;
+						@include mobile-only {
+							flex-direction: column;
+							align-items: flex-start;
+						}
+					}
+
+					.cost {
+						text-align: left;
+						font: normal normal 500 18px/44px $font-swear;
+						letter-spacing: 0;
+						color: $blue;
+						text-transform: capitalize;
+						margin-right: 14px;
+					}
+
+					.discount {
+						text-align: left;
+						font: normal normal 500 12px/16px $font-swear;
+						letter-spacing: 0;
+						color: $white;
+						text-transform: capitalize;
+						padding: 3px 7px;
+						background: $blue;
+						border-radius: 5px;
+					}
+				}
+
+				.package_of_5_sessions {
+					width: 153px;
+					display: flex;
+					align-items: flex-start;
+					flex-direction: column;
+					@include mobile-only {
+						width: 77px;
+					}
+
+					.price {
+						display: flex;
+						align-items: center;
+						@include mobile-only {
+							flex-direction: column;
+							align-items: flex-start;
+						}
+					}
+
+					.cost {
+						text-align: left;
+						font: normal normal 500 18px/44px $font-swear;
+						letter-spacing: 0;
+						color: $blue;
+						text-transform: capitalize;
+						margin-right: 14px;
+					}
+
+					.discount {
+						text-align: left;
+						font: normal normal 500 12px/16px $font-swear;
+						letter-spacing: 0;
+						color: $white;
+						text-transform: capitalize;
+						padding: 3px 7px;
+						background: $blue;
+						border-radius: 5px;
+					}
+				}
+			}
+
+			&__pagination {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin-top: 50px;
+				@include desktop {
+					display: none;
+				}
+
+				.bullet {
+					width: 6px;
+					height: 6px;
+					border-radius: 50%;
+					background-color: $black;
+					opacity: 0.25;
+
+					&:not(:last-child) {
+						margin-right: 10px;
+					}
+
+					&_active {
+						opacity: 1;
+					}
+				}
+			}
+		}
+	}
+}

@@ -7177,6 +7177,46 @@ document.addEventListener('DOMContentLoaded', function (event) {
     };
 
     var enableSwiper = function enableSwiper() {
+      mySwiper = new Swiper('.cost_table__wrapper', {
+        slidesPerView: 1,
+        slidesPerColumn: 3,
+        slidesPerGroup: 3,
+        spaceBetween: 0,
+        pagination: {
+          el: '.cost__pagination',
+          type: 'bullets',
+          clickable: true,
+          bulletActiveClass: 'bullet_active',
+          bulletClass: 'bullet'
+        }
+      });
+    };
+
+    breakpoint.addListener(breakpointChecker);
+    breakpointChecker();
+  }
+});
+"use strict";
+
+document.addEventListener('DOMContentLoaded', function (event) {
+  'use strict';
+
+  var $ = jQuery;
+
+  if (!$('body').hasClass('wp-admin')) {
+    var breakpoint = window.matchMedia('(min-width:31.25em)');
+    var mySwiper;
+
+    var breakpointChecker = function breakpointChecker() {
+      if (breakpoint.matches === true) {
+        if (mySwiper !== undefined) mySwiper.destroy(true, true);
+        return;
+      } else if (breakpoint.matches === false) {
+        return enableSwiper();
+      }
+    };
+
+    var enableSwiper = function enableSwiper() {
       mySwiper = new Swiper('.become-block .item__slider', {
         loop: true,
         a11y: true,
@@ -7205,6 +7245,49 @@ document.addEventListener('DOMContentLoaded', function (event) {
   var $ = jQuery;
 
   if (!$('body').hasClass('wp-admin')) {}
+});
+"use strict";
+
+document.addEventListener('DOMContentLoaded', function (event) {
+  'use strict';
+
+  var $ = jQuery;
+
+  if (!$('body').hasClass('wp-admin')) {
+    var breakpoint = window.matchMedia('(min-width:31.25em)');
+    var serviceTreatmentSwiper;
+
+    var breakpointChecker = function breakpointChecker() {
+      if (breakpoint.matches === true) {
+        if (serviceTreatmentSwiper !== undefined) serviceTreatmentSwiper.destroy(true, true);
+        return;
+      } else if (breakpoint.matches === false) {
+        return serviceTreatmentEnableSwiper();
+      }
+    };
+
+    var serviceTreatmentEnableSwiper = function serviceTreatmentEnableSwiper() {
+      serviceTreatmentSwiper = new Swiper('.content__wrapper', {
+        a11y: true,
+        keyboardControl: true,
+        grabCursor: true,
+        pagination: {
+          el: '.content__wrapper-pagination',
+          clickable: true,
+          bulletClass: 'bullet',
+          bulletActiveClass: 'bullet-active'
+        },
+        slidesPerView: 2,
+        slidesPerColumn: 2,
+        slidesPerGroup: 2,
+        spaceBetween: 50,
+        slidesPerColumnFill: 'row'
+      });
+    };
+
+    breakpoint.addListener(breakpointChecker);
+    breakpointChecker();
+  }
 });
 "use strict";
 
@@ -7250,6 +7333,49 @@ document.addEventListener('DOMContentLoaded', function (event) {
   var $ = jQuery;
 
   if (!$('body').hasClass('wp-admin')) {}
+});
+"use strict";
+
+document.addEventListener('DOMContentLoaded', function (event) {
+  'use strict';
+
+  var $ = jQuery;
+
+  if (!$('body').hasClass('wp-admin')) {
+    var breakpoint = window.matchMedia('(min-width:31.25em)');
+    var treatmentProcessSwiper;
+
+    var breakpointChecker = function breakpointChecker() {
+      if (breakpoint.matches === true) {
+        if (treatmentProcessSwiper !== undefined) treatmentProcessSwiper.destroy(true, true);
+        return;
+      } else if (breakpoint.matches === false) {
+        return treatmentProcessEnableSwiper();
+      }
+    };
+
+    var treatmentProcessEnableSwiper = function treatmentProcessEnableSwiper() {
+      treatmentProcessSwiper = new Swiper('.process__slider', {
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 70,
+        centeredSlides: true,
+        a11y: true,
+        keyboardControl: true,
+        grabCursor: true,
+        pagination: {
+          el: '.treatmentProcessSlider-pagination',
+          clickable: true,
+          type: 'bullets',
+          bulletClass: 'bullet',
+          bulletActiveClass: 'bullet-active'
+        }
+      });
+    };
+
+    breakpoint.addListener(breakpointChecker);
+    breakpointChecker();
+  }
 });
 "use strict";
 

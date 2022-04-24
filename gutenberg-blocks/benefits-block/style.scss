@@ -1,0 +1,127 @@
+@import "../../assets/src/scss/styles";
+
+.benefits-block {
+	.inner {
+		width: 100%;
+		max-width: 1140px;
+		margin: 0 auto;
+		display: flex;
+		align-items: flex-end;
+		justify-content: space-between;
+		padding: 118px 0 0;
+		@include mobile-only {
+			padding: 80px 16px;
+			flex-direction: column-reverse;
+		}
+
+		.wrapper {
+			&__content {
+				width: 58%;
+				padding-right: 40px;
+				@include mobile-only {
+					width: 100%;
+					padding: 0;
+				}
+
+				&_inner {
+					padding-right: 13%;
+					@include mobile-only {
+						width: 100%;
+						padding: 0;
+					}
+				}
+
+				.title {
+					text-align: left;
+					font: normal normal normal 48px/56px $font-swear;
+					letter-spacing: 0;
+					color: $black;
+					text-transform: capitalize;
+					margin-bottom: 40px;
+					@include mobile-only {
+						font: normal normal normal 40px/52px $font-swear;
+						margin-bottom: 20px;
+					}
+				}
+
+				.text {
+					text-align: left;
+					font: normal normal normal 16px/22px $font-montserrat;
+					letter-spacing: 0;
+					color: $black666;
+					margin-bottom: 50px;
+					@include mobile-only {
+						font: normal normal normal 15px/24px $font-montserrat;
+						margin-bottom: 40px;
+					}
+				}
+
+				.list {
+					display: grid;
+					grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+					column-gap: 50px;
+
+					&__item {
+						display: flex;
+						align-items: flex-start;
+						justify-content: flex-start;
+						margin-bottom: 30px;
+					}
+
+					&__icon {
+						width: 23px;
+						min-width: 23px;
+						height: 23px;
+						border-radius: 50%;
+						background-color: $blue;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						margin-right: 20px;
+
+						.fa {
+							font-size: 15px;
+							color: $white;
+						}
+					}
+
+					&__text {
+						text-align: left;
+						font: normal normal normal 14px/22px $font-montserrat;
+						letter-spacing: 0;
+						color: $black666;
+					}
+				}
+			}
+
+			&__image {
+				width: 50%;
+				position: relative;
+				@include mobile-only {
+					width: 100%;
+					padding: 60px 0 50px;
+				}
+
+				.image {
+					position: relative;
+					z-index: 10;
+				}
+
+				.shape {
+					top: -118px;
+					left: -180px;
+					bottom: 0;
+					right: 0;
+					width: 100%;
+					height: 100%;
+					position: absolute;
+					@include mobile-only {
+						top: 0;
+						left: 0;
+						object-fit: cover;
+					}
+				}
+			}
+		}
+	}
+}

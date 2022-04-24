@@ -1,0 +1,156 @@
+@import "../../assets/src/scss/styles";
+
+.results-block {
+	position: relative;
+
+	.shape {
+		bottom: 0;
+		right: 0;
+		position: absolute;
+		z-index: 5;
+		height: 95%;
+		width: 55%;
+		overflow: hidden;
+		object-fit: cover;
+		@media (max-width: 1440px) and (min-width: 1024px) {
+			width: 130%;
+			height: 70%;
+		}
+		@include mobile-only {
+			width: 100%;
+			height: 66%;
+		}
+
+		svg {
+			bottom: 0;
+			height: auto;
+			width: 100%;
+			@include mobile-only {
+				bottom: 0;
+				height: auto;
+				width: 100%;
+			}
+		}
+	}
+
+	.inner {
+		width: 100%;
+		max-width: 1440px;
+		margin: 0 auto;
+		padding: 170px 100px 90px;
+		position: relative;
+		z-index: 10;
+		@include mobile-only {
+			padding: 170px 0 40px;
+		}
+
+		.wrapper {
+			display: flex;
+			align-items: flex-end;
+			justify-content: space-between;
+			position: relative;
+			z-index: 10;
+			@include mobile-only {
+				flex-direction: column;
+			}
+
+			&__title {
+				width: 70%;
+				margin-bottom: 80px;
+				@include mobile-only {
+					width: 100%;
+					margin-bottom: 135px;
+					padding: 0 16px;
+				}
+
+				.title {
+					text-align: left;
+					font: normal normal normal 48px/56px $font-swear;
+					letter-spacing: 0;
+					color: $white;
+					text-transform: capitalize;
+					@include mobile-only {
+						text-align: center;
+						font: normal normal normal 40px/52px $font-swear;
+					}
+				}
+			}
+
+			&__content {
+				width: 30%;
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				justify-content: flex-start;
+				@include mobile-only {
+					width: 100%;
+					padding: 0 32px;
+					align-items: stretch;
+				}
+
+				.text {
+					text-align: left;
+					font: normal normal 300 17px/24px $font-montserrat;
+					letter-spacing: 0;
+					color: $white;
+					margin-bottom: 30px;
+					@include mobile-only {
+						text-align: center;
+						font: normal normal 300 15px/22px $font-montserrat;
+					}
+				}
+
+				.link {
+					text-align: center;
+					font: normal normal medium 15px/19px $font-montserrat;
+					letter-spacing: 0;
+					color: $white;
+					text-transform: uppercase;
+					padding: 18px;
+					background-color: transparent;
+					border: 1px solid $white;
+					@include mobile-only {
+						font: normal normal medium 14px/18px $font-montserrat;
+						padding: 13px;
+					}
+				}
+			}
+		}
+	}
+
+	.background__image {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 0;
+
+		&:after {
+			width: 100%;
+			height: 100%;
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			background: transparent linear-gradient(243deg, #00000000 0%, #00000053 100%) 0% 0% no-repeat padding-box;
+			@include mobile-only {
+				background: transparent linear-gradient(180deg, #0000004D 0%, #000000B1 100%) 0% 0% no-repeat padding-box;
+			}
+		}
+
+		.image {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			object-fit: cover;
+			object-position: left bottom;
+			z-index: 0;
+			@include mobile-only {
+				object-position: center;
+			}
+		}
+	}
+}

@@ -775,4 +775,139 @@ function register_acf_block_type() {
 					)
 			)
 	) );
+	acf_register_block_type( array(
+			'name'            => 'service-treatment-block',
+			'title'           => __( 'Service Treatment', 'byou' ),
+			'category'        => 'byou-blocks',
+			'icon'            => 'admin-home',
+			'keywords'        => array( 'service-treatment' ),
+			'post_types'      => array( 'page' ),
+			'mode'            => 'preview',
+			'align'           => 'full',
+			'supports'        => array(
+					'align'  => true,
+					'jsx'    => true,
+					'anchor' => true
+			),
+			'render_template' => 'gutenberg-blocks/service-treatment-block/tpl.php',
+			'enqueue_style'   => get_template_directory_uri() . '/assets/dist/css/service-treatment-block/style.css',
+			'enqueue_script' => get_template_directory_uri() . '/assets/dist/js/service-treatment-block/script.js',
+			'example'         => array(
+					'attributes' => array(
+							'mode' => 'preview',
+							'data' => array(
+									'is_preview'         => true,
+									'preview_image_help' => IT_URL . '/gutenberg-blocks/previews/service-treatment-section.jpg'
+							)
+					)
+			)
+	) );
+	acf_register_block_type( array(
+			'name'            => 'treatment-process-block',
+			'title'           => __( 'Treatment Process', 'byou' ),
+			'category'        => 'byou-blocks',
+			'icon'            => 'admin-home',
+			'keywords'        => array( 'treatment-process' ),
+			'post_types'      => array( 'page' ),
+			'mode'            => 'preview',
+			'align'           => 'full',
+			'supports'        => array(
+					'align'  => true,
+					'jsx'    => true,
+					'anchor' => true
+			),
+			'render_template' => 'gutenberg-blocks/treatment-process-block/tpl.php',
+			'enqueue_style'   => get_template_directory_uri() . '/assets/dist/css/treatment-process-block/style.css',
+			'enqueue_script' => get_template_directory_uri() . '/assets/dist/js/treatment-process-block/script.js',
+			'example'         => array(
+					'attributes' => array(
+							'mode' => 'preview',
+							'data' => array(
+									'is_preview'         => true,
+									'preview_image_help' => IT_URL . '/gutenberg-blocks/previews/treatment-process-section.jpg'
+							)
+					)
+			)
+	) );
+	acf_register_block_type( array(
+			'name'            => 'benefits-block',
+			'title'           => __( 'Benefits', 'byou' ),
+			'category'        => 'byou-blocks',
+			'icon'            => 'admin-home',
+			'keywords'        => array( 'benefits' ),
+			'post_types'      => array( 'page' ),
+			'mode'            => 'preview',
+			'align'           => 'full',
+			'supports'        => array(
+					'align'  => true,
+					'jsx'    => true,
+					'anchor' => true
+			),
+			'render_template' => 'gutenberg-blocks/benefits-block/tpl.php',
+			'enqueue_style'   => get_template_directory_uri() . '/assets/dist/css/benefits-block/style.css',
+		//'enqueue_script' => get_template_directory_uri() . '/assets/dist/js/treatment-process-block/script.js',
+			'example'         => array(
+					'attributes' => array(
+							'mode' => 'preview',
+							'data' => array(
+									'is_preview'         => true,
+									'preview_image_help' => IT_URL . '/gutenberg-blocks/previews/benefits-section.jpg'
+							)
+					)
+			)
+	) );
+	acf_register_block_type( array(
+			'name'            => 'results-block',
+			'title'           => __( 'Results Guaranteed', 'byou' ),
+			'category'        => 'byou-blocks',
+			'icon'            => 'admin-home',
+			'keywords'        => array( 'results' ),
+			'post_types'      => array( 'page' ),
+			'mode'            => 'preview',
+			'align'           => 'full',
+			'supports'        => array(
+					'align'  => true,
+					'jsx'    => true,
+					'anchor' => true
+			),
+			'render_template' => 'gutenberg-blocks/results-block/tpl.php',
+			'enqueue_style'   => get_template_directory_uri() . '/assets/dist/css/results-block/style.css',
+		//'enqueue_script' => get_template_directory_uri() . '/assets/dist/js/treatment-process-block/script.js',
+			'example'         => array(
+					'attributes' => array(
+							'mode' => 'preview',
+							'data' => array(
+									'is_preview'         => true,
+									'preview_image_help' => IT_URL . '/gutenberg-blocks/previews/results-section.jpg'
+							)
+					)
+			)
+	) );
+	acf_register_block_type( array(
+			'name'            => 'cost-table-block',
+			'title'           => __( 'Treatment Cost Table Block', 'byou' ),
+			'category'        => 'byou-blocks',
+			'icon'            => 'admin-home',
+			'keywords'        => array( 'cost', 'table' ),
+			'post_types'      => array( 'page' ),
+			'mode'            => 'preview',
+			'align'           => 'full',
+			'supports'        => array(
+					'align'  => true,
+					'jsx'    => true,
+					'anchor' => true
+			),
+			'render_template' => 'gutenberg-blocks/cost-table-block/tpl.php',
+			'enqueue_style'   => get_template_directory_uri() . '/assets/dist/css/cost-table-block/style.css',
+			'enqueue_script' => get_template_directory_uri() . '/assets/dist/js/cost-table-block/script.js',
+			'example'         => array(
+					'attributes' => array(
+							'mode' => 'preview',
+							'data' => array(
+									'is_preview'         => true,
+									'preview_image_help' => IT_URL . '/gutenberg-blocks/previews/cost-table-section.jpg'
+							)
+					)
+			)
+	) );
 }

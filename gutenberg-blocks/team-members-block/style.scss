@@ -1,7 +1,7 @@
 @import "../../assets/src/scss/styles";
 
 .team-members-block {
-	padding: 144px 0 150px;
+	padding: 16px 0 60px;
 	@include mobile-only {
 		padding: 90px 16px 100px;
 	}
@@ -17,15 +17,30 @@
 			letter-spacing: 0;
 			color: $black;
 			text-transform: capitalize;
-			margin-bottom: 70px;
+			margin-bottom: 20px;
 			@include mobile-only {
 				font: normal normal 500 40px/52px $font-swear;
 				width: 70%;
-				margin: 0 auto 50px;
+				margin: 0 auto 20px;
+			}
+		}
+
+		.text {
+			text-align: center;
+			font: normal normal normal 16px/22px $font-montserrat;
+			letter-spacing: 0;
+			color: $black;
+			text-transform: capitalize;
+			width: 70%;
+			margin: 0 auto;
+			@include mobile-only {
+				font: normal normal normal 14px/22px $font-montserrat;
+				width: 100%;
 			}
 		}
 
 		.members__wrapper {
+			margin-top: 70px;
 			display: grid;
 			grid-template-columns: repeat(auto-fill, minmax(352px, 1fr));
 			gap: 92px;

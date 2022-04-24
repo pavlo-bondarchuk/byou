@@ -1,9 +1,9 @@
 {
-    "key": "group_625dcf8ab83bf",
-    "title": "Team Members",
+    "key": "group_6264705a39ee8",
+    "title": "Benefits",
     "fields": [
         {
-            "key": "field_625dcfa42c7cf",
+            "key": "field_6264706a34e4c",
             "label": "Title",
             "name": "title",
             "type": "text",
@@ -15,14 +15,14 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "Professional Team",
+            "default_value": "",
             "placeholder": "",
             "prepend": "",
             "append": "",
             "maxlength": ""
         },
         {
-            "key": "field_6265c1e5a2a7c",
+            "key": "field_6264707f34e4d",
             "label": "Text",
             "name": "text",
             "type": "textarea",
@@ -38,13 +38,13 @@
             "placeholder": "",
             "maxlength": "",
             "rows": "",
-            "new_lines": "wpautop",
+            "new_lines": "",
             "acfe_textarea_code": 0
         },
         {
-            "key": "field_625dcfb12c7d0",
-            "label": "Member",
-            "name": "member",
+            "key": "field_6264709734e4e",
+            "label": "Benefits",
+            "name": "benefits",
             "type": "repeater",
             "instructions": "",
             "required": 0,
@@ -58,39 +58,13 @@
             "collapsed": "",
             "min": 0,
             "max": 0,
-            "layout": "block",
-            "button_label": "Add Member",
+            "layout": "table",
+            "button_label": "",
             "sub_fields": [
                 {
-                    "key": "field_625dcfbc2c7d1",
-                    "label": "Photo",
-                    "name": "photo",
-                    "type": "image",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "uploader": "",
-                    "acfe_thumbnail": 0,
-                    "return_format": "array",
-                    "preview_size": "medium",
-                    "min_width": "",
-                    "min_height": "",
-                    "min_size": "",
-                    "max_width": "",
-                    "max_height": "",
-                    "max_size": "",
-                    "mime_types": "",
-                    "library": "all"
-                },
-                {
-                    "key": "field_625dcfc82c7d2",
-                    "label": "Specialization",
-                    "name": "specialization",
+                    "key": "field_626470a134e4f",
+                    "label": "Text",
+                    "name": "text",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -100,32 +74,65 @@
                         "class": "",
                         "id": ""
                     },
-                    "default_value": "Professional Member",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
-                },
-                {
-                    "key": "field_625dcfd32c7d3",
-                    "label": "Name",
-                    "name": "name",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "John Doe",
+                    "default_value": "",
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
                     "maxlength": ""
                 }
             ]
+        },
+        {
+            "key": "field_626471c25b9a8",
+            "label": "Image",
+            "name": "image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "uploader": "",
+            "acfe_thumbnail": 0,
+            "return_format": "array",
+            "preview_size": "medium",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "library": "all"
+        },
+        {
+            "key": "field_626471ca5b9a9",
+            "label": "Shape",
+            "name": "shape",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "uploader": "",
+            "acfe_thumbnail": 0,
+            "return_format": "array",
+            "preview_size": "medium",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "library": "all"
         }
     ],
     "location": [
@@ -133,14 +140,14 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/team-members-block"
+                "value": "acf\/benefits-block"
             }
         ]
     ],
     "menu_order": 0,
     "position": "normal",
     "style": "default",
-    "label_placement": "top",
+    "label_placement": "left",
     "instruction_placement": "label",
     "hide_on_screen": "",
     "active": true,
@@ -157,5 +164,5 @@
         }
     },
     "acfe_note": "",
-    "modified": 1650836001
+    "modified": 1650749906
 }

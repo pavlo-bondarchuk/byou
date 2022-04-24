@@ -1,9 +1,9 @@
 {
-    "key": "group_625dcf8ab83bf",
-    "title": "Team Members",
+    "key": "group_62644493e337d",
+    "title": "Service Treatment",
     "fields": [
         {
-            "key": "field_625dcfa42c7cf",
+            "key": "field_626444a453d4b",
             "label": "Title",
             "name": "title",
             "type": "text",
@@ -15,16 +15,16 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "Professional Team",
+            "default_value": "Name Service Treatment",
             "placeholder": "",
             "prepend": "",
             "append": "",
             "maxlength": ""
         },
         {
-            "key": "field_6265c1e5a2a7c",
+            "key": "field_626444c153d4c",
             "label": "Text",
-            "name": "text",
+            "name": "text_before",
             "type": "textarea",
             "instructions": "",
             "required": 0,
@@ -38,13 +38,33 @@
             "placeholder": "",
             "maxlength": "",
             "rows": "",
-            "new_lines": "wpautop",
+            "new_lines": "",
             "acfe_textarea_code": 0
         },
         {
-            "key": "field_625dcfb12c7d0",
-            "label": "Member",
-            "name": "member",
+            "key": "field_626444d553d4e",
+            "label": "Text",
+            "name": "text_after",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "",
+            "acfe_textarea_code": 0
+        },
+        {
+            "key": "field_6264451a53d4f",
+            "label": "Diagnose",
+            "name": "diagnose",
             "type": "repeater",
             "instructions": "",
             "required": 0,
@@ -58,13 +78,13 @@
             "collapsed": "",
             "min": 0,
             "max": 0,
-            "layout": "block",
-            "button_label": "Add Member",
+            "layout": "table",
+            "button_label": "",
             "sub_fields": [
                 {
-                    "key": "field_625dcfbc2c7d1",
-                    "label": "Photo",
-                    "name": "photo",
+                    "key": "field_6264454753d50",
+                    "label": "Image",
+                    "name": "image",
                     "type": "image",
                     "instructions": "",
                     "required": 0,
@@ -88,10 +108,10 @@
                     "library": "all"
                 },
                 {
-                    "key": "field_625dcfc82c7d2",
-                    "label": "Specialization",
-                    "name": "specialization",
-                    "type": "text",
+                    "key": "field_6264454f53d51",
+                    "label": "Text",
+                    "name": "text",
+                    "type": "textarea",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -100,30 +120,12 @@
                         "class": "",
                         "id": ""
                     },
-                    "default_value": "Professional Member",
+                    "default_value": "",
                     "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
-                },
-                {
-                    "key": "field_625dcfd32c7d3",
-                    "label": "Name",
-                    "name": "name",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "John Doe",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
+                    "maxlength": "",
+                    "rows": "",
+                    "new_lines": "",
+                    "acfe_textarea_code": 0
                 }
             ]
         }
@@ -133,14 +135,14 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/team-members-block"
+                "value": "acf\/service-treatment-block"
             }
         ]
     ],
     "menu_order": 0,
     "position": "normal",
     "style": "default",
-    "label_placement": "top",
+    "label_placement": "left",
     "instruction_placement": "label",
     "hide_on_screen": "",
     "active": true,
@@ -157,5 +159,5 @@
         }
     },
     "acfe_note": "",
-    "modified": 1650836001
+    "modified": 1650742058
 }
