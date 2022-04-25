@@ -936,5 +936,31 @@ function register_acf_block_type() {
 							)
 					)
 			)
+	) );acf_register_block_type( array(
+			'name'            => 'squares-block',
+			'title'           => __( 'Treatment Squares Block', 'byou' ),
+			'category'        => 'byou-blocks',
+			'icon'            => 'admin-home',
+			'keywords'        => array( 'squares', 'treatment' ),
+			'post_types'      => array( 'page' ),
+			'mode'            => 'preview',
+			'align'           => 'full',
+			'supports'        => array(
+					'align'  => true,
+					'jsx'    => true,
+					'anchor' => true
+			),
+			'render_template' => 'gutenberg-blocks/squares-block/tpl.php',
+			'enqueue_style'   => get_template_directory_uri() . '/assets/dist/css/squares-block/style.css',
+			'enqueue_script' => get_template_directory_uri() . '/assets/dist/js/squares-block/script.js',
+			'example'         => array(
+					'attributes' => array(
+							'mode' => 'preview',
+							'data' => array(
+									'is_preview'         => true,
+									'preview_image_help' => IT_URL . '/gutenberg-blocks/previews/squares-section.jpg'
+							)
+					)
+			)
 	) );
 }
