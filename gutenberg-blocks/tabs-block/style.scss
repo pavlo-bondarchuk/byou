@@ -21,6 +21,9 @@
 				padding-bottom: 30px;
 				text-align: center;
 				border-bottom: 1px solid #CECECE;
+				@include mobile-only {
+					padding-bottom: 20px;
+				}
 
 				&.active {
 					border-bottom: 4px solid $blue;
@@ -33,6 +36,9 @@
 				letter-spacing: 0;
 				color: $black;
 				text-transform: capitalize;
+				@include mobile-only {
+					font: normal normal normal 16px/24px $font-swear;
+				}
 			}
 
 			&__content {
@@ -40,17 +46,27 @@
 				display: flex;
 				align-items: center;
 				justify-content: space-between;
+				@include mobile-only {
+					padding: 50px 16px 80px;
+				}
 
 				.wrapper {
 					&__content {
 						width: 50%;
 						padding-right: 170px;
+						@include mobile-only {
+							width: 100%;
+							padding: 0;
+						}
 
 						.text {
 							text-align: left;
 							font: normal normal normal 16px/22px $font-montserrat;
 							letter-spacing: 0;
 							color: $black666;
+							@include mobile-only {
+								font: normal normal normal 15px/21px $font-montserrat;
+							}
 						}
 					}
 
@@ -58,6 +74,9 @@
 						width: 50%;
 						position: relative;
 						padding: 13px 0 57px 126px;
+						@include mobile-only {
+							display: none;
+						}
 
 						.image {
 							position: relative;
