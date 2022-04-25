@@ -1,33 +1,31 @@
 @import "../../assets/src/scss/styles";
 
-.benefits-block {
+.benefits-used-block {
 	.inner {
 		width: 100%;
-		max-width: 1140px;
+		max-width: 1240px;
 		margin: 0 auto;
 		display: flex;
-		align-items: flex-end;
+		align-items: flex-start;
 		justify-content: space-between;
 		padding: 118px 0 0;
 		@include mobile-only {
 			padding: 80px 16px;
-			flex-direction: column-reverse;
+			flex-direction: column;
 		}
 
 		.wrapper {
 			&__content {
-				width: 58%;
-				padding-right: 90px;
+				width: 47%;
+				padding: 0;
 				@include mobile-only {
 					width: 100%;
-					padding: 0;
 				}
 
 				&_inner {
-					padding-right: 13%;
+					padding: 0;
 					@include mobile-only {
 						width: 100%;
-						padding: 0;
 					}
 				}
 
@@ -37,22 +35,50 @@
 					letter-spacing: 0;
 					color: $black;
 					text-transform: capitalize;
-					margin-bottom: 40px;
+					margin-top: 70px;
+					margin-bottom: 20px;
 					@include mobile-only {
-						font: normal normal normal 40px/52px $font-swear;
+						margin-top: 0;
 						margin-bottom: 20px;
+						font: normal normal normal 40px/52px $font-swear;
 					}
 				}
 
 				.text {
-					text-align: left;
-					font: normal normal normal 16px/22px $font-montserrat;
-					letter-spacing: 0;
-					color: $black666;
-					margin-bottom: 50px;
-					@include mobile-only {
-						font: normal normal normal 15px/24px $font-montserrat;
+					&_before {
+						text-align: left;
+						font: normal normal normal 16px/22px $font-montserrat;
+						letter-spacing: 0;
+						color: $black666;
 						margin-bottom: 40px;
+						@include mobile-only {
+							font: normal normal normal 15px/24px $font-montserrat;
+						}
+					}
+
+					&_middle {
+						text-align: left;
+						font: normal normal normal 16px/22px $font-montserrat;
+						letter-spacing: 0;
+						color: $black666;
+						margin-top: 10px;
+						margin-bottom: 30px;
+						@include mobile-only {
+							font: normal normal normal 15px/24px $font-montserrat;
+							margin-top: 10px;
+							margin-bottom: 40px;
+						}
+					}
+
+					&_after {
+						text-align: left;
+						font: normal normal normal 16px/22px $font-montserrat;
+						letter-spacing: 0;
+						color: $black666;
+						margin-top: 10px;
+						@include mobile-only {
+							font: normal normal normal 15px/24px $font-montserrat;
+						}
 					}
 				}
 
@@ -61,6 +87,7 @@
 						display: flex;
 						flex-direction: column;
 					}
+
 					&.two__column {
 						display: grid;
 						grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
@@ -71,7 +98,10 @@
 						display: flex;
 						align-items: flex-start;
 						justify-content: flex-start;
-						margin-bottom: 30px;
+						margin-bottom: 25px;
+						@include mobile-only {
+							margin-bottom: 28px;
+						}
 					}
 
 					&__icon {
@@ -101,8 +131,9 @@
 			}
 
 			&__image {
-				width: 50%;
+				width: 53%;
 				position: relative;
+				padding: 25px 130px 0 0;
 				@include mobile-only {
 					width: 100%;
 					padding: 60px 0 50px;
@@ -114,9 +145,9 @@
 				}
 
 				.shape {
-					top: -118px;
-					left: -180px;
-					bottom: 0;
+					top: 0;
+					left: 0;
+					bottom: auto;
 					right: 0;
 					width: 100%;
 					height: 100%;

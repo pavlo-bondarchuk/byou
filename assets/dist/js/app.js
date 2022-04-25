@@ -7027,47 +7027,6 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
 });
 "use strict";
 
-document.addEventListener('DOMContentLoaded', function (event) {
-  'use strict';
-
-  var $ = jQuery;
-
-  if (!$('body').hasClass('wp-admin')) {
-    var breakpoint = window.matchMedia('(min-width:31.25em)');
-    var mySwiper;
-
-    var breakpointChecker = function breakpointChecker() {
-      if (breakpoint.matches === true) {
-        if (mySwiper !== undefined) mySwiper.destroy(true, true);
-        return;
-      } else if (breakpoint.matches === false) {
-        return enableSwiper();
-      }
-    };
-
-    var enableSwiper = function enableSwiper() {
-      mySwiper = new Swiper('.become-block .item__slider', {
-        loop: true,
-        a11y: true,
-        keyboardControl: true,
-        grabCursor: true,
-        pagination: {
-          el: '.item__slider-pagination',
-          clickable: true,
-          bulletClass: 'bullet',
-          bulletActiveClass: 'bullet-active'
-        },
-        slidesPerView: 1,
-        spaceBetween: 0
-      });
-    };
-
-    breakpoint.addListener(breakpointChecker);
-    breakpointChecker();
-  }
-});
-"use strict";
-
 var imageCompareViewers = document.querySelectorAll(".image-compare");
 var configs = [{
   controlColor: "#FFFFFF"
@@ -7137,18 +7096,19 @@ document.addEventListener('DOMContentLoaded', function (event) {
     };
 
     var enableSwiper = function enableSwiper() {
-      mySwiper = new Swiper('.cost__wrapper', {
+      mySwiper = new Swiper('.become-block .item__slider', {
         loop: true,
-        centeredSlides: true,
-        centeredSlidesBounds: true,
-        slidesPerView: 1,
+        a11y: true,
+        keyboardControl: true,
+        grabCursor: true,
         pagination: {
-          el: '.cost__pagination',
-          type: 'bullets',
+          el: '.item__slider-pagination',
           clickable: true,
-          bulletActiveClass: 'bullet_active',
-          bulletClass: 'bullet'
-        }
+          bulletClass: 'bullet',
+          bulletActiveClass: 'bullet-active'
+        },
+        slidesPerView: 1,
+        spaceBetween: 0
       });
     };
 
@@ -7217,6 +7177,55 @@ document.addEventListener('DOMContentLoaded', function (event) {
     };
 
     var enableSwiper = function enableSwiper() {
+      mySwiper = new Swiper('.cost__wrapper', {
+        loop: true,
+        centeredSlides: true,
+        centeredSlidesBounds: true,
+        slidesPerView: 1,
+        pagination: {
+          el: '.cost__pagination',
+          type: 'bullets',
+          clickable: true,
+          bulletActiveClass: 'bullet_active',
+          bulletClass: 'bullet'
+        }
+      });
+    };
+
+    breakpoint.addListener(breakpointChecker);
+    breakpointChecker();
+  }
+});
+"use strict";
+
+document.addEventListener('DOMContentLoaded', function (event) {
+  'use strict';
+
+  var $ = jQuery;
+
+  if (!$('body').hasClass('wp-admin')) {}
+});
+"use strict";
+
+document.addEventListener('DOMContentLoaded', function (event) {
+  'use strict';
+
+  var $ = jQuery;
+
+  if (!$('body').hasClass('wp-admin')) {
+    var breakpoint = window.matchMedia('(min-width:31.25em)');
+    var mySwiper;
+
+    var breakpointChecker = function breakpointChecker() {
+      if (breakpoint.matches === true) {
+        if (mySwiper !== undefined) mySwiper.destroy(true, true);
+        return;
+      } else if (breakpoint.matches === false) {
+        return enableSwiper();
+      }
+    };
+
+    var enableSwiper = function enableSwiper() {
       mySwiper = new Swiper('.become-block .item__slider', {
         loop: true,
         a11y: true,
@@ -7236,15 +7245,6 @@ document.addEventListener('DOMContentLoaded', function (event) {
     breakpoint.addListener(breakpointChecker);
     breakpointChecker();
   }
-});
-"use strict";
-
-document.addEventListener('DOMContentLoaded', function (event) {
-  'use strict';
-
-  var $ = jQuery;
-
-  if (!$('body').hasClass('wp-admin')) {}
 });
 "use strict";
 

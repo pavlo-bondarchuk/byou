@@ -43,7 +43,12 @@ else : ?>
                         <div class="text"><?php echo $text;?></div>
 					<?php endif; ?>
                     </div>
-					<div class="list">
+					<?php if ( get_field( 'benefits_1col2col' ) == 1 ) : ?>
+						<?php $column = ' one__column'; ?>
+					<?php else : ?>
+						<?php $column = ' two__column'; ?>
+					<?php endif; ?>
+					<div class="list<?php echo $column; ?>">
                       <?php if ( have_rows( 'benefits' ) ) : ?>
                         <?php while ( have_rows( 'benefits' ) ) : the_row(); ?>
                         <div class="list__item">

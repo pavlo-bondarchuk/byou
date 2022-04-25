@@ -47,14 +47,13 @@
 
 				.swiper-wrapper {
 					@include desktop {
-						display: grid;
-						grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
-						align-items: flex-start;
-						justify-content: space-between;
+						display: flex;
+						align-items: center;
+						justify-content: center;
 						flex-wrap: wrap;
 						column-gap: 67px;
 						row-gap: 50px;
-						padding: 52px 0 100px;
+						padding: 0 0 100px;
 					}
 				}
 
@@ -86,6 +85,7 @@
 					display: flex;
 					flex-direction: column;
 					align-items: center;
+					width: 20%;
 				}
 				@include mobile-only {
 					display: flex;

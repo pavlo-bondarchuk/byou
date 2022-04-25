@@ -1,9 +1,9 @@
 {
-    "key": "group_6264705a39ee8",
-    "title": "Benefits",
+    "key": "group_62666a4a32658",
+    "title": "Benefits Used",
     "fields": [
         {
-            "key": "field_6264706a34e4c",
+            "key": "field_62666a4a3eae3",
             "label": "Title",
             "name": "title",
             "type": "text",
@@ -15,16 +15,16 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
+            "default_value": "What Is A Chemical Peel Nyc Used For?",
             "placeholder": "",
             "prepend": "",
             "append": "",
             "maxlength": ""
         },
         {
-            "key": "field_6264707f34e4d",
-            "label": "Text",
-            "name": "text",
+            "key": "field_62666b080a78d",
+            "label": "Text before",
+            "name": "text_before",
             "type": "textarea",
             "instructions": "",
             "required": 0,
@@ -34,7 +34,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
+            "default_value": "It is widely believed that cosmetologists and dermatologists perform a chemical face peel only on the forehead and cheeks, but specialists also work with complex and highly sensitive areas. Namely, treatments for the face area include:",
             "placeholder": "",
             "maxlength": "",
             "rows": "",
@@ -42,9 +42,9 @@
             "acfe_textarea_code": 0
         },
         {
-            "key": "field_6264709734e4e",
-            "label": "Benefits",
-            "name": "benefits",
+            "key": "field_62666a4a46195",
+            "label": "Benefits One Column",
+            "name": "benefits_one_column",
             "type": "repeater",
             "instructions": "",
             "required": 0,
@@ -62,7 +62,7 @@
             "button_label": "",
             "sub_fields": [
                 {
-                    "key": "field_626470a134e4f",
+                    "key": "field_62666a4a5cbe3",
                     "label": "Text",
                     "name": "text",
                     "type": "text",
@@ -74,7 +74,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "default_value": "",
+                    "default_value": "text",
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
@@ -83,10 +83,10 @@
             ]
         },
         {
-            "key": "field_62665bc74cc20",
-            "label": "Benefits 1 column \/ 2 column",
-            "name": "benefits_1col2col",
-            "type": "true_false",
+            "key": "field_62666b440a78e",
+            "label": "Text middle",
+            "name": "text_middle",
+            "type": "textarea",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -95,14 +95,76 @@
                 "class": "",
                 "id": ""
             },
-            "message": "",
-            "default_value": 0,
-            "ui": 1,
-            "ui_on_text": "1 column",
-            "ui_off_text": "2 column"
+            "default_value": "In addition, a body chemical peel is also possible. Options for the body area include procedures:",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "",
+            "acfe_textarea_code": 0
         },
         {
-            "key": "field_626471c25b9a8",
+            "key": "field_62666b530a78f",
+            "label": "Benefits Two Column",
+            "name": "benefits_two_column",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_repeater_stylised_button": 0,
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_62666b530a790",
+                    "label": "Text",
+                    "name": "text",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "text",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        },
+        {
+            "key": "field_62666a4a42730",
+            "label": "Text after",
+            "name": "text_after",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Of course, a full body chemical peel in NYC requires higher medical training, high-tech equipment, and certified drugs suitable for this purpose.",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "",
+            "acfe_textarea_code": 0
+        },
+        {
+            "key": "field_62666a4a4d676",
             "label": "Image",
             "name": "image",
             "type": "image",
@@ -128,7 +190,7 @@
             "library": "all"
         },
         {
-            "key": "field_626471ca5b9a9",
+            "key": "field_62666a4a510e7",
             "label": "Shape",
             "name": "shape",
             "type": "image",
@@ -159,7 +221,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/benefits-block"
+                "value": "acf\/benefits-used-block"
             }
         ]
     ],
@@ -183,5 +245,5 @@
         }
     },
     "acfe_note": "",
-    "modified": 1650875661
+    "modified": 1650879680
 }

@@ -857,6 +857,33 @@ function register_acf_block_type() {
 			)
 	) );
 	acf_register_block_type( array(
+			'name'            => 'benefits-used-block',
+			'title'           => __( 'Benefits Used', 'byou' ),
+			'category'        => 'byou-blocks',
+			'icon'            => 'admin-home',
+			'keywords'        => array( 'benefits-used' ),
+			'post_types'      => array( 'page' ),
+			'mode'            => 'preview',
+			'align'           => 'full',
+			'supports'        => array(
+					'align'  => true,
+					'jsx'    => true,
+					'anchor' => true
+			),
+			'render_template' => 'gutenberg-blocks/benefits-used-block/tpl.php',
+			'enqueue_style'   => get_template_directory_uri() . '/assets/dist/css/benefits-used-block/style.css',
+		//'enqueue_script' => get_template_directory_uri() . '/assets/dist/js/treatment-process-block/script.js',
+			'example'         => array(
+					'attributes' => array(
+							'mode' => 'preview',
+							'data' => array(
+									'is_preview'         => true,
+									'preview_image_help' => IT_URL . '/gutenberg-blocks/previews/benefits-used-section.jpg'
+							)
+					)
+			)
+	) );
+	acf_register_block_type( array(
 			'name'            => 'results-block',
 			'title'           => __( 'Results Guaranteed', 'byou' ),
 			'category'        => 'byou-blocks',
