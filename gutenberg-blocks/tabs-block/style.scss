@@ -1,0 +1,80 @@
+@import "../../assets/src/scss/styles";
+
+.tabs-block {
+	.inner {
+		width: 100%;
+		max-width: 1180px;
+		margin: 0 auto;
+
+		.tab {
+			&__wrapper {
+				.horizontal {
+					display: flex;
+					list-style: none;
+					margin: 0;
+					padding: 0;
+				}
+			}
+
+			&__button {
+				width: 50%;
+				padding-bottom: 30px;
+				text-align: center;
+				border-bottom: 1px solid #CECECE;
+
+				&.active {
+					border-bottom: 4px solid $blue;
+				}
+			}
+
+			&__link {
+				text-align: left;
+				font: normal normal normal 24px/32px $font-swear;
+				letter-spacing: 0;
+				color: $black;
+				text-transform: capitalize;
+			}
+
+			&__content {
+				padding: 76px 0;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+
+				.wrapper {
+					&__content {
+						width: 50%;
+						padding-right: 170px;
+
+						.text {
+							text-align: left;
+							font: normal normal normal 16px/22px $font-montserrat;
+							letter-spacing: 0;
+							color: $black666;
+						}
+					}
+
+					&__image {
+						width: 50%;
+						position: relative;
+						padding: 13px 0 57px 126px;
+
+						.image {
+							position: relative;
+							z-index: 10;
+						}
+
+						.shape {
+							position: absolute;
+							top: 0;
+							left: 0;
+							width: 100%;
+							height: 100%;
+							z-index: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}
