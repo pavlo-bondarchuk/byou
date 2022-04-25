@@ -63,6 +63,10 @@ else : ?>
                         <?php endwhile; ?>
                       <?php endif; ?>
                     </div>
+					<?php $text_after = get_field( 'text_after' ); ?>
+					<?php if($text_after): ?>
+                        <div class="text_after"><?php echo $text_after;?></div>
+					<?php endif; ?>
         </div>
         <div class="wrapper__image">
 					<?php

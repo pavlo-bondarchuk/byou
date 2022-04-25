@@ -78,7 +78,7 @@
             "key": "field_626138bed851c",
             "label": "Text",
             "name": "text",
-            "type": "textarea",
+            "type": "wysiwyg",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -88,11 +88,10 @@
                 "id": ""
             },
             "default_value": "",
-            "placeholder": "",
-            "maxlength": "",
-            "rows": "",
-            "new_lines": "",
-            "acfe_textarea_code": 0
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
         },
         {
             "key": "field_626138bedc1b0",
@@ -158,5 +157,5 @@
         }
     },
     "acfe_note": "",
-    "modified": 1650544579
+    "modified": 1650888341
 }

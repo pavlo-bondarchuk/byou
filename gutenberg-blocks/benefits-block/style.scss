@@ -54,6 +54,17 @@
 						font: normal normal normal 15px/24px $font-montserrat;
 						margin-bottom: 40px;
 					}
+					&_after {
+						text-align: left;
+						font: normal normal normal 16px/22px $font-montserrat;
+						letter-spacing: 0;
+						color: $black666;
+						margin-bottom: 50px;
+						@include mobile-only {
+							font: normal normal normal 15px/24px $font-montserrat;
+							margin-bottom: 40px;
+						}
+					}
 				}
 
 				.list {

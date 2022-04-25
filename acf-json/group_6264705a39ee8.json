@@ -83,6 +83,26 @@
             ]
         },
         {
+            "key": "field_6266a5add4617",
+            "label": "Text After",
+            "name": "text_after",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "",
+            "acfe_textarea_code": 0
+        },
+        {
             "key": "field_62665bc74cc20",
             "label": "Benefits 1 column \/ 2 column",
             "name": "benefits_1col2col",
@@ -183,5 +203,5 @@
         }
     },
     "acfe_note": "",
-    "modified": 1650875661
+    "modified": 1650894274
 }
