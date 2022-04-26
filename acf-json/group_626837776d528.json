@@ -1,43 +1,9 @@
 {
-    "key": "group_6267ce4d14770",
-    "title": "Find The Treatment As Your Best Fit",
+    "key": "group_626837776d528",
+    "title": "About Treatments in Grid",
     "fields": [
         {
-            "key": "field_6267ce5ee7335",
-            "label": "Title",
-            "name": "title",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "Find The Treatment As Your Best Fit",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_6267ce68e7336",
-            "label": "Background Color",
-            "name": "background_color",
-            "type": "color_picker",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "#193979"
-        },
-        {
-            "key": "field_6267ce82e7337",
+            "key": "field_626837777be58",
             "label": "Treatments",
             "name": "treatments",
             "type": "repeater",
@@ -57,7 +23,7 @@
             "button_label": "",
             "sub_fields": [
                 {
-                    "key": "field_6267ce8be7338",
+                    "key": "field_62683777835f3",
                     "label": "Image",
                     "name": "image",
                     "type": "image",
@@ -83,7 +49,7 @@
                     "library": "all"
                 },
                 {
-                    "key": "field_6267ce9ae7339",
+                    "key": "field_6268377787240",
                     "label": "Title",
                     "name": "title",
                     "type": "text",
@@ -102,7 +68,7 @@
                     "maxlength": ""
                 },
                 {
-                    "key": "field_6267cea2e733a",
+                    "key": "field_626837778ada6",
                     "label": "Text",
                     "name": "text",
                     "type": "textarea",
@@ -129,7 +95,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/find-block"
+                "value": "acf\/about-treatments-in-grid-block"
             }
         ]
     ],
@@ -153,5 +119,5 @@
         }
     },
     "acfe_note": "",
-    "modified": 1650997099
+    "modified": 1650997730
 }

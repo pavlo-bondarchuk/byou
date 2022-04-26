@@ -1,6 +1,6 @@
 @import "../../assets/src/scss/styles";
 
-.find-block {
+.about-treatments-in-grid-block {
 	.inner {
 		width: 100%;
 		max-width: 1240px;
@@ -26,11 +26,13 @@
 						column-gap: rem(71);
 					}
 				}
+
 				.swiper-slide {
 					@include desktop {
 						flex-shrink: 1;
 					}
 				}
+
 				.wrapper__treatments-pagination {
 					@include desktop {
 						display: none;
@@ -78,14 +80,14 @@
 						text-align: left;
 						font: normal normal bold 16px/22px $font-montserrat;
 						letter-spacing: 0;
-						color: $white;
+						color: $black;
 						margin-bottom: 20px;
 					}
 
 					&__text {
 						text-align: left;
 						font: normal normal normal 16px/22px $font-montserrat;
-						color: $white;
+						color: $black;
 						letter-spacing: 0;
 					}
 				}

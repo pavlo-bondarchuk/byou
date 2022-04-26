@@ -1045,4 +1045,31 @@ function register_acf_block_type() {
 					)
 			)
 	) );
+	acf_register_block_type( array(
+			'name'            => 'about-treatments-in-grid-block',
+			'title'           => __( 'About Treatments in Grid Block', 'byou' ),
+			'category'        => 'byou-blocks',
+			'icon'            => 'admin-home',
+			'keywords'        => array( 'about-treatments-in-grid' ),
+			'post_types'      => array( 'page' ),
+			'mode'            => 'preview',
+			'align'           => 'full',
+			'supports'        => array(
+					'align'  => true,
+					'jsx'    => true,
+					'anchor' => true
+			),
+			'render_template' => 'gutenberg-blocks/about-treatments-in-grid-block/tpl.php',
+			'enqueue_style'   => get_template_directory_uri() . '/assets/dist/css/about-treatments-in-grid-block/style.css',
+			//'enqueue_script' => get_template_directory_uri() . '/assets/dist/js/about-treatments-in-grid-block/script.js',
+			'example'         => array(
+					'attributes' => array(
+							'mode' => 'preview',
+							'data' => array(
+									'is_preview'         => true,
+									'preview_image_help' => IT_URL . '/gutenberg-blocks/previews/about-treatments-in-grid-block-section.jpg'
+							)
+					)
+			)
+	) );
 }

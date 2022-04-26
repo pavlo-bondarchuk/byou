@@ -1,6 +1,6 @@
 <?php
 /**
- * Block template file: gutenberg-blocks/find-block/tpl.php
+ * Block template file: gutenberg-blocks/about-treatments-in-grid-block/tpl.php
  *
  * Find Block Block Template.
  *
@@ -11,13 +11,13 @@
  */
 
 // Create id attribute allowing for custom "anchor" value.
-$id = 'find-block-' . $block['id'];
+$id = 'about-treatments-in-grid-block-' . $block['id'];
 if ( !empty( $block['anchor'] ) ) {
 	$id = $block['anchor'];
 }
 
 // Create class attribute allowing for custom "className" and "align" values.
-$classes = 'find-block';
+$classes = 'about-treatments-in-grid-block';
 if ( !empty( $block['className'] ) ) {
 	$classes .= ' ' . $block['className'];
 }
@@ -30,14 +30,14 @@ if ( !empty( $block['align'] ) ) {
 if ( isset( $block['data']['preview_image_help'] ) ) :
 	echo '<img src="' . $block['data']['preview_image_help'] . '" style="width:100%; height:auto;">';
 else : ?>
-	<?php
-	$background_color_object = get_field_object( 'background_color' );
-	$background_color = $background_color_object['value'] ? ' style="background-color:' . $background_color_object['value'] . '"' : ' style="background-color:' . $background_color_object['default_value'] . '"';
-	?>
     <div id="<?php echo esc_attr( $id ); ?>"
-         class="<?php echo esc_attr( $classes ); ?>" <?php echo $background_color; ?>>
+         class="<?php echo esc_attr( $classes ); ?>">
         <div class="inner">
             <div class="wrapper">
+							<?php $title = get_field( 'title' ); ?>
+							<?php if ( $title ) : ?>
+                                <h4 class="main-title"><?php echo $title; ?></h4>
+							<?php endif; ?>
 							<?php if ( have_rows( 'treatments' ) ) : ?>
                             <div class="wrapper__treatments">
                               <div class="swiper-wrapper">
