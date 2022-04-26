@@ -1,9 +1,9 @@
 {
-    "key": "group_62614b6ad8a7f",
-    "title": "Treatment Features",
+    "key": "group_6267ce4d14770",
+    "title": "Find The Treatment As Your Best Fit",
     "fields": [
         {
-            "key": "field_6267f4a21b3d1",
+            "key": "field_6267ce5ee7335",
             "label": "Title",
             "name": "title",
             "type": "text",
@@ -15,16 +15,31 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
+            "default_value": "Find The Treatment As Your Best Fit",
             "placeholder": "",
             "prepend": "",
             "append": "",
             "maxlength": ""
         },
         {
-            "key": "field_62614b6ae6006",
-            "label": "Item",
-            "name": "item",
+            "key": "field_6267ce68e7336",
+            "label": "Background Color",
+            "name": "background_color",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#193979"
+        },
+        {
+            "key": "field_6267ce82e7337",
+            "label": "Treatments",
+            "name": "treatments",
             "type": "repeater",
             "instructions": "",
             "required": 0,
@@ -38,13 +53,13 @@
             "collapsed": "",
             "min": 0,
             "max": 0,
-            "layout": "table",
-            "button_label": "Add Item",
+            "layout": "row",
+            "button_label": "",
             "sub_fields": [
                 {
-                    "key": "field_62614b6aed528",
-                    "label": "Icon",
-                    "name": "icon",
+                    "key": "field_6267ce8be7338",
+                    "label": "Image",
+                    "name": "image",
                     "type": "image",
                     "instructions": "",
                     "required": 0,
@@ -68,7 +83,7 @@
                     "library": "all"
                 },
                 {
-                    "key": "field_62614b6af1087",
+                    "key": "field_6267ce9ae7339",
                     "label": "Title",
                     "name": "title",
                     "type": "text",
@@ -80,14 +95,14 @@
                         "class": "",
                         "id": ""
                     },
-                    "default_value": "Lorem Ipsum Dolor Sit Amet",
+                    "default_value": "CHEMICAL PEELS",
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
                     "maxlength": ""
                 },
                 {
-                    "key": "field_62614b6b00a5f",
+                    "key": "field_6267cea2e733a",
                     "label": "Text",
                     "name": "text",
                     "type": "textarea",
@@ -99,7 +114,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "default_value": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+                    "default_value": "Applying chemical peels is one effective way to reduce. The chemical peels are applied to the face and consist of an acid solution that ranges from mild to medium. It is adjusted to suit the patient’s specific needs and cleanses the skin from within. After the chemical peel is applied on the client’s face, the outermost skin layer is removed which allows the skin to regenerate itself. By doing this process, the redness and acne on the skin will be dramatically reduced. After your treatment, there is very little downtime.",
                     "placeholder": "",
                     "maxlength": "",
                     "rows": "",
@@ -114,7 +129,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/features-block"
+                "value": "acf\/find-block"
             }
         ]
     ],
@@ -138,5 +153,5 @@
         }
     },
     "acfe_note": "",
-    "modified": 1650980020
+    "modified": 1650970292
 }

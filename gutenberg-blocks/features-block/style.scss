@@ -11,8 +11,25 @@
 		max-width: 1136px;
 		margin: 0 auto;
 
+		.main_title {
+			text-align: center;
+			font: normal normal normal 48px/56px $font-swear;
+			letter-spacing: 0;
+			color: $black;
+			text-transform: capitalize;
+			padding: 170px 0 80px;
+			margin: 0;
+			@include mobile-only {
+				font: normal normal normal 40px/52px $font-swear;
+				padding: 85px 0 40px;
+			}
+		}
+
 		&__wrapper {
 			display: flex;
+			column-gap: 130px;
+			align-items: flex-start;
+			justify-content: space-between;
 			@include mobile-only {
 				flex-direction: column;
 				overflow: hidden;
@@ -24,13 +41,6 @@
 				align-items: center;
 				justify-content: space-between;
 				width: 100%;
-
-				&:not(:last-child) {
-					margin-right: 100px;
-					@include mobile-only {
-						margin-right: 0;
-					}
-				}
 
 				@include mobile-only {
 					margin-bottom: 80px;

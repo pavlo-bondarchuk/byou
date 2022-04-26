@@ -1018,4 +1018,31 @@ function register_acf_block_type() {
 					)
 			)
 	) );
+	acf_register_block_type( array(
+			'name'            => 'find-block',
+			'title'           => __( 'Find The Treatment As Your Best Fit Block', 'byou' ),
+			'category'        => 'byou-blocks',
+			'icon'            => 'admin-home',
+			'keywords'        => array( 'find' ),
+			'post_types'      => array( 'page' ),
+			'mode'            => 'preview',
+			'align'           => 'full',
+			'supports'        => array(
+					'align'  => true,
+					'jsx'    => true,
+					'anchor' => true
+			),
+			'render_template' => 'gutenberg-blocks/find-block/tpl.php',
+			'enqueue_style'   => get_template_directory_uri() . '/assets/dist/css/find-block/style.css',
+			'enqueue_script' => get_template_directory_uri() . '/assets/dist/js/find-block/script.js',
+			'example'         => array(
+					'attributes' => array(
+							'mode' => 'preview',
+							'data' => array(
+									'is_preview'         => true,
+									'preview_image_help' => IT_URL . '/gutenberg-blocks/previews/find-section.jpg'
+							)
+					)
+			)
+	) );
 }
