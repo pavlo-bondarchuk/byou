@@ -3,9 +3,9 @@
 .before-after {
 
 	&-block {
-		padding: 150px 0 110px;
+		padding: 0 0 110px;
 		@include mobile-only {
-			padding: 70px 0 50px;
+			padding: 0 0 50px;
 		}
 
 		.inner {
