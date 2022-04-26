@@ -32,8 +32,17 @@ if ( isset( $block['data']['preview_image_help'] ) ) :
 else : ?>
 	<?php
 	$background_color_object = get_field_object( 'background_color' );
-	$background_color        = $background_color_object['value'] ? ' style="background-color:' . $background_color_object['value'] . '"' : ' style="background-color:' . $background_color_object['default_value'] . '"';
 	?>
+	<?php if ( get_field( 'remove_background_color' ) == 1 ) : ?>
+		<?php $background_color = ''; ?>
+	<?php else : ?>
+		<?php $background_color = $background_color_object['value'] ? ' style="background-color:' . $background_color_object['value'] . '"' : ' style="background-color:' . $background_color_object['default_value'] . '"'; ?>
+	<?php endif; ?>
+	<?php if ( get_field( 'text_black' ) == 1 ) : ?>
+		<?php $classes .= ' text_black'; ?>
+	<?php else : ?>
+		<?php $classes .= ' text_white'; ?>
+	<?php endif; ?>
     <div id="<?php echo esc_attr( $id ); ?>"
          class="<?php echo esc_attr( $classes ); ?>" <?php echo $background_color; ?>>
         <div class="inner">

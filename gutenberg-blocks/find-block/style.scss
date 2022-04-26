@@ -1,6 +1,26 @@
 @import "../../assets/src/scss/styles";
 
 .find-block {
+	&.text_black {
+		.treatment {
+			&__title {
+				color: $black;
+			}
+			&__text {
+				color: $black;
+			}
+		}
+	}
+	&.text_white {
+		.treatment {
+			&__title {
+				color: $white;
+			}
+			&__text {
+				color: $white;
+			}
+		}
+	}
 	.inner {
 		width: 100%;
 		max-width: 1240px;
@@ -91,7 +111,6 @@
 						text-align: left;
 						font: normal normal bold 16px/22px $font-montserrat;
 						letter-spacing: 0;
-						color: $white;
 						margin-bottom: 20px;
 					}
 
@@ -99,7 +118,6 @@
 						text-align: left;
 						font: normal normal normal 16px/22px $font-montserrat;
 						letter-spacing: 0;
-						color: $white;
 					}
 				}
 			}
