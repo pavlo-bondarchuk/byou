@@ -26,12 +26,13 @@
 
 		.text_before {
 			width: 60%;
-			margin: 0 auto;
+			margin: 0 auto 80px;
 			text-align: center;
 			font: normal normal normal 16px/22px $font-montserrat;
 			letter-spacing: 0;
 			color: $black666;
 			@include mobile-only {
+				margin: 0 auto;
 				text-align: left;
 				width: 100%;
 				font: normal normal normal 13px/20px $font-montserrat;
