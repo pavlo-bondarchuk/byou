@@ -22,6 +22,25 @@
             "maxlength": ""
         },
         {
+            "key": "field_62698af3f3250",
+            "label": "Text",
+            "name": "text",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "RF body contouring is a very effective way to reach your summer body goals in a very short time frame. Transcript ID results are fully visible after 12-14 weeks post-treatment. You’ll start noticing the first changes somewhere around the 4-week mark and can expect to lose up to 27% of body fat in targeted areas. Here are some radio frequency fat removal before and after images to show you just how effective this non-surgical procedure is:",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
             "key": "field_625730a13e34c",
             "label": "Hashtag",
             "name": "hashtag",
@@ -182,5 +201,5 @@
         }
     },
     "acfe_note": "",
-    "modified": 1650634883
+    "modified": 1651084040
 }
