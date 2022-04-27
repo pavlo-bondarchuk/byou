@@ -43,9 +43,12 @@
 			font: normal normal normal 16px/22px $font-montserrat;
 			letter-spacing: 0;
 			color: $black666;
-			margin: 0;
 			padding: 10px 0 50px;
+			width: 53%;
+			margin: 0 auto;
 			@include mobile-only {
+				width: 100%;
+				margin: 0;
 				font: normal normal normal 14px/22px $font-montserrat;
 				padding: 10px 0 40px;
 			}
