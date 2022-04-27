@@ -1,0 +1,134 @@
+@import "../../assets/src/scss/styles";
+
+.service-treatment-block {
+	padding: 80px 0;
+	@include mobile-only {
+		padding: 80px 16px;
+	}
+
+	.inner {
+		width: 100%;
+		max-width: 1240px;
+		margin: 0 auto;
+
+		.title {
+			text-align: center;
+			font: normal normal normal 48px/56px $font-swear;
+			letter-spacing: 0;
+			color: $black;
+			text-transform: capitalize;
+			margin-bottom: 20px;
+			@include mobile-only {
+				text-align: left;
+				font: normal normal normal 40px/52px $font-swear;
+			}
+		}
+
+		.text_before {
+			width: 60%;
+			margin: 0 auto 80px;
+			text-align: center;
+			font: normal normal normal 16px/22px $font-montserrat;
+			letter-spacing: 0;
+			color: $black666;
+			@include mobile-only {
+				margin: 0 auto;
+				text-align: left;
+				width: 100%;
+				font: normal normal normal 13px/20px $font-montserrat;
+			}
+		}
+
+		.content {
+			&__wrapper {
+				@include mobile-only {
+					padding: 60px 0;
+					overflow: hidden;
+				}
+
+				.swiper-wrapper {
+					@include desktop {
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						flex-wrap: wrap;
+						column-gap: 67px;
+						row-gap: 50px;
+						padding: 0 0 100px;
+					}
+				}
+
+				&-pagination {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					margin-top: 60px;
+
+					.bullet {
+						width: 5px;
+						height: 5px;
+						background-color: #00000067;
+						border-radius: 50%;
+
+						&:not(:last-child) {
+							margin-right: 7px;
+						}
+
+						&-active {
+							background-color: $black;
+						}
+					}
+				}
+			}
+
+			&__item {
+				@include desktop {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					width: 12%;
+				}
+				@include mobile-only {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					flex-direction: column;
+				}
+			}
+
+			&__image {
+				width: 60px;
+				height: 60px;
+				border-radius: 50%;
+				overflow: hidden;
+				margin-bottom: 20px;
+			}
+
+			&__text {
+				text-align: center;
+				font: normal normal normal 18px/22px $font-swear;
+				letter-spacing: 0;
+				color: #000000;
+				@include mobile-only {
+					font: normal normal normal 14px/20px $font-swear;
+				}
+			}
+		}
+
+		.text_after {
+			width: 60%;
+			margin: 0 auto;
+			text-align: center;
+			font: normal normal normal 16px/22px $font-montserrat;
+			letter-spacing: 0;
+			color: $black666;
+			margin-bottom: 52px;
+			@include mobile-only {
+				text-align: left;
+				width: 100%;
+				font: normal normal normal 13px/20px $font-montserrat;
+				margin: 0;
+			}
+		}
+	}
+}

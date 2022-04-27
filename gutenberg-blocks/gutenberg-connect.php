@@ -803,6 +803,33 @@ function register_acf_block_type() {
 			)
 	) );
 	acf_register_block_type( array(
+			'name'            => 'service-treatment6col-block',
+			'title'           => __( 'Service Treatment 6 column', 'byou' ),
+			'category'        => 'byou-blocks',
+			'icon'            => 'admin-home',
+			'keywords'        => array( 'service-treatment6col' ),
+			'post_types'      => array( 'page' ),
+			'mode'            => 'preview',
+			'align'           => 'full',
+			'supports'        => array(
+					'align'  => true,
+					'jsx'    => true,
+					'anchor' => true
+			),
+			'render_template' => 'gutenberg-blocks/service-treatment6col-block/tpl.php',
+			'enqueue_style'   => get_template_directory_uri() . '/assets/dist/css/service-treatment6col-block/style.css',
+			'enqueue_script' => get_template_directory_uri() . '/assets/dist/js/service-treatment6col-block/script.js',
+			'example'         => array(
+					'attributes' => array(
+							'mode' => 'preview',
+							'data' => array(
+									'is_preview'         => true,
+									'preview_image_help' => IT_URL . '/gutenberg-blocks/previews/service-treatment6col-section.jpg'
+							)
+					)
+			)
+	) );
+	acf_register_block_type( array(
 			'name'            => 'treatment-process-block',
 			'title'           => __( 'Treatment Process', 'byou' ),
 			'category'        => 'byou-blocks',
