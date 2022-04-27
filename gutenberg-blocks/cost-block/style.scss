@@ -1,9 +1,9 @@
 @import "../../assets/src/scss/styles";
 
 .cost-block {
-	padding: 206px 0 150px;
+	padding: 140px 0;
 	@include mobile-only {
-		padding: 157px 0 60px;
+		padding: 90px 0;
 	}
 
 	.inner {
