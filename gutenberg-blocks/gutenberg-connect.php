@@ -1019,6 +1019,33 @@ function register_acf_block_type() {
 			)
 	) );
 	acf_register_block_type( array(
+			'name'            => 'intro-fullscreen-blue-shape-block',
+			'title'           => __( 'Treatment Intro Fullscreen Banner with blue shape', 'byou' ),
+			'category'        => 'byou-blocks',
+			'icon'            => 'admin-home',
+			'keywords'        => array( 'fullscreen', 'intro', 'blue-shape' ),
+			'post_types'      => array( 'page' ),
+			'mode'            => 'preview',
+			'align'           => 'full',
+			'supports'        => array(
+					'align'  => true,
+					'jsx'    => true,
+					'anchor' => true
+			),
+			'render_template' => 'gutenberg-blocks/intro-fullscreen-blue-shape-block/tpl.php',
+			'enqueue_style'   => get_template_directory_uri() . '/assets/dist/css/intro-fullscreen-blue-shape-block/style.css',
+		//'enqueue_script' => get_template_directory_uri() . '/assets/dist/js/fullscreen-block/script.js',
+			'example'         => array(
+					'attributes' => array(
+							'mode' => 'preview',
+							'data' => array(
+									'is_preview'         => true,
+									'preview_image_help' => IT_URL . '/gutenberg-blocks/previews/intro-fullscreen-blue-shape-section.jpg'
+							)
+					)
+			)
+	) );
+	acf_register_block_type( array(
 			'name'            => 'tabs-block',
 			'title'           => __( 'Treatment Tabs Block', 'byou' ),
 			'category'        => 'byou-blocks',
