@@ -29,7 +29,10 @@ if ( ! empty( $block['align'] ) ) {
 if( isset( $block['data']['preview_image_help'] )  ) :
 	echo '<img src="'. $block['data']['preview_image_help'] .'" style="width:100%; height:auto;">';
 else : ?>
-<div id="<?php echo esc_attr( $id ); ?>" class="<?php echo esc_attr( $classes ); ?>">
+	<?php
+	$background_color = get_sub_field_object( 'background_color' );
+	$background_color = $background_color ? ' style="background-color:' . $background_color['value'] . ';"' : ' style="background-color:' . $background_color['default_value'] . ';"'; ?>
+<div id="<?php echo esc_attr( $id ); ?>" class="<?php echo esc_attr( $classes ); ?>"<?php echo $background_color; ?>>
 	<div class="inner">
 			<?php $main_title = get_field( 'title' ); ?>
 			<?php if ( $main_title ) : ?>

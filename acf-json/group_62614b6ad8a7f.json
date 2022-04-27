@@ -1,6 +1,6 @@
 {
     "key": "group_62614b6ad8a7f",
-    "title": "Treatment Features",
+    "title": "Treatment Features Block",
     "fields": [
         {
             "key": "field_6267f4a21b3d1",
@@ -107,6 +107,21 @@
                     "acfe_textarea_code": 0
                 }
             ]
+        },
+        {
+            "key": "field_62690c9535547",
+            "label": "Background Color",
+            "name": "background_color",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
         }
     ],
     "location": [
@@ -138,5 +153,5 @@
         }
     },
     "acfe_note": "",
-    "modified": 1650980020
+    "modified": 1651051695
 }
