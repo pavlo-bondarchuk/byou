@@ -51,6 +51,11 @@
 					display: flex;
 					align-items: center;
 					justify-content: center;
+					@include desktop {
+						column-gap: 70px;
+						max-width: 1040px;
+						margin: 0 auto;
+					}
 					@include mobile-only {
 						justify-content: stretch;
 					}
@@ -61,16 +66,12 @@
 				width: auto;
 				padding: 30px 20px;
 				background-color: #F0F3FD;
+				@include desktop {
+					flex-shrink: 1;
+				}
 				@include mobile-only {
 					padding: 30px 26px;
 					box-sizing: border-box;
-				}
-
-				&:not(:last-child) {
-					margin-right: 70px;
-					@include mobile-only {
-						margin: 0;
-					}
 				}
 
 				&_content {
