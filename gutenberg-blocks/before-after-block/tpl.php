@@ -37,6 +37,18 @@ if( isset( $block['data']['preview_image_help'] )  ) :
 else : ?>
 <div id="<?php echo esc_attr( $id ); ?>" class="<?php echo esc_attr( $classes ); ?>">
 	<div class="inner">
+      <?php $title = get_field( 'title' ); ?>
+      <?php if($title): ?>
+          <h4 class="main__title"><?php echo $title;?></h4>
+      <?php endif; ?>
+			<?php $hashtag = get_field( 'hashtag' ); ?>
+			<?php if($hashtag): ?>
+          <div class="main__hashtag"><?php echo $hashtag;?></div>
+			<?php endif; ?>
+			<?php $text = get_field( 'text' ); ?>
+			<?php if($text): ?>
+          <div class="main__text"><?php echo $text;?></div>
+			<?php endif; ?>
         <div class="title"><?php the_field( 'title' ); ?></div>
         <div class="hashtag"><?php the_field( 'hashtag' ); ?></div>
         <div class="services__wrapper">

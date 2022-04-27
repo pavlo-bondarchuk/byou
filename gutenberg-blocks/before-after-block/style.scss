@@ -14,7 +14,7 @@
 			margin: 0 auto;
 		}
 
-		.title {
+		.main__title {
 			text-align: center;
 			font: normal normal normal 48px/56px $font-swear;
 			letter-spacing: 0;
@@ -27,7 +27,20 @@
 			}
 		}
 
-		.hashtag {
+		.main__hashtag {
+			text-align: center;
+			font: normal normal normal 16px/22px $font-montserrat;
+			letter-spacing: 0;
+			color: $black666;
+			margin: 0;
+			padding: 10px 0 50px;
+			@include mobile-only {
+				font: normal normal normal 14px/22px $font-montserrat;
+				padding: 10px 0 40px;
+			}
+		}
+
+		.main__text {
 			text-align: center;
 			font: normal normal normal 24px/56px $font-swear;
 			letter-spacing: 0;
