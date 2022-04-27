@@ -106,7 +106,7 @@
                     "key": "field_6267ce9ae7339",
                     "label": "Title",
                     "name": "title",
-                    "type": "text",
+                    "type": "wysiwyg",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -115,17 +115,17 @@
                         "class": "",
                         "id": ""
                     },
-                    "default_value": "CHEMICAL PEELS",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0
                 },
                 {
                     "key": "field_6267cea2e733a",
                     "label": "Text",
                     "name": "text",
-                    "type": "textarea",
+                    "type": "wysiwyg",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -135,11 +135,10 @@
                         "id": ""
                     },
                     "default_value": "Applying chemical peels is one effective way to reduce. The chemical peels are applied to the face and consist of an acid solution that ranges from mild to medium. It is adjusted to suit the patient’s specific needs and cleanses the skin from within. After the chemical peel is applied on the client’s face, the outermost skin layer is removed which allows the skin to regenerate itself. By doing this process, the redness and acne on the skin will be dramatically reduced. After your treatment, there is very little downtime.",
-                    "placeholder": "",
-                    "maxlength": "",
-                    "rows": "",
-                    "new_lines": "",
-                    "acfe_textarea_code": 0
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0
                 }
             ]
         }
@@ -173,5 +172,5 @@
         }
     },
     "acfe_note": "",
-    "modified": 1651045785
+    "modified": 1651082947
 }
