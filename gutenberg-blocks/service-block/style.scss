@@ -114,7 +114,7 @@
 		width: 100%;
 		margin: 0 auto;
 		display: flex;
-		align-items: flex-start;
+		align-items: center;
 		@include mobile-only {
 			flex-direction: column;
 		}
