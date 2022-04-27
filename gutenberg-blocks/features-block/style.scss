@@ -1,7 +1,7 @@
 @import "../../assets/src/scss/styles";
 
 .features-block {
-	padding: 0 0 76px;
+	padding: rem(54 0 52);
 	@include mobile-only {
 		padding: 0 16px 0;
 	}
