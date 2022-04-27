@@ -135,6 +135,32 @@
 							}
 						}
 					}
+
+					.list_with_star {
+						&__wrapper {
+							margin-top: 30px;
+						}
+
+						&__item {
+							display: flex;
+							align-items: center;
+							margin-bottom: 26px;
+
+							.star {
+								font-size: 12px;
+								color: #F09342;
+								margin-right: 12px;
+							}
+							.text {
+								text-align: left;
+								font: normal normal normal 18px/22px $font-swear;
+								letter-spacing: 0;
+								color: $black;
+								text-transform: capitalize;
+								margin: 0;
+							}
+						}
+					}
 				}
 			}
 		}

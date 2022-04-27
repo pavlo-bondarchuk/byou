@@ -1,6 +1,6 @@
 {
     "key": "group_626138bec0fb2",
-    "title": "Treatment",
+    "title": "Treatment Block",
     "fields": [
         {
             "key": "field_626138beccf41",
@@ -94,6 +94,47 @@
             "delay": 0
         },
         {
+            "key": "field_6268eaf1090f0",
+            "label": "List with star",
+            "name": "list_with_star",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_repeater_stylised_button": 0,
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "Add Item",
+            "sub_fields": [
+                {
+                    "key": "field_6268eb01090f1",
+                    "label": "Text",
+                    "name": "text",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Acne Facials And Skincare",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        },
+        {
             "key": "field_626138bedc1b0",
             "label": "Button",
             "name": "button",
@@ -157,5 +198,5 @@
         }
     },
     "acfe_note": "",
-    "modified": 1650888341
+    "modified": 1651044280
 }

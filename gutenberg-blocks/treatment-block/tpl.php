@@ -44,29 +44,48 @@ else : ?>
 	<div class="inner">
 			<div class="column__image">
               <div class="image">
-								<?php $image = get_field( 'image' ); ?>
-								<?php if ( $image ) : ?>
+                <?php $image = get_field( 'image' ); ?>
+                <?php if ( $image ) : ?>
                     <img src="<?php echo esc_url( $image['url'] ); ?>" alt="<?php echo esc_attr( $image['alt'] ); ?>" />
-								<?php endif; ?>
+                <?php endif; ?>
               </div>
                 <div class="shape">
-									<?php $shape = get_field( 'shape' ); ?>
-									<?php if ( $shape ) : ?>
+                  <?php $shape = get_field( 'shape' ); ?>
+                  <?php if ( $shape ) : ?>
                       <img src="<?php echo esc_url( $shape['url'] ); ?>" alt="<?php echo esc_attr( $shape['alt'] ); ?>" />
-									<?php endif; ?>
+                  <?php endif; ?>
                 </div>
             </div>
 			<div class="column__content">
                 <div class="content_wrapper">
-                    <div class="title"><?php the_field( 'title' ); ?></div>
-                    <div class="text"><?php the_field( 'text' ); ?></div>
-									<?php $button = get_field( 'button' ); ?>
-									<?php if ( $button ) : ?>
+                  <?php $title = get_field( 'title' ); ?>
+                  <?php if ( $title ) : ?>
+                      <h5 class="title"><?php echo $title; ?></h5>
+                  <?php endif; ?>
+                  <?php $text = get_field( 'text' ); ?>
+                  <?php if ( $text ) : ?>
+                      <div class="text"><?php echo $text; ?></div>
+                  <?php endif; ?>
+                  <div class="list_with_star__wrapper">
+                  <?php if ( have_rows( 'list_with_star' ) ) : ?>
+                    <?php while ( have_rows( 'list_with_star' ) ) : the_row(); ?>
+                    <div class="list_with_star__item">
+                      <i class="fa fa-star star"></i>
+                      <?php $text = get_sub_field( 'text' ); ?>
+                      <?php if ( $text ) : ?>
+                          <div class="text"><?php echo $text; ?></div>
+                      <?php endif; ?>
+                    </div>
+                    <?php endwhile; ?>
+                  <?php endif; ?>
+                  </div>
+                  <?php $button = get_field( 'button' ); ?>
+                  <?php if ( $button ) : ?>
                       <a href="<?php echo esc_url( $button['url'] ); ?>" target="<?php echo esc_attr( $button['target'] ); ?>" class="link">
-												<?php echo esc_html( $button['title'] ); ?>
+                        <?php echo esc_html( $button['title'] ); ?>
                           <span class="icon"></span>
                       </a>
-									<?php endif; ?>
+                  <?php endif; ?>
                 </div>
             </div>
     </div>
