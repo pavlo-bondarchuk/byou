@@ -112,6 +112,43 @@
                     "max_size": "",
                     "mime_types": "",
                     "library": "all"
+                },
+                {
+                    "key": "field_62699cf9b872e",
+                    "label": "Tab Additional Content",
+                    "name": "tab_additional_content",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "acfe_repeater_stylised_button": 0,
+                    "collapsed": "",
+                    "min": 0,
+                    "max": 0,
+                    "layout": "table",
+                    "button_label": "",
+                    "sub_fields": [
+                        {
+                            "key": "field_62699d11b872f",
+                            "label": "Content",
+                            "name": "content",
+                            "type": "link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array"
+                        }
+                    ]
                 }
             ]
         }
@@ -145,5 +182,5 @@
         }
     },
     "acfe_note": "",
-    "modified": 1650906194
+    "modified": 1651088795
 }

@@ -68,6 +68,47 @@
 								font: normal normal normal 15px/21px $font-montserrat;
 							}
 						}
+
+						.tab_additional_content {
+							padding: 48px 0 0;
+							@include mobile-only {
+								padding: 40px 0 0;
+							}
+
+							.link {
+								display: flex;
+								align-items: center;
+								text-align: left;
+								font: normal normal normal 28px/32px $font-swear;
+								letter-spacing: 0;
+								color: $black;
+								transition: all .2s ease-in-out;
+								margin-bottom: 20px;
+
+								&:hover {
+									color: $blue;
+
+									.icon {
+										display: block;
+										width: 108px;
+										height: 14px;
+										margin-left: 60px;
+									}
+								}
+
+								.icon {
+									display: none;
+									margin-left: 0;
+									width: 0;
+									height: 14px;
+									background-image: url("data:image/svg+xml,%3Csvg width='108' height='14' viewBox='0 0 108 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 5C13.8333 11.5 55.5 20.5 107 1.5M107 1.5L96 0.5M107 1.5L104 7' stroke='%231F4A94' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+									background-position: center;
+									background-repeat: no-repeat;
+									background-size: 100%;
+									transition: all .3s ease-in-out;
+								}
+							}
+						}
 					}
 
 					&__image {

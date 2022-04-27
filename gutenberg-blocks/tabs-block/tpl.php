@@ -51,6 +51,19 @@ else : ?>
                         <?php if($tab_text): ?>
                             <div class="text"><?php echo $tab_text;?></div>
                         <?php endif; ?>
+                            <?php if ( have_rows( 'tab_additional_content' ) ) : ?>
+                                <div class="tab_additional_content">
+                              <?php while ( have_rows( 'tab_additional_content' ) ) : the_row(); ?>
+                                <?php $content = get_sub_field( 'content' ); ?>
+                                <?php if ( $content ) : ?>
+                                        <a href="<?php echo esc_url( $content['url'] ); ?>" target="<?php echo esc_attr( $content['target'] ); ?>" class="link">
+                                          <?php echo esc_html( $content['title'] ); ?>
+                                            <div class="icon"></div>
+                                        </a>
+                                <?php endif; ?>
+                              <?php endwhile; ?>
+                                </div>
+                            <?php endif; ?>
                       </div>
                       <div class="wrapper__image">
                         <?php $tab_image = get_sub_field( 'tab_image' ); ?>
