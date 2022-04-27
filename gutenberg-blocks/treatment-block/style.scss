@@ -90,6 +90,8 @@
 						color: $black;
 						text-transform: capitalize;
 						margin-bottom: 20px;
+						margin-top: 0;
+						padding: 0;
 						@include mobile-only {
 							font: normal normal 500 40px/52px $font-swear;
 						}
