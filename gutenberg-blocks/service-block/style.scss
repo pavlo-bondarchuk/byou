@@ -7,6 +7,67 @@
 	}
 
 	&.image__align_left {
+		&.shape__align_left {
+			.inner {
+				.column {
+					&__desktop {
+						.image {
+							@include tablet {
+								padding: 23px 128px 88px 0;
+							}
+						}
+						.shape {
+							position: absolute;
+							top: 0;
+							right: 0;
+							width: 100%;
+							height: 100%;
+							z-index: 0;
+
+							img {
+								position: absolute;
+								top: 0;
+								right: 50px;
+								width: auto;
+								height: 100%;
+							}
+						}
+					}
+				}
+			}
+		}
+		&.shape__align_right {
+			.inner {
+				.column {
+					&__desktop {
+						.image {
+							@include tablet {
+								padding: 0 0 130px 0;
+							}
+						}
+						.shape {
+							position: absolute;
+							top: 10px;
+							right: 0;
+							bottom: 0;
+							left: -130px;
+							width: 100%;
+							height: 100%;
+							z-index: 0;
+
+							img {
+								position: absolute;
+								top: 0;
+								right: 0;
+								width: 100%;
+								height: 100%;
+								object-fit: cover;
+							}
+						}
+					}
+				}
+			}
+		}
 		.inner {
 			@include tablet {
 				flex-direction: row;
@@ -15,36 +76,17 @@
 			.column {
 				&__desktop {
 					&:first-child {
-						width: 70%;
+						width: 52%;
 					}
 					&:last-child {
 						width: 30%;
 					}
 					.image {
-						padding: 0;
 						z-index: 10;
 						position: relative;
 						@include tablet {
-							padding-right: 128px;
 							z-index: 10;
 							position: relative;
-						}
-					}
-
-					.shape {
-						position: absolute;
-						top: 0;
-						right: 0;
-						width: 100%;
-						height: 100%;
-						z-index: 0;
-
-						img {
-							position: absolute;
-							top: 0;
-							right: 50px;
-							width: auto;
-							height: 100%;
 						}
 					}
 
@@ -122,7 +164,6 @@
 
 		.column {
 			&__desktop {
-				width: 50%;
 				position: relative;
 				@include mobile-only {
 					display: none;

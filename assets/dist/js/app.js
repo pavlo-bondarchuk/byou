@@ -7169,47 +7169,6 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
 });
 "use strict";
 
-document.addEventListener('DOMContentLoaded', function (event) {
-  'use strict';
-
-  var $ = jQuery;
-
-  if (!$('body').hasClass('wp-admin')) {
-    var breakpoint = window.matchMedia('(min-width:31.25em)');
-    var mySwiper;
-
-    var breakpointChecker = function breakpointChecker() {
-      if (breakpoint.matches === true) {
-        if (mySwiper !== undefined) mySwiper.destroy(true, true);
-        return;
-      } else if (breakpoint.matches === false) {
-        return enableSwiper();
-      }
-    };
-
-    var enableSwiper = function enableSwiper() {
-      mySwiper = new Swiper('.become-block .item__slider', {
-        loop: true,
-        a11y: true,
-        keyboardControl: true,
-        grabCursor: true,
-        pagination: {
-          el: '.item__slider-pagination',
-          clickable: true,
-          bulletClass: 'bullet',
-          bulletActiveClass: 'bullet-active'
-        },
-        slidesPerView: 1,
-        spaceBetween: 0
-      });
-    };
-
-    breakpoint.addListener(breakpointChecker);
-    breakpointChecker();
-  }
-});
-"use strict";
-
 var imageCompareViewers = document.querySelectorAll(".image-compare");
 var configs = [{
   controlColor: "#FFFFFF"
@@ -7346,41 +7305,33 @@ document.addEventListener('DOMContentLoaded', function (event) {
 
   var $ = jQuery;
 
-  if (!$('body').hasClass('wp-admin')) {}
-});
-"use strict";
-
-document.addEventListener('DOMContentLoaded', function (event) {
-  'use strict';
-
-  var $ = jQuery;
-
   if (!$('body').hasClass('wp-admin')) {
     var breakpoint = window.matchMedia('(min-width:31.25em)');
-    var findTreatmentSwiper;
+    var mySwiper;
 
     var breakpointChecker = function breakpointChecker() {
       if (breakpoint.matches === true) {
-        if (findTreatmentSwiper !== undefined) findTreatmentSwiper.destroy(true, true);
+        if (mySwiper !== undefined) mySwiper.destroy(true, true);
         return;
       } else if (breakpoint.matches === false) {
-        return findTreatmentEnableSwiper();
+        return enableSwiper();
       }
     };
 
-    var findTreatmentEnableSwiper = function findTreatmentEnableSwiper() {
-      findTreatmentSwiper = new Swiper('.wrapper__treatments', {
+    var enableSwiper = function enableSwiper() {
+      mySwiper = new Swiper('.become-block .item__slider', {
+        loop: true,
         a11y: true,
         keyboardControl: true,
         grabCursor: true,
         pagination: {
-          el: '.wrapper__treatments-pagination',
+          el: '.item__slider-pagination',
           clickable: true,
           bulletClass: 'bullet',
           bulletActiveClass: 'bullet-active'
         },
         slidesPerView: 1,
-        spaceBetween: 25
+        spaceBetween: 0
       });
     };
 
@@ -7435,33 +7386,46 @@ document.addEventListener('DOMContentLoaded', function (event) {
 
   var $ = jQuery;
 
+  if (!$('body').hasClass('wp-admin')) {}
+});
+"use strict";
+
+document.addEventListener('DOMContentLoaded', function (event) {
+  'use strict';
+
+  var $ = jQuery;
+
   if (!$('body').hasClass('wp-admin')) {
-    var slider = new Swiper('.slider__container', {
-      lazy: true,
-      loop: true,
-      allowTouchMove: true,
-      autoplay: {
-        delay: 2000
-      },
-      navigation: {
-        nextEl: '.sliderNext',
-        prevEl: '.sliderPrev'
-      },
-      breakpoints: {
-        320: {
-          slidesPerView: 1.25,
-          spaceBetween: 5
-        },
-        480: {
-          slidesPerView: 1.25,
-          spaceBetween: 5
-        },
-        640: {
-          slidesPerView: 1,
-          spaceBetween: 20
-        }
+    var breakpoint = window.matchMedia('(min-width:31.25em)');
+    var findTreatmentSwiper;
+
+    var breakpointChecker = function breakpointChecker() {
+      if (breakpoint.matches === true) {
+        if (findTreatmentSwiper !== undefined) findTreatmentSwiper.destroy(true, true);
+        return;
+      } else if (breakpoint.matches === false) {
+        return findTreatmentEnableSwiper();
       }
-    });
+    };
+
+    var findTreatmentEnableSwiper = function findTreatmentEnableSwiper() {
+      findTreatmentSwiper = new Swiper('.wrapper__treatments', {
+        a11y: true,
+        keyboardControl: true,
+        grabCursor: true,
+        pagination: {
+          el: '.wrapper__treatments-pagination',
+          clickable: true,
+          bulletClass: 'bullet',
+          bulletActiveClass: 'bullet-active'
+        },
+        slidesPerView: 1,
+        spaceBetween: 25
+      });
+    };
+
+    breakpoint.addListener(breakpointChecker);
+    breakpointChecker();
   }
 });
 "use strict";
@@ -7505,6 +7469,42 @@ document.addEventListener('DOMContentLoaded', function (event) {
 
     breakpoint.addListener(breakpointChecker);
     breakpointChecker();
+  }
+});
+"use strict";
+
+document.addEventListener('DOMContentLoaded', function (event) {
+  'use strict';
+
+  var $ = jQuery;
+
+  if (!$('body').hasClass('wp-admin')) {
+    var slider = new Swiper('.slider__container', {
+      lazy: true,
+      loop: true,
+      allowTouchMove: true,
+      autoplay: {
+        delay: 2000
+      },
+      navigation: {
+        nextEl: '.sliderNext',
+        prevEl: '.sliderPrev'
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 1.25,
+          spaceBetween: 5
+        },
+        480: {
+          slidesPerView: 1.25,
+          spaceBetween: 5
+        },
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 20
+        }
+      }
+    });
   }
 });
 "use strict";

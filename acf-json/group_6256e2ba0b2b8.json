@@ -126,6 +126,25 @@
             "ui": 1,
             "ui_on_text": "Left",
             "ui_off_text": "Right"
+        },
+        {
+            "key": "field_626971ac0cb90",
+            "label": "Shape Left\/Right",
+            "name": "shape_leftright",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
         }
     ],
     "location": [
@@ -157,5 +176,5 @@
         }
     },
     "acfe_note": "",
-    "modified": 1649861402
+    "modified": 1651077575
 }

@@ -40,6 +40,11 @@ else : ?>
 	<?php else : ?>
 		<?php $classes .= ' image__align_right'; ?>
 	<?php endif; ?>
+	<?php if ( get_field( 'shape_leftright' ) == 1 ) : ?>
+		<?php $classes .= ' shape__align_left'; ?>
+	<?php else : ?>
+		<?php $classes .= ' shape__align_right'; ?>
+	<?php endif; ?>
 <div id="<?php echo esc_attr( $id ); ?>" class="<?php echo esc_attr( $classes ); ?>">
 	<div class="inner">
 			<div class="column__desktop">
