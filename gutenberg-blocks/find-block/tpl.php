@@ -38,6 +38,14 @@ else : ?>
          class="<?php echo esc_attr( $classes ); ?>" <?php echo $background_color; ?>>
         <div class="inner">
             <div class="wrapper">
+							<?php $title = get_field( 'title' ); ?>
+							<?php if ( $title ) : ?>
+                                <h4 class="main-title"><?php echo $title; ?></h4>
+							<?php endif; ?>
+							<?php $text = get_field( 'text' ); ?>
+							<?php if ( $text ) : ?>
+                                <div class="main-text"><?php echo $text; ?></div>
+							<?php endif; ?>
 							<?php if ( have_rows( 'treatments' ) ) : ?>
                             <div class="wrapper__treatments">
                               <div class="swiper-wrapper">

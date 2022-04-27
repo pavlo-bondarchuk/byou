@@ -22,6 +22,26 @@
             "maxlength": ""
         },
         {
+            "key": "field_6268f577c2da8",
+            "label": "Text",
+            "name": "text",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "The best way to get rid of acne is to consult a professional dermatologist or esthetician at our clinic. They can diagnose your skin condition with quick analysis and determine the best course of action. If you don’t suffer from many acne-related issues, a simple acne facial can do the trick. We’ll use different active ingredients and a couple of treatments will be more than enough to completely clear up your breakouts.",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "",
+            "acfe_textarea_code": 0
+        },
+        {
             "key": "field_6267ce68e7336",
             "label": "Background Color",
             "name": "background_color",
@@ -153,5 +173,5 @@
         }
     },
     "acfe_note": "",
-    "modified": 1650997099
+    "modified": 1651045785
 }

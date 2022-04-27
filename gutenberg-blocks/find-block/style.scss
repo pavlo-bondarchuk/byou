@@ -18,10 +18,20 @@
 				letter-spacing: 0;
 				color: $white;
 				text-transform: capitalize;
-				margin-bottom: 80px;
+				margin-bottom: 20px;
 				@include mobile-only {
 					font: normal normal normal 40px/52px $font-swear;
-					margin-bottom: 60px;
+				}
+			}
+			.main-text {
+				text-align: center;
+				font: normal normal normal 16px/22px $font-montserrat;
+				letter-spacing: 0;
+				color: $white;
+				margin-top: 60px;
+				margin-bottom: 50px;
+				@include mobile-only {
+					font: normal normal normal 14px/22px $font-montserrat;
 				}
 			}
 
