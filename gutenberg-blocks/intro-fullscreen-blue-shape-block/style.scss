@@ -51,10 +51,9 @@
 
 			.text {
 				text-align: left;
-				font: normal normal 300 17px/24px $font-montserrat;
+				font: normal normal 300 16px/22px $font-montserrat;
 				letter-spacing: 0;
 				color: #FFFFFF;
-				text-transform: uppercase;
 				width: 100%;
 				@include mobile-only {
 					text-align: center;
