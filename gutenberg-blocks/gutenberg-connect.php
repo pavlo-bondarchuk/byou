@@ -16,7 +16,7 @@ function builder_blocks( $categories, $post ) {
 	);
 }
 
-add_filter( 'block_categories', 'builder_blocks', 10, 2 );
+add_filter( 'block_categories_all', 'builder_blocks', 10, 2 );
 
 function register_acf_block_type() {
 	acf_register_block_type( array(
@@ -1122,6 +1122,34 @@ function register_acf_block_type() {
 							'data' => array(
 									'is_preview'         => true,
 									'preview_image_help' => IT_URL . '/gutenberg-blocks/previews/about-treatments-in-grid-block-section.jpg'
+							)
+					)
+			)
+	) );
+	acf_register_block_type( array(
+			'name'            => 'testimonials-block',
+			'title'           => __( 'Clients Testimonials Block', 'byou' ),
+			'category'        => 'byou-blocks',
+			'icon'            => 'admin-home',
+			'keywords'        => array( 'testimonials' ),
+			'post_types'      => array( 'page' ),
+			'mode'            => 'preview',
+			'align'           => 'full',
+			'supports'        => array(
+					'align'  => true,
+					'jsx'    => true,
+					'anchor' => true,
+					'customClassName' => true,
+			),
+			'render_template' => 'gutenberg-blocks/testimonials-block/tpl.php',
+			'enqueue_style'   => get_template_directory_uri() . '/assets/dist/css/testimonials-block/style.css',
+			//'enqueue_script' => get_template_directory_uri() . '/assets/dist/js/testimonials-block/script.js',
+			'example'         => array(
+					'attributes' => array(
+							'mode' => 'preview',
+							'data' => array(
+									'is_preview'         => true,
+									'preview_image_help' => IT_URL . '/gutenberg-blocks/previews/testimonials-section.jpg'
 							)
 					)
 			)

@@ -1,0 +1,160 @@
+@import "../../assets/src/scss/styles";
+
+.testimonials {
+	&-block {
+		.inner {
+			max-width: 1240px;
+			width: 100%;
+			margin: 0 auto;
+
+			.title {
+				text-align: center;
+				font: normal normal 500 48px/56px $font-swear;
+				letter-spacing: 0;
+				color: $black;
+				text-transform: capitalize;
+				margin-bottom: 20px;
+				@include mobile-only {
+					font: normal normal 500 40px/52px $font-swear;
+					width: 70%;
+					margin: 0 auto;
+				}
+			}
+		}
+	}
+
+	&__wrapper {
+		padding: 80px 0 70px;
+		overflow: hidden;
+		@include mobile-only {
+			padding: 0 20px 70px;
+		}
+
+		.swiper-wrapper {
+			//display: flex;
+			//align-items: center;
+			//justify-content: space-between;
+		}
+	}
+
+	&__item {
+		width: 33.33%;
+
+		.inner {
+			padding: 20px 29px 0 20px;
+			@include mobile-only {
+				padding: 50px 0 0;
+			}
+		}
+
+		&_personal {
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			margin-bottom: 15px;
+			@include mobile-only {
+				margin-bottom: 25px;
+				flex-direction: column;
+				align-items: center;
+			}
+		}
+
+		&_avatar {
+			width: 56px;
+			height: 56px;
+			border-radius: 50%;
+			margin-right: 15px;
+			@include mobile-only {
+				margin: 0;
+				margin-bottom: 15px;
+			}
+		}
+
+		&_name {
+			text-align: left;
+			font: normal normal 500 18px/21px $font-montserrat;
+			letter-spacing: 0;
+			color: $black;
+			margin-bottom: 5px;
+			@include mobile-only {
+				text-align: center;
+				font: normal normal 500 15px/21px $font-montserrat;
+			}
+		}
+
+		&_date {
+			text-align: left;
+			font: normal normal normal 12px/21px $font-montserrat;
+			letter-spacing: 0;
+			color: #777777;
+			@include mobile-only {
+				text-align: center;
+			}
+		}
+
+		&_stars {
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			margin-bottom: 15px;
+			@include mobile-only {
+				margin-bottom: 25px;
+				justify-content: center;
+			}
+
+			.star {
+				font-size: 23px;
+
+				&.active {
+					color: #EFA500;
+				}
+
+				&.inactive {
+					color: #EEEEEE;
+				}
+			}
+		}
+
+		&_review {
+			text-align: left;
+			font: normal normal normal 15px/21px $font-montserrat;
+			letter-spacing: 0;
+			color: #666666;
+			@include mobile-only {
+				text-align: center;
+			}
+		}
+	}
+
+	&__pagination {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-top: 70px;
+		@include mobile-only {
+			margin-top: 58px;
+		}
+
+		.bullet {
+			width: 7px;
+			height: 7px;
+			border-radius: 50%;
+			background-color: #0000004D;
+			@include mobile-only {
+				width: 5px;
+				height: 5px;
+			}
+
+			&:not(.last-child) {
+				margin-right: 39px;
+				@include mobile-only {
+					margin-right: 24px;
+				}
+			}
+
+			&_active {
+				background-color: $black;
+			}
+		}
+	}
+}
