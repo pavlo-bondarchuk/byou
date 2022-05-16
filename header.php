@@ -72,9 +72,14 @@ $first_block_behind_header = get_field('first_block_behind_header') ? '' : ' fir
                         </a>
                     </div>
                     <div class="addition">
-                        <a href="/shop">Shop</a>
-                        <a href="/contact">Contact Us</a>
-                        <a href="/book" class="button__blue">Book Free Consultation</a>
+					<?php
+                    $menuLocations = get_nav_menu_locations();
+                    $menuID = $menuLocations['header-additonal'];
+                    $additonalNav = wp_get_nav_menu_items($menuID);
+                    foreach ( $additonalNav as $navItem ) {
+                        echo '<a href="'.$navItem->url.'" title="'.$navItem->title.'" class="'.$navItem->classes[0].'">'.$navItem->title.'</a>';
+                    }
+                    ;?>
                     </div>
                 </div>
             </div>

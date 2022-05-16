@@ -11,7 +11,7 @@
  */
 
 // Create id attribute allowing for custom "anchor" value.
-$id = 'book-form-block-' . $block['id'];
+$id = 'book';
 if ( ! empty($block['anchor'] ) ) {
 	$id = $block['anchor'];
 }

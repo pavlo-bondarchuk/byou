@@ -38,10 +38,10 @@ $result = curl_exec( $ch );
 curl_close( $ch );
 $res     = json_decode( $result, true );
 $reviews = $res['result']['reviews'];
-//foreach ( $reviews as $key => $row ) {
-//	$rating[$key] = $row['rating'];
-//}
-//$rating = array_column( $reviews, 'rating' );
+foreach ( $reviews as $key => $row ) {
+	$rating[$key] = $row['rating'];
+}
+$rating = array_column( $res['result'], 'rating' );
 //array_multisort( $rating, SORT_DESC, $reviews );
 ?>
 <?php
@@ -54,6 +54,7 @@ else : ?>
             <div class="testimonials__wrapper">
                 <div class="swiper-wrapper">
 						<?php foreach( $reviews as $review => $item ) :?>
+						<?php //if ( 4 > (int) $item['rating']) continue;?>
                       <div class="swiper-slide testimonials__item">
                           <div class="inner">
                               <div class="testimonials__item_personal">
@@ -69,7 +70,7 @@ else : ?>
                                       </div>
                                   </div>
                               </div>
-                              <div class="testimonials__item_stars">
+                              <div class="testimonials__item_stars <?php echo $item['rating']; ?>">
 									<?php for ( $i = 1; $i <= $item['rating']; $i++ ) { ?>
                                         <span class="star active">&#9733;</span>
 									<?php } ?>

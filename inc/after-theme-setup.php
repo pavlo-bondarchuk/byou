@@ -37,6 +37,7 @@ function byou_setup() {
 	register_nav_menus(
 			array(
 					'header' => esc_html__( 'Header', 'byou' ),
+					'header-additonal' => esc_html__( 'Header Additional', 'byou' ),
 					'header-mobile' => esc_html__( 'Header Mobile', 'byou' ),
 					'services' => esc_html__( 'Services', 'byou' ),
 					'services-mobile' => esc_html__( 'Services Mobile', 'byou' ),
