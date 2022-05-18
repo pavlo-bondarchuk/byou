@@ -55,7 +55,7 @@ else : ?>
 			$attributes = 'frameborder="0"';
 			$iframe = str_replace('></iframe>', ' ' . $attributes . '></iframe>', $iframe);
 			?>
-	        <?php if($title): ?>
+	        <?php if($iframe): ?>
 			<div class="video">
               <?php echo $iframe; ?>
             </div>
