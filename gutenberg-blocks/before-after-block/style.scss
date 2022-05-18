@@ -16,11 +16,11 @@
 
 		.main__title {
 			text-align: center;
-			font: normal normal normal 48px/56px $font-swear;
+			font: normal normal normal 48px/52px $font-swear;
 			letter-spacing: 0;
 			color: $black;
 			text-transform: capitalize;
-			margin-bottom: 9px;
+			margin-bottom: 18px;
 			@include mobile-only {
 				font: normal normal normal 40px/50px $font-swear;
 				margin-bottom: 15px;
@@ -29,7 +29,7 @@
 
 		.main__hashtag {
 			text-align: center;
-			font: normal normal normal 24px/56px $font-swear;
+			font: normal normal normal 24px/32px $font-swear;
 			letter-spacing: 0;
 			color: $black666;
 			margin-bottom: 9px;
