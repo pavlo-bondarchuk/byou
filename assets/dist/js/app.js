@@ -2273,12 +2273,13 @@ jQuery(document).ready(function ($) {
     e.preventDefault();
     $(this).next(".submenu").toggleClass('opened');
   });
-  $(".menu__open").on('click', function (e) {
-    e.preventDefault();
-    $(this).toggleClass('is-active');
+  $(".menu__open").click(function () {
+    //e.preventDefault();
+    console.log('click');
+    $(this).addClass('is-active');
     $(".menuMobile").toggleClass('opened');
     $('.overlay').toggleClass('isOpen');
-    $('body').toggleClass('no-scroll');
+    $('body').addClass('no-scroll');
   });
   $(".lang_switcher").on('click', function (e) {
     e.preventDefault();
@@ -2335,7 +2336,7 @@ jQuery(document).ready(function ($) {
     }
   });
   $('.header').on('mouseover', function () {
-    if (window.matchMedia("(min-width: 767px)").matches) {
+    if (window.matchMedia("(min-width: 1024px)").matches) {
       $(this).addClass('white');
       $('.header__menu').addClass('white');
       $('.services__menu').addClass('white');
@@ -2343,7 +2344,7 @@ jQuery(document).ready(function ($) {
     }
   });
   $('.header').on('mouseleave', function () {
-    if (window.matchMedia("(min-width: 767px)").matches) {
+    if (window.matchMedia("(min-width: 1024px)").matches) {
       if ($('.page-container').hasClass('first_block_behind_header')) {
         $(this).addClass('white');
         $('.header__menu').addClass('white');
@@ -7201,47 +7202,6 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
 });
 "use strict";
 
-document.addEventListener('DOMContentLoaded', function (event) {
-  'use strict';
-
-  var $ = jQuery;
-
-  if (!$('body').hasClass('wp-admin')) {
-    var breakpoint = window.matchMedia('(min-width:31.25em)');
-    var mySwiper;
-
-    var breakpointChecker = function breakpointChecker() {
-      if (breakpoint.matches === true) {
-        if (mySwiper !== undefined) mySwiper.destroy(true, true);
-        return;
-      } else if (breakpoint.matches === false) {
-        return enableSwiper();
-      }
-    };
-
-    var enableSwiper = function enableSwiper() {
-      mySwiper = new Swiper('.become-block .item__slider', {
-        loop: true,
-        a11y: true,
-        keyboardControl: true,
-        grabCursor: true,
-        pagination: {
-          el: '.item__slider-pagination',
-          clickable: true,
-          bulletClass: 'bullet',
-          bulletActiveClass: 'bullet-active'
-        },
-        slidesPerView: 1,
-        spaceBetween: 0
-      });
-    };
-
-    breakpoint.addListener(breakpointChecker);
-    breakpointChecker();
-  }
-});
-"use strict";
-
 var imageCompareViewers = document.querySelectorAll(".image-compare");
 var configs = [{
   controlColor: "#FFFFFF"
@@ -7311,6 +7271,47 @@ document.addEventListener('DOMContentLoaded', function (event) {
     };
 
     var enableSwiper = function enableSwiper() {
+      mySwiper = new Swiper('.become-block .item__slider', {
+        loop: true,
+        a11y: true,
+        keyboardControl: true,
+        grabCursor: true,
+        pagination: {
+          el: '.item__slider-pagination',
+          clickable: true,
+          bulletClass: 'bullet',
+          bulletActiveClass: 'bullet-active'
+        },
+        slidesPerView: 1,
+        spaceBetween: 0
+      });
+    };
+
+    breakpoint.addListener(breakpointChecker);
+    breakpointChecker();
+  }
+});
+"use strict";
+
+document.addEventListener('DOMContentLoaded', function (event) {
+  'use strict';
+
+  var $ = jQuery;
+
+  if (!$('body').hasClass('wp-admin')) {
+    var breakpoint = window.matchMedia('(min-width:31.25em)');
+    var mySwiper;
+
+    var breakpointChecker = function breakpointChecker() {
+      if (breakpoint.matches === true) {
+        if (mySwiper !== undefined) mySwiper.destroy(true, true);
+        return;
+      } else if (breakpoint.matches === false) {
+        return enableSwiper();
+      }
+    };
+
+    var enableSwiper = function enableSwiper() {
       mySwiper = new Swiper('.cost__wrapper', {
         loop: true,
         centeredSlides: true,
@@ -7323,6 +7324,47 @@ document.addEventListener('DOMContentLoaded', function (event) {
           bulletActiveClass: 'bullet_active',
           bulletClass: 'bullet'
         }
+      });
+    };
+
+    breakpoint.addListener(breakpointChecker);
+    breakpointChecker();
+  }
+});
+"use strict";
+
+document.addEventListener('DOMContentLoaded', function (event) {
+  'use strict';
+
+  var $ = jQuery;
+
+  if (!$('body').hasClass('wp-admin')) {
+    var breakpoint = window.matchMedia('(min-width:31.25em)');
+    var mySwiper;
+
+    var breakpointChecker = function breakpointChecker() {
+      if (breakpoint.matches === true) {
+        if (mySwiper !== undefined) mySwiper.destroy(true, true);
+        return;
+      } else if (breakpoint.matches === false) {
+        return enableSwiper();
+      }
+    };
+
+    var enableSwiper = function enableSwiper() {
+      mySwiper = new Swiper('.become-block .item__slider', {
+        loop: true,
+        a11y: true,
+        keyboardControl: true,
+        grabCursor: true,
+        pagination: {
+          el: '.item__slider-pagination',
+          clickable: true,
+          bulletClass: 'bullet',
+          bulletActiveClass: 'bullet-active'
+        },
+        slidesPerView: 1,
+        spaceBetween: 0
       });
     };
 
@@ -7388,47 +7430,6 @@ document.addEventListener('DOMContentLoaded', function (event) {
 
   if (!$('body').hasClass('wp-admin')) {
     var breakpoint = window.matchMedia('(min-width:31.25em)');
-    var mySwiper;
-
-    var breakpointChecker = function breakpointChecker() {
-      if (breakpoint.matches === true) {
-        if (mySwiper !== undefined) mySwiper.destroy(true, true);
-        return;
-      } else if (breakpoint.matches === false) {
-        return enableSwiper();
-      }
-    };
-
-    var enableSwiper = function enableSwiper() {
-      mySwiper = new Swiper('.become-block .item__slider', {
-        loop: true,
-        a11y: true,
-        keyboardControl: true,
-        grabCursor: true,
-        pagination: {
-          el: '.item__slider-pagination',
-          clickable: true,
-          bulletClass: 'bullet',
-          bulletActiveClass: 'bullet-active'
-        },
-        slidesPerView: 1,
-        spaceBetween: 0
-      });
-    };
-
-    breakpoint.addListener(breakpointChecker);
-    breakpointChecker();
-  }
-});
-"use strict";
-
-document.addEventListener('DOMContentLoaded', function (event) {
-  'use strict';
-
-  var $ = jQuery;
-
-  if (!$('body').hasClass('wp-admin')) {
-    var breakpoint = window.matchMedia('(min-width:31.25em)');
     var findTreatmentSwiper;
 
     var breakpointChecker = function breakpointChecker() {
@@ -7453,6 +7454,92 @@ document.addEventListener('DOMContentLoaded', function (event) {
         },
         slidesPerView: 1,
         spaceBetween: 25
+      });
+    };
+
+    breakpoint.addListener(breakpointChecker);
+    breakpointChecker();
+  }
+});
+"use strict";
+
+document.addEventListener('DOMContentLoaded', function (event) {
+  'use strict';
+
+  var $ = jQuery;
+
+  if (!$('body').hasClass('wp-admin')) {
+    var breakpoint = window.matchMedia('(min-width:31.25em)');
+    var serviceTreatmentSwiper;
+
+    var breakpointChecker = function breakpointChecker() {
+      if (breakpoint.matches === true) {
+        if (serviceTreatmentSwiper !== undefined) serviceTreatmentSwiper.destroy(true, true);
+        return;
+      } else if (breakpoint.matches === false) {
+        return serviceTreatmentEnableSwiper();
+      }
+    };
+
+    var serviceTreatmentEnableSwiper = function serviceTreatmentEnableSwiper() {
+      serviceTreatmentSwiper = new Swiper('.content__wrapper', {
+        a11y: true,
+        keyboardControl: true,
+        grabCursor: true,
+        pagination: {
+          el: '.content__wrapper-pagination',
+          clickable: true,
+          bulletClass: 'bullet',
+          bulletActiveClass: 'bullet-active'
+        },
+        slidesPerView: 2,
+        slidesPerColumn: 2,
+        slidesPerGroup: 2,
+        spaceBetween: 50,
+        slidesPerColumnFill: 'row'
+      });
+    };
+
+    breakpoint.addListener(breakpointChecker);
+    breakpointChecker();
+  }
+});
+"use strict";
+
+document.addEventListener('DOMContentLoaded', function (event) {
+  'use strict';
+
+  var $ = jQuery;
+
+  if (!$('body').hasClass('wp-admin')) {
+    var breakpoint = window.matchMedia('(min-width:31.25em)');
+    var serviceTreatmentSwiper;
+
+    var breakpointChecker = function breakpointChecker() {
+      if (breakpoint.matches === true) {
+        if (serviceTreatmentSwiper !== undefined) serviceTreatmentSwiper.destroy(true, true);
+        return;
+      } else if (breakpoint.matches === false) {
+        return serviceTreatmentEnableSwiper();
+      }
+    };
+
+    var serviceTreatmentEnableSwiper = function serviceTreatmentEnableSwiper() {
+      serviceTreatmentSwiper = new Swiper('.content__wrapper', {
+        a11y: true,
+        keyboardControl: true,
+        grabCursor: true,
+        pagination: {
+          el: '.content__wrapper-pagination',
+          clickable: true,
+          bulletClass: 'bullet',
+          bulletActiveClass: 'bullet-active'
+        },
+        slidesPerView: 2,
+        slidesPerColumn: 2,
+        slidesPerGroup: 2,
+        spaceBetween: 50,
+        slidesPerColumnFill: 'row'
       });
     };
 
@@ -7504,82 +7591,10 @@ document.addEventListener('DOMContentLoaded', function (event) {
   var $ = jQuery;
 
   if (!$('body').hasClass('wp-admin')) {
-    var breakpoint = window.matchMedia('(min-width:31.25em)');
-    var serviceTreatmentSwiper;
-
-    var breakpointChecker = function breakpointChecker() {
-      if (breakpoint.matches === true) {
-        if (serviceTreatmentSwiper !== undefined) serviceTreatmentSwiper.destroy(true, true);
-        return;
-      } else if (breakpoint.matches === false) {
-        return serviceTreatmentEnableSwiper();
-      }
-    };
-
-    var serviceTreatmentEnableSwiper = function serviceTreatmentEnableSwiper() {
-      serviceTreatmentSwiper = new Swiper('.content__wrapper', {
-        a11y: true,
-        keyboardControl: true,
-        grabCursor: true,
-        pagination: {
-          el: '.content__wrapper-pagination',
-          clickable: true,
-          bulletClass: 'bullet',
-          bulletActiveClass: 'bullet-active'
-        },
-        slidesPerView: 2,
-        slidesPerColumn: 2,
-        slidesPerGroup: 2,
-        spaceBetween: 50,
-        slidesPerColumnFill: 'row'
-      });
-    };
-
-    breakpoint.addListener(breakpointChecker);
-    breakpointChecker();
-  }
-});
-"use strict";
-
-document.addEventListener('DOMContentLoaded', function (event) {
-  'use strict';
-
-  var $ = jQuery;
-
-  if (!$('body').hasClass('wp-admin')) {
-    var breakpoint = window.matchMedia('(min-width:31.25em)');
-    var serviceTreatmentSwiper;
-
-    var breakpointChecker = function breakpointChecker() {
-      if (breakpoint.matches === true) {
-        if (serviceTreatmentSwiper !== undefined) serviceTreatmentSwiper.destroy(true, true);
-        return;
-      } else if (breakpoint.matches === false) {
-        return serviceTreatmentEnableSwiper();
-      }
-    };
-
-    var serviceTreatmentEnableSwiper = function serviceTreatmentEnableSwiper() {
-      serviceTreatmentSwiper = new Swiper('.content__wrapper', {
-        a11y: true,
-        keyboardControl: true,
-        grabCursor: true,
-        pagination: {
-          el: '.content__wrapper-pagination',
-          clickable: true,
-          bulletClass: 'bullet',
-          bulletActiveClass: 'bullet-active'
-        },
-        slidesPerView: 2,
-        slidesPerColumn: 2,
-        slidesPerGroup: 2,
-        spaceBetween: 50,
-        slidesPerColumnFill: 'row'
-      });
-    };
-
-    breakpoint.addListener(breakpointChecker);
-    breakpointChecker();
+    $('.tab__wrapper').tabslet({
+      active: 1,
+      animation: true
+    });
   }
 });
 "use strict";
@@ -7590,20 +7605,6 @@ document.addEventListener('DOMContentLoaded', function (event) {
   var $ = jQuery;
 
   if (!$('body').hasClass('wp-admin')) {}
-});
-"use strict";
-
-document.addEventListener('DOMContentLoaded', function (event) {
-  'use strict';
-
-  var $ = jQuery;
-
-  if (!$('body').hasClass('wp-admin')) {
-    $('.tab__wrapper').tabslet({
-      active: 1,
-      animation: true
-    });
-  }
 });
 "use strict";
 

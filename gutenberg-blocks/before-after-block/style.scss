@@ -32,12 +32,13 @@
 			font: normal normal normal 24px/32px $font-swear;
 			letter-spacing: 0;
 			color: $black666;
-			margin-bottom: 9px;
+			margin-bottom: 20px;
 			@include mobile-only {
 				font: normal normal normal 20px/24px $font-swear;
 				margin: 0;
 			}
 		}
+
 		.main__text {
 			text-align: center;
 			font: normal normal normal 16px/22px $font-montserrat;
@@ -60,6 +61,7 @@
 			align-items: center;
 			justify-content: space-between;
 			margin: 0;
+			overflow: hidden;
 
 			@include mobile-only {
 				padding: 60px 16px 0;
@@ -68,6 +70,9 @@
 			}
 
 			.swiper-pagination {
+				@include tablet {
+					display: none;
+				}
 				@include mobile-only {
 					padding-top: 40px;
 				}

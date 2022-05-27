@@ -15,7 +15,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "Find The Treatment As Your Best Fit",
+            "default_value": "",
             "placeholder": "",
             "prepend": "",
             "append": "",
@@ -172,5 +172,5 @@
         }
     },
     "acfe_note": "",
-    "modified": 1651082947
+    "modified": 1652955138
 }
