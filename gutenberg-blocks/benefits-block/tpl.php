@@ -48,11 +48,19 @@ else : ?>
 					<?php else : ?>
 						<?php $column = ' two__column'; ?>
 					<?php endif; ?>
+					<?php $remove_bullets = get_field( 'remove_bullets' );
+                    if($remove_bullets == true){
+                        $bullets = '<div class="list__icon"><i class="fa fa-check"></i></div>';
+					} else {
+						$bullets = '';
+					}
+                    ?>
 					<div class="list<?php echo $column; ?>">
                       <?php if ( have_rows( 'benefits' ) ) : ?>
                         <?php while ( have_rows( 'benefits' ) ) : the_row(); ?>
                         <div class="list__item">
-                          <div class="list__icon"><i class="fa fa-check"></i></div>
+                          <!--<div class="list__icon"><i class="fa fa-check"></i></div>-->
+                          <?php echo $bullets;?>
                           <?php $text = get_sub_field( 'text' ); ?>
                           <?php if($text): ?>
                               <div class="list__text">
