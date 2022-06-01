@@ -5,8 +5,9 @@
 function byou_scripts() {
 	wp_enqueue_style( 'byou-style', get_template_directory_uri() . '/assets/dist/css/styles.css', array(), _S_VERSION );
 
-	wp_enqueue_style( 'swear-display', 'https://use.typekit.net/kbw6qxr.css', array(), null, 'all' );
+	//wp_enqueue_style( 'swear-display', 'https://use.typekit.net/kbw6qxr.css', array(), null, 'all' );
 
+	wp_enqueue_style( 'byou-playfair', 'https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap', array(), null, 'all' );
 	wp_enqueue_style( 'byou-montserrat', 'https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap', array(), null, 'all' );
 
 	wp_enqueue_style('fontawesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css', array(), _S_VERSION);

@@ -22,7 +22,7 @@
 
 				.title {
 					text-align: left;
-					font: normal normal normal 71px/56px $font-swear;
+					font: normal normal normal 71px/56px $font-playfair;
 					letter-spacing: 0;
 					color: $black;
 					text-transform: capitalize;
@@ -31,7 +31,7 @@
 					@include mobile-only {
 						text-align: center;
 						padding: 60px 0 50px;
-						font: normal normal normal 40px/52px $font-swear;
+						font: normal normal normal 40px/52px $font-playfair;
 					}
 				}
 
@@ -50,7 +50,7 @@
 
 						&_question {
 							text-align: left;
-							font: normal normal normal 24px/28px $font-swear;
+							font: normal normal normal 24px/28px $font-playfair;
 							letter-spacing: 0;
 							color: $black;
 							text-transform: capitalize;
@@ -58,7 +58,7 @@
 							position: relative;
 							cursor: pointer;
 							@include mobile-only {
-								font: normal normal normal 18px/24px $font-swear;
+								font: normal normal normal 18px/24px $font-playfair;
 								padding: 15px 17px;
 							}
 

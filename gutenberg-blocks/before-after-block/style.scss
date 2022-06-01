@@ -16,25 +16,25 @@
 
 		.main__title {
 			text-align: center;
-			font: normal normal normal 48px/52px $font-swear;
+			font: normal normal normal 48px/52px $font-playfair;
 			letter-spacing: 0;
 			color: $black;
 			text-transform: capitalize;
 			margin-bottom: 18px;
 			@include mobile-only {
-				font: normal normal normal 40px/50px $font-swear;
+				font: normal normal normal 40px/50px $font-playfair;
 				margin-bottom: 15px;
 			}
 		}
 
 		.main__hashtag {
 			text-align: center;
-			font: normal normal normal 24px/32px $font-swear;
+			font: normal normal normal 24px/32px $font-playfair;
 			letter-spacing: 0;
 			color: $black666;
 			margin-bottom: 20px;
 			@include mobile-only {
-				font: normal normal normal 20px/24px $font-swear;
+				font: normal normal normal 20px/24px $font-playfair;
 				margin: 0;
 			}
 		}
@@ -104,7 +104,7 @@
 
 						.service_name {
 							text-align: left;
-							font: normal normal normal 14px/18px $font-swear;
+							font: normal normal normal 14px/18px $font-playfair;
 							letter-spacing: 0.7px;
 							color: $black;
 							margin-bottom: 10px;

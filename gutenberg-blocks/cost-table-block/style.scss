@@ -16,13 +16,13 @@
 
 		.title {
 			text-align: center;
-			font: normal normal normal 48px/56px $font-swear;
+			font: normal normal normal 48px/56px $font-playfair;
 			letter-spacing: 0;
 			color: $black;
 			text-transform: capitalize;
 			margin-bottom: 20px;
 			@include mobile-only {
-				font: normal normal normal 40px/52px $font-swear;
+				font: normal normal normal 40px/52px $font-playfair;
 				margin-bottom: 50px;
 			}
 		}
@@ -125,7 +125,7 @@
 
 				.title {
 					text-align: left;
-					font: normal normal normal 24px/32px $font-swear;
+					font: normal normal normal 24px/32px $font-playfair;
 					letter-spacing: 0;
 					color: $black;
 					text-transform: capitalize;
@@ -142,7 +142,7 @@
 
 				.cost {
 					text-align: left;
-					font: normal normal normal 18px/24px $font-swear;
+					font: normal normal normal 18px/24px $font-playfair;
 					letter-spacing: 0;
 					color: $blue;
 				}
@@ -232,7 +232,7 @@
 
 					.title {
 						text-align: left;
-						font: normal normal normal 24px/28px $font-swear;
+						font: normal normal normal 24px/28px $font-playfair;
 						letter-spacing: 0;
 						color: $black;
 						text-transform: capitalize;
@@ -253,7 +253,7 @@
 
 					.cost {
 						text-align: left;
-						font: normal normal 500 18px/44px $font-swear;
+						font: normal normal 500 18px/44px $font-playfair;
 						letter-spacing: 0;
 						color: $blue;
 						text-transform: capitalize;
@@ -282,7 +282,7 @@
 
 					.cost {
 						text-align: left;
-						font: normal normal 500 18px/44px $font-swear;
+						font: normal normal 500 18px/44px $font-playfair;
 						letter-spacing: 0;
 						color: $blue;
 						text-transform: capitalize;
@@ -291,7 +291,7 @@
 
 					.discount {
 						text-align: left;
-						font: normal normal 500 12px/16px $font-swear;
+						font: normal normal 500 12px/16px $font-playfair;
 						letter-spacing: 0;
 						color: $white;
 						text-transform: capitalize;
@@ -321,7 +321,7 @@
 
 					.cost {
 						text-align: left;
-						font: normal normal 500 18px/44px $font-swear;
+						font: normal normal 500 18px/44px $font-playfair;
 						letter-spacing: 0;
 						color: $blue;
 						text-transform: capitalize;
@@ -330,7 +330,7 @@
 
 					.discount {
 						text-align: left;
-						font: normal normal 500 12px/16px $font-swear;
+						font: normal normal 500 12px/16px $font-playfair;
 						letter-spacing: 0;
 						color: $white;
 						text-transform: capitalize;

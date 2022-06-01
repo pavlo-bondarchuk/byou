@@ -31,12 +31,12 @@
 
 					.title {
 						text-align: left;
-						font: normal normal normal 48px/56px $font-swear;
+						font: normal normal normal 48px/56px $font-playfair;
 						letter-spacing: 0;
 						color: $black;
 						margin-bottom: 50px;
 						@include mobile-only {
-							font: normal normal normal 40px/52px $font-swear;
+							font: normal normal normal 40px/52px $font-playfair;
 							margin-bottom: 92px;
 						}
 					}

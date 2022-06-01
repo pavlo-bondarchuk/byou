@@ -54,13 +54,13 @@
 
 					.title {
 						text-align: left;
-						font: normal normal 500 48px/56px $font-swear;
+						font: normal normal 500 48px/56px $font-playfair;
 						letter-spacing: 0;
 						color: $black;
 						text-transform: capitalize;
 						margin-bottom: 30px;
 						@include mobile-only {
-							font: normal normal 500 40px/52px $font-swear;
+							font: normal normal 500 40px/52px $font-playfair;
 						}
 					}
 
@@ -168,7 +168,7 @@
 
 				.title {
 					text-align: center;
-					font: normal normal 500 48px/56px $font-swear;
+					font: normal normal 500 48px/56px $font-playfair;
 					letter-spacing: 0;
 					color: $black;
 					text-transform: capitalize;

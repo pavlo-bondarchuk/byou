@@ -43,12 +43,12 @@
 		.text {
 			max-width: 780px;
 			text-align: center;
-			font: normal normal normal 48px/56px $font-swear;
+			font: normal normal normal 48px/56px $font-playfair;
 			letter-spacing: 0;
 			color: $white;
 			margin-bottom: 50px;
 			@include mobile-only {
-				font: normal normal normal 34px/48px $font-swear;
+				font: normal normal normal 34px/48px $font-playfair;
 				margin-bottom: 40px;
 			}
 		}

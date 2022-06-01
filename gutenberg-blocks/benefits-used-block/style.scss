@@ -31,7 +31,7 @@
 
 				.title {
 					text-align: left;
-					font: normal normal normal 48px/56px $font-swear;
+					font: normal normal normal 48px/56px $font-playfair;
 					letter-spacing: 0;
 					color: $black;
 					text-transform: capitalize;
@@ -40,7 +40,7 @@
 					@include mobile-only {
 						margin-top: 0;
 						margin-bottom: 20px;
-						font: normal normal normal 40px/52px $font-swear;
+						font: normal normal normal 40px/52px $font-playfair;
 					}
 				}
 

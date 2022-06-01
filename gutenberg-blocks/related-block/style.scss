@@ -11,14 +11,14 @@
 
 	&_title {
 		text-align: center;
-		font: normal normal 300 48px/81px $font-swear;
+		font: normal normal 300 48px/81px $font-playfair;
 		letter-spacing: 0;
 		color: $black;
 		text-transform: capitalize;
 		padding: 70px 0;
 		@include mobile-only {
 			padding: 44px 0 40px;
-			font: normal normal normal 40px/50px $font-swear;
+			font: normal normal normal 40px/50px $font-playfair;
 		}
 	}
 
@@ -49,14 +49,14 @@
 		.title {
 			width: 91%;
 			text-align: left;
-			font: normal normal normal 24px/34px $font-swear;
+			font: normal normal normal 24px/34px $font-playfair;
 			letter-spacing: 0;
 			color: $black;
 			text-transform: capitalize;
 			margin-bottom: 20px;
 			@include mobile-only {
 				width: 100%;
-				font: normal normal normal 18px/25px $font-swear;
+				font: normal normal normal 18px/25px $font-playfair;
 			}
 		}
 
@@ -67,7 +67,7 @@
 			color: $black666;
 			margin-bottom: 20px;
 			@include mobile-only {
-				font: normal normal normal 14px/25px $font-swear;
+				font: normal normal normal 14px/25px $font-playfair;
 				margin-bottom: 30px;
 			}
 		}

@@ -34,7 +34,7 @@
 			}
 
 			.title {
-				font: normal normal 300 71px/81px $font-swear;
+				font: normal normal 300 71px/81px $font-playfair;
 				color: #fff;
 				width: 330px;
 				@include desktop {
@@ -45,7 +45,7 @@
 				@include mobile-only {
 					text-align: center;
 					margin-bottom: 105px;
-					font: normal normal 300 62px/71px $font-swear;
+					font: normal normal 300 62px/71px $font-playfair;
 				}
 			}
 

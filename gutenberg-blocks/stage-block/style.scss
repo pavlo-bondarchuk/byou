@@ -13,7 +13,7 @@
 
 		.title {
 			text-align: center;
-			font: normal normal normal 48px/56px $font-swear;
+			font: normal normal normal 48px/56px $font-playfair;
 			letter-spacing: 0;
 			color: $black;
 			text-transform: capitalize;
@@ -22,7 +22,7 @@
 			margin-bottom: 80px;
 			@include mobile-only {
 				width: 100%;
-				font: normal normal normal 40px/52px $font-swear;
+				font: normal normal normal 40px/52px $font-playfair;
 				margin-bottom: 50px;
 			}
 		}
@@ -52,7 +52,7 @@
 			&__number {
 				padding: 8px 22px;
 				text-align: left;
-				font: normal normal bold 24px/26px $font-swear;
+				font: normal normal bold 24px/26px $font-playfair;
 				letter-spacing: 0;
 				color: $blue;
 				text-transform: uppercase;
@@ -68,7 +68,7 @@
 
 			&__text {
 				text-align: left;
-				font: normal normal normal 20px/26px $font-swear;
+				font: normal normal normal 20px/26px $font-playfair;
 				letter-spacing: 0;
 				color: $black;
 			}

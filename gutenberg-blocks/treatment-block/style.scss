@@ -85,7 +85,7 @@
 
 					.title {
 						text-align: left;
-						font: normal normal 500 48px/56px $font-swear;
+						font: normal normal 500 48px/56px $font-playfair;
 						letter-spacing: 0;
 						color: $black;
 						text-transform: capitalize;
@@ -93,7 +93,7 @@
 						margin-top: 0;
 						padding: 0;
 						@include mobile-only {
-							font: normal normal 500 40px/52px $font-swear;
+							font: normal normal 500 40px/52px $font-playfair;
 						}
 					}
 
@@ -155,7 +155,7 @@
 							}
 							.text {
 								text-align: left;
-								font: normal normal normal 18px/22px $font-swear;
+								font: normal normal normal 18px/22px $font-playfair;
 								letter-spacing: 0;
 								color: $black;
 								text-transform: capitalize;
@@ -252,13 +252,13 @@
 
 					.title {
 						text-align: left;
-						font: normal normal 500 48px/56px $font-swear;
+						font: normal normal 500 48px/56px $font-playfair;
 						letter-spacing: 0;
 						color: $black;
 						text-transform: capitalize;
 						padding: 100px 0 20px;
 						@include mobile-only {
-							font: normal normal 500 40px/52px $font-swear;
+							font: normal normal 500 40px/52px $font-playfair;
 							padding: 0;
 							padding-bottom: 20px;
 						}
