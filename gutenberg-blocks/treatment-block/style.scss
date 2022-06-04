@@ -252,13 +252,13 @@
 
 					.title {
 						text-align: left;
-						font: normal normal 500 48px/56px $font-playfair;
+						font: normal normal 800 48px/56px $font-playfair;
 						letter-spacing: 0;
 						color: $black;
 						text-transform: capitalize;
 						padding: 100px 0 20px;
 						@include mobile-only {
-							font: normal normal 500 40px/52px $font-playfair;
+							font: normal normal 800 40px/52px $font-playfair;
 							padding: 0;
 							padding-bottom: 20px;
 						}
