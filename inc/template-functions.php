@@ -53,7 +53,7 @@ add_filter( 'mce_buttons_2', 'wpex_mce_buttons' );
  */
 if ( ! function_exists( 'wpex_mce_google_fonts_array' ) ) {
 	function wpex_mce_google_fonts_array( $initArray ) {
-		$initArray['font_formats'] = 'Montserrat=Montserrat, sans-serif;Playfair Display=Playfair-Display, sans-serif;Arial=Arial, sans-serif;';
+		$initArray['font_formats'] = 'Montserrat=Montserrat, sans-serif;Playfair Display=Playfair+Display, sans-serif;Arial=Arial, sans-serif;';
 		return $initArray;
 	}
 }
