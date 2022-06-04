@@ -53,7 +53,7 @@ add_filter( 'mce_buttons_2', 'wpex_mce_buttons' );
  */
 if ( ! function_exists( 'wpex_mce_google_fonts_array' ) ) {
 	function wpex_mce_google_fonts_array( $initArray ) {
-		$initArray['font_formats'] = 'Montserrat=Montserrat, sans-serif;Swear Display=swear-display, sans-serif;Arial=Arial, sans-serif;';
+		$initArray['font_formats'] = 'Montserrat=Montserrat, sans-serif;Playfair Display=Playfair-Display, sans-serif;Arial=Arial, sans-serif;';
 		return $initArray;
 	}
 }
@@ -73,20 +73,20 @@ add_action( 'init', 'wpex_mce_google_fonts_styles' );
 /**
  * Add Adobe Scripts for use with the editor
  */
-if ( ! function_exists( 'wpex_mce_adobe_fonts_styles' ) ) {
-	function wpex_mce_adobe_fonts_styles() {
-		$font_url = 'https://use.typekit.net/kbw6qxr.css';
-		add_editor_style( str_replace( ',', '%2C', $font_url ) );
-	}
-}
-add_action( 'init', 'wpex_mce_adobe_fonts_styles' );
+//if ( ! function_exists( 'wpex_mce_adobe_fonts_styles' ) ) {
+//	function wpex_mce_adobe_fonts_styles() {
+//		$font_url = 'https://use.typekit.net/kbw6qxr.css';
+//		add_editor_style( str_replace( ',', '%2C', $font_url ) );
+//	}
+//}
+//add_action( 'init', 'wpex_mce_adobe_fonts_styles' );
 
 /**
  * Customize mce editor font sizes
  */
 if ( ! function_exists( 'wpex_mce_text_sizes' ) ) {
 	function wpex_mce_text_sizes( $initArray ){
-		$initArray['fontsize_formats'] = "9px 10px 12px 13px 14px 16px 18px 21px 24px 28px 32px 36px";
+		$initArray['fontsize_formats'] = "9px 10px 11px 12px 13px 14px 15px 16px 17px 18px 19px 20px 21px 22px 23px 24px 25px 26px 27px 28px 29px 30px 31px 32px 33px 34px 35px 36px 37px 38px 39px 40px";
 		return $initArray;
 	}
 }
