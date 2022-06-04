@@ -29,17 +29,20 @@
 				flex-direction: column;
 				overflow: hidden;
 			}
-
+			.swiper-wrapper {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				column-gap: 100px;
+				row-gap: 50px;
+			}
 			.item {
 				display: flex;
 				flex-direction: column;
 				align-items: center;
 				max-width: 100%;
 				@include desktop {
-					width: 27.5%;
-					&:not(.last-child) {
-						margin-right: 100px;
-					}
+					width: 27%;
 				}
 
 				&__icon {
