@@ -16,13 +16,13 @@
 
 		.main__title {
 			text-align: center;
-			font: normal normal normal 48px/52px $font-playfair;
+			font: normal normal 800 48px/52px $font-playfair;
 			letter-spacing: 0;
 			color: $black;
 			text-transform: capitalize;
 			margin-bottom: 18px;
 			@include mobile-only {
-				font: normal normal normal 40px/50px $font-playfair;
+				font: normal normal 800 40px/50px $font-playfair;
 				margin-bottom: 15px;
 			}
 		}

@@ -13,13 +13,13 @@
 		.title {
 			padding: 118px 0;
 			text-align: center;
-			font: normal normal normal 48px/56px $font-playfair;
+			font: normal normal 800 48px/56px $font-playfair;
 			letter-spacing: 0;
 			color: $white;
 			text-transform: capitalize;
 			@include mobile-only {
 				padding: 54px 0;
-				font: normal normal normal 40px/52px $font-playfair;
+				font: normal normal 800 40px/52px $font-playfair;
 			}
 		}
 

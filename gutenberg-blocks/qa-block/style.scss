@@ -22,7 +22,7 @@
 
 				.title {
 					text-align: left;
-					font: normal normal normal 71px/56px $font-playfair;
+					font: normal normal 800 71px/56px $font-playfair;
 					letter-spacing: 0;
 					color: $black;
 					text-transform: capitalize;
@@ -31,7 +31,7 @@
 					@include mobile-only {
 						text-align: center;
 						padding: 60px 0 50px;
-						font: normal normal normal 40px/52px $font-playfair;
+						font: normal normal 800 40px/52px $font-playfair;
 					}
 				}
 

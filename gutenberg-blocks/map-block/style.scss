@@ -45,14 +45,14 @@
 
 			.title {
 				text-align: left;
-				font: normal normal 500 48px/56px $font-playfair;
+				font: normal normal 800 48px/56px $font-playfair;
 				letter-spacing: 0;
 				color: $black;
 				text-transform: capitalize;
 				margin-bottom: 18px;
 				@include mobile-only {
 					text-align: center;
-					font: normal normal 500 40px/50px $font-playfair;
+					font: normal normal 800 40px/50px $font-playfair;
 					margin-bottom: 43px;
 				}
 			}

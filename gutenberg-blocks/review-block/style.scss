@@ -23,13 +23,13 @@
 
 		.name {
 			text-align: center;
-			font: normal normal normal 20px/24px $font-montserrat;
+			font: normal normal 800 20px/24px $font-montserrat;
 			letter-spacing: 0;
 			color: $white;
 			text-transform: uppercase;
 			margin-bottom: 20px;
 			@include mobile-only {
-				font: normal normal normal 16px/20px $font-montserrat;
+				font: normal normal 800 16px/20px $font-montserrat;
 			}
 		}
 

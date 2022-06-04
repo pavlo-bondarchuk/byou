@@ -33,13 +33,13 @@
 
 				.title {
 					text-align: left;
-					font: normal normal normal 48px/56px $font-playfair;
+					font: normal normal 800 48px/56px $font-playfair;
 					letter-spacing: 0;
 					color: $black;
 					text-transform: capitalize;
 					margin-bottom: 40px;
 					@include mobile-only {
-						font: normal normal normal 40px/52px $font-playfair;
+						font: normal normal 800 40px/52px $font-playfair;
 						margin-bottom: 20px;
 					}
 					* {

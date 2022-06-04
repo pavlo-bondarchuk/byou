@@ -32,12 +32,12 @@
 
 			&__link {
 				text-align: left;
-				font: normal normal normal 24px/32px $font-playfair;
+				font: normal normal 800 24px/32px $font-playfair;
 				letter-spacing: 0;
 				color: $black;
 				text-transform: capitalize;
 				@include mobile-only {
-					font: normal normal normal 16px/24px $font-playfair;
+					font: normal normal 800 16px/24px $font-playfair;
 				}
 			}
 

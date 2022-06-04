@@ -11,14 +11,14 @@
 
 	&_title {
 		text-align: center;
-		font: normal normal 300 48px/81px $font-playfair;
+		font: normal normal 800 48px/81px $font-playfair;
 		letter-spacing: 0;
 		color: $black;
 		text-transform: capitalize;
 		padding: 70px 0;
 		@include mobile-only {
 			padding: 44px 0 40px;
-			font: normal normal normal 40px/50px $font-playfair;
+			font: normal normal 800 40px/50px $font-playfair;
 		}
 	}
 

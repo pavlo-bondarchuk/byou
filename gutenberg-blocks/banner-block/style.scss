@@ -57,12 +57,12 @@
 
 		.title {
 			text-align: center;
-			font: normal normal 500 48px/56px $font-playfair;
+			font: normal normal 800 48px/56px $font-playfair;
 			letter-spacing: 0;
 			color: #FFFFFF;
 			margin-bottom: 50px;
 			@include mobile-only {
-				font: normal normal 500 40px/52px $font-playfair;
+				font: normal normal 800 40px/52px $font-playfair;
 			}
 		}
 

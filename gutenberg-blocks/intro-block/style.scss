@@ -34,7 +34,7 @@
 			}
 
 			.title {
-				font: normal normal 300 71px/81px $font-playfair;
+				font: normal normal 800 71px/81px $font-playfair;
 				color: #fff;
 				width: 330px;
 				@include desktop {
@@ -51,7 +51,7 @@
 			.text {
 				text-align: left;
 				font: normal normal 300 17px/24px $font-montserrat;
-				letter-spacing: 0px;
+				letter-spacing: 0;
 				color: #FFFFFF;
 				text-transform: uppercase;
 				width: 258px;
