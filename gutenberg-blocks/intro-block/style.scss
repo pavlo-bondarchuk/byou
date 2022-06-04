@@ -37,6 +37,7 @@
 				font: normal normal 800 71px/81px $font-playfair;
 				color: #fff;
 				@include desktop {
+					white-space: nowrap;
 					text-align: left;
 					margin-bottom: 50px;
 				}
@@ -87,6 +88,14 @@
 			flex-direction: column;
 			align-items: flex-start;
 			width: 100%;
+
+			&:first-child {
+				max-width: 883px;
+			}
+
+			&:last-child {
+				max-width: 250px;
+			}
 
 			@include mobile-only {
 				align-items: center;
