@@ -68,7 +68,7 @@
 					font: normal normal 800 48px/56px $font-playfair;
 					letter-spacing: 0;
 					color: $white;
-					text-transform: capitalize;
+					    text-transform: none;
 					@include mobile-only {
 						text-align: center;
 						font: normal normal 800 40px/52px $font-playfair;

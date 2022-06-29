@@ -19,7 +19,7 @@
 			font: normal normal 800 48px/56px $font-playfair;
 			letter-spacing: 0;
 			color: $black;
-			text-transform: capitalize;
+			    text-transform: none;
 			margin-bottom: 20px;
 			@include mobile-only {
 				font: normal normal 800 40px/52px $font-playfair;
@@ -128,7 +128,7 @@
 					font: normal normal 800 24px/32px $font-playfair;
 					letter-spacing: 0;
 					color: $black;
-					text-transform: capitalize;
+					    text-transform: none;
 					margin-bottom: 10px;
 				}
 
@@ -137,7 +137,7 @@
 					font: normal normal normal 14px/20px $font-montserrat;
 					letter-spacing: 0;
 					color: $black666;
-					text-transform: capitalize;
+					    text-transform: none;
 				}
 
 				.cost {
@@ -235,7 +235,7 @@
 						font: normal normal 800 24px/28px $font-playfair;
 						letter-spacing: 0;
 						color: $black;
-						text-transform: capitalize;
+						    text-transform: none;
 						opacity: 1;
 						margin: 0;
 						padding: 0;
@@ -256,7 +256,7 @@
 						font: normal normal 800 18px/44px $font-playfair;
 						letter-spacing: 0;
 						color: $blue;
-						text-transform: capitalize;
+						    text-transform: none;
 						margin-right: 14px;
 					}
 				}
@@ -285,7 +285,7 @@
 						font: normal normal 800 18px/44px $font-playfair;
 						letter-spacing: 0;
 						color: $blue;
-						text-transform: capitalize;
+						    text-transform: none;
 						margin-right: 14px;
 					}
 
@@ -294,7 +294,7 @@
 						font: normal normal 800 12px/16px $font-playfair;
 						letter-spacing: 0;
 						color: $white;
-						text-transform: capitalize;
+						    text-transform: none;
 						padding: 3px 7px;
 						background: $blue;
 						border-radius: 5px;
@@ -324,7 +324,7 @@
 						font: normal normal 800 18px/44px $font-playfair;
 						letter-spacing: 0;
 						color: $blue;
-						text-transform: capitalize;
+						    text-transform: none;
 						margin-right: 14px;
 					}
 
@@ -333,7 +333,7 @@
 						font: normal normal 800 12px/16px $font-playfair;
 						letter-spacing: 0;
 						color: $white;
-						text-transform: capitalize;
+						    text-transform: none;
 						padding: 3px 7px;
 						background: $blue;
 						border-radius: 5px;

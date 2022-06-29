@@ -19,7 +19,7 @@
 			font: normal normal 800 48px/56px $font-playfair;
 			letter-spacing: 0;
 			color: $black;
-			text-transform: capitalize;
+			    text-transform: none;
 			margin: 0 0 20px;
 			@include mobile-only {
 				font: normal normal 800 40px/52px $font-playfair;
@@ -87,7 +87,7 @@
 					font: normal normal 800 24px/32px $font-playfair;
 					letter-spacing: 0;
 					color: $black;
-					text-transform: capitalize;
+					    text-transform: none;
 					margin-bottom: 10px;
 				}
 
@@ -96,7 +96,7 @@
 					font: normal normal normal 14px/20px $font-montserrat;
 					letter-spacing: 0;
 					color: $black666;
-					text-transform: capitalize;
+					    text-transform: none;
 				}
 
 				.cost {

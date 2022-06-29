@@ -29,7 +29,7 @@
 						font: normal normal 800 48px/56px $font-playfair;
 						letter-spacing: 0;
 						color: $black;
-						text-transform: capitalize;
+						    text-transform: none;
 						margin-top: 48px;
 						margin-bottom: 20px;
 						@include mobile-only {

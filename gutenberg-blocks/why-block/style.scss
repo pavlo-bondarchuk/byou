@@ -57,7 +57,7 @@
 						font: normal normal 800 48px/56px $font-playfair;
 						letter-spacing: 0;
 						color: $black;
-						text-transform: capitalize;
+						    text-transform: none;
 						margin-bottom: 30px;
 						@include mobile-only {
 							font: normal normal 800 40px/52px $font-playfair;
@@ -69,7 +69,7 @@
 						font: normal normal normal 16px/27px $font-montserrat;
 						letter-spacing: 0;
 						color: $black666;
-						text-transform: capitalize;
+						    text-transform: none;
 						margin-bottom: 30px;
 					}
 
@@ -171,7 +171,7 @@
 					font: normal normal 500 48px/56px $font-playfair;
 					letter-spacing: 0;
 					color: $black;
-					text-transform: capitalize;
+					    text-transform: none;
 					margin-bottom: 95px;
 				}
 
@@ -211,7 +211,7 @@
 							font: normal normal normal 18px/22px $font-montserrat;
 							letter-spacing: 0;
 							color: $black;
-							text-transform: capitalize;
+							    text-transform: none;
 							position: absolute;
 							z-index: 10;
 							max-width: 244px;
