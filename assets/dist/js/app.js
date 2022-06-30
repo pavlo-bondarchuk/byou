@@ -7221,18 +7221,19 @@ document.addEventListener('DOMContentLoaded', function (event) {
     };
 
     var enableSwiper = function enableSwiper() {
-      mySwiper = new Swiper('.cost_table__wrapper', {
-        slidesPerView: 1,
-        slidesPerColumn: 3,
-        slidesPerGroup: 3,
-        spaceBetween: 0,
+      mySwiper = new Swiper('.become-block .item__slider', {
+        loop: true,
+        a11y: true,
+        keyboardControl: true,
+        grabCursor: true,
         pagination: {
-          el: '.cost__pagination',
-          type: 'bullets',
+          el: '.item__slider-pagination',
           clickable: true,
-          bulletActiveClass: 'bullet_active',
-          bulletClass: 'bullet'
-        }
+          bulletClass: 'bullet',
+          bulletActiveClass: 'bullet-active'
+        },
+        slidesPerView: 1,
+        spaceBetween: 0
       });
     };
 
@@ -7351,19 +7352,18 @@ document.addEventListener('DOMContentLoaded', function (event) {
     };
 
     var enableSwiper = function enableSwiper() {
-      mySwiper = new Swiper('.become-block .item__slider', {
-        loop: true,
-        a11y: true,
-        keyboardControl: true,
-        grabCursor: true,
-        pagination: {
-          el: '.item__slider-pagination',
-          clickable: true,
-          bulletClass: 'bullet',
-          bulletActiveClass: 'bullet-active'
-        },
+      mySwiper = new Swiper('.cost_table__wrapper', {
         slidesPerView: 1,
-        spaceBetween: 0
+        slidesPerColumn: 3,
+        slidesPerGroup: 3,
+        spaceBetween: 0,
+        pagination: {
+          el: '.cost__pagination',
+          type: 'bullets',
+          clickable: true,
+          bulletActiveClass: 'bullet_active',
+          bulletClass: 'bullet'
+        }
       });
     };
 
@@ -7473,46 +7473,6 @@ document.addEventListener('DOMContentLoaded', function (event) {
 
   if (!$('body').hasClass('wp-admin')) {
     var breakpoint = window.matchMedia('(min-width:31.25em)');
-    var findTreatmentSwiper;
-
-    var breakpointChecker = function breakpointChecker() {
-      if (breakpoint.matches === true) {
-        if (findTreatmentSwiper !== undefined) findTreatmentSwiper.destroy(true, true);
-        return;
-      } else if (breakpoint.matches === false) {
-        return findTreatmentEnableSwiper();
-      }
-    };
-
-    var findTreatmentEnableSwiper = function findTreatmentEnableSwiper() {
-      findTreatmentSwiper = new Swiper('.wrapper__treatments', {
-        a11y: true,
-        keyboardControl: true,
-        grabCursor: true,
-        pagination: {
-          el: '.wrapper__treatments-pagination',
-          clickable: true,
-          bulletClass: 'bullet',
-          bulletActiveClass: 'bullet-active'
-        },
-        slidesPerView: 1,
-        spaceBetween: 25
-      });
-    };
-
-    breakpoint.addListener(breakpointChecker);
-    breakpointChecker();
-  }
-});
-"use strict";
-
-document.addEventListener('DOMContentLoaded', function (event) {
-  'use strict';
-
-  var $ = jQuery;
-
-  if (!$('body').hasClass('wp-admin')) {
-    var breakpoint = window.matchMedia('(min-width:31.25em)');
     var serviceTreatmentSwiper;
 
     var breakpointChecker = function breakpointChecker() {
@@ -7540,6 +7500,46 @@ document.addEventListener('DOMContentLoaded', function (event) {
         slidesPerGroup: 2,
         spaceBetween: 50,
         slidesPerColumnFill: 'row'
+      });
+    };
+
+    breakpoint.addListener(breakpointChecker);
+    breakpointChecker();
+  }
+});
+"use strict";
+
+document.addEventListener('DOMContentLoaded', function (event) {
+  'use strict';
+
+  var $ = jQuery;
+
+  if (!$('body').hasClass('wp-admin')) {
+    var breakpoint = window.matchMedia('(min-width:31.25em)');
+    var findTreatmentSwiper;
+
+    var breakpointChecker = function breakpointChecker() {
+      if (breakpoint.matches === true) {
+        if (findTreatmentSwiper !== undefined) findTreatmentSwiper.destroy(true, true);
+        return;
+      } else if (breakpoint.matches === false) {
+        return findTreatmentEnableSwiper();
+      }
+    };
+
+    var findTreatmentEnableSwiper = function findTreatmentEnableSwiper() {
+      findTreatmentSwiper = new Swiper('.wrapper__treatments', {
+        a11y: true,
+        keyboardControl: true,
+        grabCursor: true,
+        pagination: {
+          el: '.wrapper__treatments-pagination',
+          clickable: true,
+          bulletClass: 'bullet',
+          bulletActiveClass: 'bullet-active'
+        },
+        slidesPerView: 1,
+        spaceBetween: 25
       });
     };
 
