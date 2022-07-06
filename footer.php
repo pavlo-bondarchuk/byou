@@ -163,14 +163,28 @@
 	);
 	?>
     <div class="social">
-        <a href="" class="icon"><i class="fa-brands fa-instagram"></i> </a>
-        <a href="" class="icon"><i class="fa-brands fa-facebook-f"></i> </a>
-        <a href="" class="icon"><i class="fa-brands fa-twitter"></i> </a>
-        <a href="" class="icon"><i class="fa-brands fa-pinterest"></i> </a>
+	    <?php if ( have_rows( 'floating_menu_socials', 'option' ) ) : ?>
+		    <?php while ( have_rows( 'floating_menu_socials', 'option' ) ) : the_row(); ?>
+			    <?php $link = get_sub_field( 'link' ); ?>
+			    <?php if ( $link ) : ?>
+                    <a href="<?php echo get_sub_field( 'link' ); ?>">
+                        <i class="fa-brands fa-<?php echo get_sub_field( 'social_icon' )['value']; ?> icon"></i>
+                    </a>
+			    <?php endif; ?>
+		    <?php endwhile; ?>
+	    <?php endif; ?>
     </div>
     <div class="buttons">
-        <a href="" class="button button__white">FREE CONSULTATION</a>
-        <a href="" class="button button__bordered_white">CALL US</a>
+	    <?php $free_consultation_button = get_field( 'free_consultation_button', 'option' ); ?>
+	    <?php if ( $free_consultation_button ) : ?>
+            <a href="<?php echo esc_url( $free_consultation_button['url'] ); ?>" target="<?php echo esc_attr( $free_consultation_button['target'] ); ?>"  class="button button__white">
+                <?php echo esc_html( $free_consultation_button['title'] ); ?>
+            </a>
+	    <?php endif; ?>
+	    <?php $call_us_button = get_field( 'call_us_button', 'option' ); ?>
+	    <?php if ( $call_us_button ) : ?>
+            <a href="<?php echo esc_url( $call_us_button['url'] ); ?>" target="<?php echo esc_attr( $call_us_button['target'] ); ?>" class="button button__bordered_white"><?php echo esc_html( $call_us_button['title'] ); ?></a>
+	    <?php endif; ?>
     </div>
 </div>
 <div class="floatMenu">

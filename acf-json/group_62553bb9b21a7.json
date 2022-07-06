@@ -33,10 +33,10 @@
             "return_format": "array"
         },
         {
-            "key": "field_62553c07d96d9",
-            "label": "SHOP NOW BUTTON",
-            "name": "shop_now_button",
-            "type": "link",
+            "key": "field_62c5ae59836cd",
+            "label": "Floating Menu Socials",
+            "name": "floating_menu_socials",
+            "type": "repeater",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -45,7 +45,62 @@
                 "class": "",
                 "id": ""
             },
-            "return_format": "array"
+            "acfe_repeater_stylised_button": 0,
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_62c5ae59836ce",
+                    "label": "Social Icon",
+                    "name": "social_icon",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "instagram": "instagram",
+                        "facebook": "facebook-f",
+                        "youtube": "youtube",
+                        "tiktok": "tiktok"
+                    },
+                    "default_value": false,
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 1,
+                    "ajax": 0,
+                    "return_format": "array",
+                    "allow_custom": 0,
+                    "search_placeholder": "",
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_62c5ae59836cf",
+                    "label": "Link",
+                    "name": "link",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
         }
     ],
     "location": [
@@ -77,5 +132,5 @@
         }
     },
     "acfe_note": "",
-    "modified": 1649753109
+    "modified": 1657122717
 }

@@ -132,8 +132,8 @@
                             "choices": {
                                 "instagram": "instagram",
                                 "facebook": "facebook-f",
-                                "twitter": "twitter",
-                                "pinterest": "pinterest"
+                                "youtube": "youtube",
+                                "tiktok": "tiktok"
                             },
                             "default_value": false,
                             "allow_null": 0,
@@ -408,5 +408,5 @@
         }
     },
     "acfe_note": "",
-    "modified": 1650023906
+    "modified": 1657122624
 }
