@@ -2365,7 +2365,6 @@ jQuery(document).ready(function ($) {
   $('.services__menu_mobile .menu-item-has-children').on('click', function () {
     $(this).addClass('active');
     $('.services__menu_mobile .menu-item-has-children').removeClass('active');
-    $('.services__menu_mobile .menu-item-has-children .sub-menu').hide('slow');
     $(this).children('.sub-menu').slideToggle(300);
   });
   $('.services__menu_mobile .menu-item-has-children').prepend('<span class="arrow"></span>');
@@ -7602,6 +7601,15 @@ document.addEventListener('DOMContentLoaded', function (event) {
 
   var $ = jQuery;
 
+  if (!$('body').hasClass('wp-admin')) {}
+});
+"use strict";
+
+document.addEventListener('DOMContentLoaded', function (event) {
+  'use strict';
+
+  var $ = jQuery;
+
   if (!$('body').hasClass('wp-admin')) {
     var breakpoint = window.matchMedia('(min-width:31.25em)');
     var treatmentProcessSwiper;
@@ -7637,15 +7645,6 @@ document.addEventListener('DOMContentLoaded', function (event) {
     breakpoint.addListener(breakpointChecker);
     breakpointChecker();
   }
-});
-"use strict";
-
-document.addEventListener('DOMContentLoaded', function (event) {
-  'use strict';
-
-  var $ = jQuery;
-
-  if (!$('body').hasClass('wp-admin')) {}
 });
 "use strict";
 
