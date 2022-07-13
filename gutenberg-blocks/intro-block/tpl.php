@@ -39,7 +39,7 @@ else : ?>
 <div id="<?php echo esc_attr( $id ); ?>" class="<?php echo esc_attr( $classes ); ?>">
     <div class="content__wrapper">
             <div class="content__col">
-                <div class="title"><?php the_field( 'title' ); ?></div>
+                <h1 class="title"><?php the_field( 'title' ); ?></h1>
             </div>
             <div class="content__col">
                 <div class="text text__main text__white text__mb_medium"><?php the_field( 'text' ); ?></div>
