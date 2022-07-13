@@ -39,7 +39,7 @@ else : ?>
 	<div class="inner">
 			<div class="inner__wrapper">
                 <div class="wrapper__content">
-					<div class="title"><?php the_field( 'title' ); ?></div>
+					<h1 class="title"><?php the_field( 'title' ); ?></h1>
 					<?php $text = get_field( 'text' ); ?>
 	                <?php if ( $text ) : ?>
                         <div class="text"><?php echo $text; ?></div>
