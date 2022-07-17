@@ -25,19 +25,13 @@ if ( ! empty( $block['align'] ) ) {
 	$classes .= ' align' . $block['align'];
 }
 ?>
-
-<style type="text/css">
-	<?php echo '#' . $id; ?> {
-	/* Add styles that use ACF values here */
-	}
-</style>
 <?php
 if( isset( $block['data']['preview_image_help'] )  ) :
 	echo '<img src="'. $block['data']['preview_image_help'] .'" style="width:100%; height:auto;">';
 else : ?>
 <div id="<?php echo esc_attr( $id ); ?>" class="<?php echo esc_attr( $classes ); ?>">
 	<div class="inner">
-			<div class="name"><?php the_field( 'name' ); ?></div>
+			<h2 class="name"><?php the_field( 'name' ); ?></h2>
 			<div class="review_star_rating">
               <?php
               $rating = get_field('review_star_rating');

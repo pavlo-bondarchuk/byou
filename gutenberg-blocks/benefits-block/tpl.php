@@ -36,7 +36,7 @@ else : ?>
 					<div class="wrapper__content_inner">
                     <?php $title = get_field( 'title' ); ?>
 					<?php if($title): ?>
-                        <h4 class="title"><?php echo $title;?></h4>
+                        <h2 class="title"><?php echo $title;?></h2>
 					<?php endif; ?>
 					<?php $text = get_field( 'text' ); ?>
 					<?php if($text): ?>

@@ -30,7 +30,7 @@ if ( isset( $block['data']['preview_image_help'] ) ) :
 	echo '<img src="' . $block['data']['preview_image_help'] . '" style="width:100%; height:auto;">';
 else : ?>
 	<div class="post__related">
-		<div class="post__related_title"><?php echo __( 'You Might Like Also', 'byou' ); ?></div>
+		<h2 class="post__related_title"><?php echo __( 'You Might Like Also', 'byou' ); ?></h2>
 		<div class="post__related_wrapper">
 			<?php
 			$post = get_post();

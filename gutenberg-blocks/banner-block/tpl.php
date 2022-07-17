@@ -42,7 +42,7 @@ else : ?>
 		<?php endif; ?>
     </div>
     <div class="inner">
-		<div class="title"><?php the_field( 'text' ); ?></div>
+		<h2 class="title"><?php the_field( 'text' ); ?></h2>
 		<?php $button = get_field( 'button' ); ?>
 		<?php if ( $button ) : ?>
 			<a href="<?php echo esc_url( $button['url'] ); ?>" target="<?php echo esc_attr( $button['target'] ); ?>" class="button">

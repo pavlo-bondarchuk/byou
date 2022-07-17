@@ -51,7 +51,7 @@ else : ?>
                           <div class="wrapper__content"<?php echo $background_color; ?>>
 														<?php $title = get_sub_field( 'title' ); ?>
 														<?php if ( $title ) : ?>
-                                <div class="title"><?php echo $title; ?></div>
+                                <h2 class="title"><?php echo $title; ?></h2>
 														<?php endif; ?>
 														<?php $text = get_sub_field( 'text' ); ?>
 														<?php if ( $text ) : ?>

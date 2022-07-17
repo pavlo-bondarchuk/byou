@@ -25,13 +25,6 @@ if ( !empty( $block['align'] ) ) {
 	$classes .= ' align' . $block['align'];
 }
 ?>
-
-<style type="text/css">
-    <?php echo '#' . $id; ?>
-		{
-		/* Add styles that use ACF values here */
-		}
-</style>
 <?php
 if( isset( $block['data']['preview_image_help'] )  ) :
 	echo '<img src="'. $block['data']['preview_image_help'] .'" style="width:100%; height:auto;">';

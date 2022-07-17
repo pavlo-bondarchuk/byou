@@ -40,7 +40,7 @@ else : ?>
             <div class="wrapper">
 							<?php $title = get_field( 'title' ); ?>
 							<?php if ( $title ) : ?>
-                                <h4 class="main-title"><?php echo $title; ?></h4>
+                                <h2 class="main-title"><?php echo $title; ?></h2>
 							<?php endif; ?>
 							<?php $text = get_field( 'text' ); ?>
 							<?php if ( $text ) : ?>
@@ -59,7 +59,7 @@ else : ?>
                                       <?php endif; ?>
                                       <?php $title = get_sub_field( 'title' ); ?>
                                       <?php if ( $title ) : ?>
-                                          <h5 class="treatment__title"><?php echo $title; ?></h5>
+                                          <h4 class="treatment__title"><?php echo $title; ?></h4>
                                       <?php endif; ?>
                                       <?php $text = get_sub_field( 'text' ); ?>
                                       <?php if ( $text ) : ?>

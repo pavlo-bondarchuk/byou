@@ -26,11 +26,6 @@ if ( ! empty( $block['align'] ) ) {
 }
 ?>
 
-<style type="text/css">
-	<?php echo '#' . $id; ?> {
-	/* Add styles that use ACF values here */
-	}
-</style>
 <?php
 if ( isset( $block['data']['preview_image_help'] ) ) :
 	echo '<img src="' . $block['data']['preview_image_help'] . '" style="width:100%; height:auto;">';
@@ -60,7 +55,7 @@ else : ?>
                 <div class="content_wrapper">
                   <?php $title = get_field( 'title' ); ?>
                   <?php if ( $title ) : ?>
-                      <h5 class="title"><?php echo $title; ?></h5>
+                      <h2 class="title"><?php echo $title; ?></h2>
                   <?php endif; ?>
                   <?php $text = get_field( 'text' ); ?>
                   <?php if ( $text ) : ?>

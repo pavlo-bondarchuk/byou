@@ -38,7 +38,7 @@ else : ?>
 	<div class="inner">
 			<?php $title = get_field( 'title' ); ?>
 			<?php if($title): ?>
-                <h4 class="title"><?php echo $title; ?></h4>
+                <h2 class="title"><?php echo $title; ?></h2>
 			<?php endif;?>
 			<?php
 			$iframe = get_field('video_link');

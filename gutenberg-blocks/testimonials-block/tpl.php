@@ -26,7 +26,7 @@ if ( !empty( $block['align'] ) ) {
 }
 $template = array(
 		array( 'core/heading', array(
-				'level'   => 4,
+				'level'   => 2,
 				'content' => 'What Our Clients Say'
 		) ),
 );

@@ -26,12 +26,6 @@ if ( !empty( $block['align'] ) ) {
 }
 ?>
 
-    <style type="text/css">
-        <?php echo '#' . $id; ?>
-				{
-				/* Add styles that use ACF values here */
-				}
-    </style>
 <?php
 if ( isset( $block['data']['preview_image_help'] ) ) :
 	echo '<img src="' . $block['data']['preview_image_help'] . '" style="width:100%; height:auto;">';
@@ -42,7 +36,7 @@ else : ?>
                     <?php if ( have_rows( 'why_choose' ) ) : ?>
 						<?php while ( have_rows( 'why_choose' ) ) : the_row(); ?>
 							<div class="content_wrapper">
-                            <div class="title"><?php the_sub_field( 'title' ); ?></div>
+                            <h2 class="title"><?php the_sub_field( 'title' ); ?></h2>
                             <div class="text"><?php the_sub_field( 'text' ); ?></div>
 							<?php $button = get_sub_field( 'button' ); ?>
 							<?php if ( $button ) : ?>

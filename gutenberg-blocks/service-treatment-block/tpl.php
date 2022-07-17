@@ -34,7 +34,7 @@ else : ?>
 	<div class="inner">
 			<?php $title = get_field( 'title' ); ?>
 			<?php if($title): ?>
-                <h4 class="title"><?php echo $title;?></h4>
+                <h2 class="title"><?php echo $title;?></h2>
 			<?php endif; ?>
 			<?php $text_before = get_field( 'text_before' ); ?>
 			<?php if($text_before): ?>

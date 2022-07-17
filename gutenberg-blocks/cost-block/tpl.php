@@ -25,7 +25,6 @@ if ( ! empty( $block['align'] ) ) {
 	$classes .= ' align' . $block['align'];
 }
 ?>
-
 <?php
 if( isset( $block['data']['preview_image_help'] )  ) :
 	echo '<img src="'. $block['data']['preview_image_help'] .'" style="width:100%; height:auto;">';
@@ -34,7 +33,7 @@ else : ?>
 	<div class="inner">
 			<?php $title = get_field( 'title' ); ?>
 			<?php if($title): ?>
-            <h3 class="title"><?php echo $title;?></h3>
+            <h2 class="title"><?php echo $title;?></h2>
 			<?php endif; ?>
 			<?php $description = get_field( 'description' ); ?>
 			<?php if($description): ?>

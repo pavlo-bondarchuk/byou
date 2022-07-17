@@ -25,12 +25,6 @@ if ( ! empty( $block['align'] ) ) {
 	$classes .= ' align' . $block['align'];
 }
 ?>
-
-<style type="text/css">
-	<?php echo '#' . $id; ?> {
-	/* Add styles that use ACF values here */
-	}
-</style>
 <?php if( isset( $block['data']['preview_image_help'] )  ) :
 echo '<img src="'. $block['data']['preview_image_help'] .'" style="width:100%; height:auto;">';
 else : ?>
@@ -40,7 +34,7 @@ else : ?>
         <div class="over">
 					<?php if ( have_rows( 'overlay' ) ) : ?>
 						<?php while ( have_rows( 'overlay' ) ) : the_row(); ?>
-							<div class="title"><?php the_sub_field( 'title' ); ?></div>
+							<h2 class="title"><?php the_sub_field( 'title' ); ?></h2>
 							<div class="items">
                               <?php if ( have_rows( 'item' ) ) : ?>
                                 <?php while ( have_rows( 'item' ) ) : the_row(); ?>
