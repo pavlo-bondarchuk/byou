@@ -1088,7 +1088,7 @@ function register_acf_block_type() {
 			),
 			'render_template' => 'gutenberg-blocks/find-block/tpl.php',
 			'enqueue_style'   => get_template_directory_uri() . '/assets/dist/css/find-block/style.css',
-			'enqueue_script' => get_template_directory_uri() . '/assets/dist/js/find-block/script.js',
+			//'enqueue_script' => get_template_directory_uri() . '/assets/dist/js/find-block/script.js',
 			'example'         => array(
 					'attributes' => array(
 							'mode' => 'preview',
